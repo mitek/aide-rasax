@@ -9,3 +9,7 @@ nlu:
       - rasa x
       - both
       - all
+      - aide
+      - помощник
+      - ассистент
+      

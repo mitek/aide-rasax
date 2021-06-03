@@ -27,12 +27,12 @@ stories:
   - intent: get_started_intro
   - action: utter_greet
   - action: utter_ask_playground_install_info
-  - intent: install_rasa
+  - intent: install_aide
   - action: utter_ask_which_product
 
 - story: Getting started with Rasa Open Source installation
   steps:
-  - intent: install_rasa
+  - intent: install_aide
   - action: utter_ask_which_product
   - or:
     - intent: faq
@@ -56,7 +56,7 @@ stories:
   - intent: get_started_intro
   - action: utter_greet
   - action: utter_ask_playground_install_info
-  - intent: install_rasa
+  - intent: install_aide
   - action: utter_ask_which_product
   - or:
     - intent: faq
@@ -77,7 +77,7 @@ stories:
 
 - story: Getting started with Rasa X local mode installation
   steps:
-  - intent: install_rasa
+  - intent: install_aide
   - action: utter_ask_which_product
   - or:
     - intent: faq
@@ -101,7 +101,7 @@ stories:
 
 - story: Getting started with Rasa X server installation
   steps:
-  - intent: install_rasa
+  - intent: install_aide
   - action: utter_ask_which_product
   - or:
     - intent: faq
@@ -157,7 +157,7 @@ stories:
     - product: playground
   - action: utter_faq
   - action: action_set_faq_slot
-  - intent: install_rasa
+  - intent: install_aide
   - action: utter_ask_which_product
   - intent: faq
     entities:

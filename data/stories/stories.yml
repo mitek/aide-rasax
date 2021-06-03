@@ -1,5 +1,99 @@
 version: "2.0"
 stories:
+
+- story: answer out of scope
+  steps:
+  - intent: out_of_scope
+  - action: utter_out_of_scope
+- story: give help
+  steps:
+  - intent: help
+  - action: utter_help
+- story: thank
+  steps:
+  - intent: thank
+  - action: utter_welcome
+- story: greet + give info
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_help
+- story: say goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+- story: open incident form interrupted
+  steps:
+  - or:
+    - intent: open_incident
+    - intent: password_reset
+    - intent: problem_email
+  - action: open_incident_form
+  - active_loop: open_incident_form
+  - intent: help
+  - action: utter_help
+  - action: open_incident_form
+  - active_loop: null
+  - action: action_open_incident
+- story: open incident form interrupted
+  steps:
+  - or:
+    - intent: open_incident
+    - intent: password_reset
+    - intent: problem_email
+  - action: open_incident_form
+  - active_loop: open_incident_form
+  - intent: out_of_scope
+  - action: utter_out_of_scope
+  - action: open_incident_form
+  - active_loop: null
+  - action: action_open_incident
+- story: incident status form interrupted
+  steps:
+  - intent: incident_status
+  - action: incident_status_form
+  - active_loop: incident_status_form
+  - intent: help
+  - action: utter_help
+  - action: incident_status_form
+  - active_loop: null
+  - action: action_check_incident_status
+- story: incident status form interrupted
+  steps:
+  - intent: incident_status
+  - action: incident_status_form
+  - active_loop: incident_status_form
+  - intent: out_of_scope
+  - action: utter_out_of_scope
+  - action: incident_status_form
+  - active_loop: null
+  - action: action_check_incident_status
+- story: incident status form switch to open incident
+  steps:
+  - intent: incident_status
+  - action: incident_status_form
+  - active_loop: incident_status_form
+  - or:
+    - intent: open_incident
+    - intent: password_reset
+    - intent: problem_email
+  - action: open_incident_form
+  - active_loop: open_incident_form
+  - active_loop: null
+  - action: action_open_incident
+- story: open incident form switch to incident status form
+  steps:
+  - or:
+    - intent: open_incident
+    - intent: password_reset
+    - intent: problem_email
+  - action: open_incident_form
+  - active_loop: open_incident_form
+  - intent: incident_status
+  - action: incident_status_form
+  - active_loop: incident_status_form
+  - active_loop: null
+  - action: action_check_incident_status
 - story: thanks
   steps:
   - intent: thank
@@ -270,130 +364,3 @@ stories:
   steps:
   - intent: react_negative
   - action: utter_react_negative
-- story: why rasa 1
-  steps:
-  - intent: why_rasa
-  - action: utter_why_rasa
-  - action: utter_ask_more
-  - intent: affirm
-  - action: utter_why_rasa_research
-  - action: utter_why_rasa_nlu
-  - action: utter_why_rasa_dialogue
-  - action: utter_why_rasa_os
-  - action: utter_why_rasa_compliant
-- story: why rasa 2
-  steps:
-  - intent: why_rasa
-    entities:
-    - current_api: tensorflow
-  - slot_was_set:
-    - current_api: __other__
-  - action: utter_why_rasa
-  - action: utter_ask_more
-  - intent: affirm
-  - action: utter_why_rasa_research
-  - action: utter_why_rasa_nlu
-  - action: utter_why_rasa_dialogue
-  - action: utter_why_rasa_os
-  - action: utter_why_rasa_compliant
-- story: why rasa 3
-  steps:
-  - intent: why_rasa
-    entities:
-    - current_api: luis
-  - slot_was_set:
-    - current_api: luis
-  - action: utter_why_rasa
-  - action: utter_switch_luis
-  - action: utter_ask_more_migrate
-  - intent: affirm
-  - action: utter_why_rasa_research
-  - action: utter_why_rasa_nlu
-  - action: utter_why_rasa_dialogue
-  - action: utter_why_rasa_os
-  - action: utter_why_rasa_compliant
-- story: why rasa 4
-  steps:
-  - intent: why_rasa
-    entities:
-    - current_api: dialogflow
-  - slot_was_set:
-    - current_api: dialogflow
-  - action: utter_why_rasa
-  - action: utter_switch_dialogflow
-  - action: utter_ask_more_migrate
-  - intent: affirm
-  - action: utter_why_rasa_research
-  - action: utter_why_rasa_nlu
-  - action: utter_why_rasa_dialogue
-  - action: utter_why_rasa_os
-  - action: utter_why_rasa_compliant
-- story: why rasa 5
-  steps:
-  - intent: why_rasa
-  - action: utter_why_rasa
-  - action: utter_ask_more
-  - intent: deny
-  - action: utter_anything_else
-- story: why rasa 6
-  steps:
-  - intent: why_rasa
-    entities:
-    - current_api: tensorflow
-  - slot_was_set:
-    - current_api: __other__
-  - action: utter_why_rasa
-  - action: utter_ask_more
-  - intent: deny
-  - action: utter_anything_else
-- story: why rasa 7
-  steps:
-  - intent: why_rasa
-    entities:
-    - current_api: luis
-  - slot_was_set:
-    - current_api: luis
-  - action: utter_why_rasa
-  - action: utter_switch_luis
-  - action: utter_ask_more_migrate
-  - intent: deny
-  - action: utter_anything_else
-- story: why rasa 8
-  steps:
-  - intent: why_rasa
-    entities:
-    - current_api: dialogflow
-  - slot_was_set:
-    - current_api: dialogflow
-  - action: utter_why_rasa
-  - action: utter_switch_dialogflow
-  - action: utter_ask_more_migrate
-  - intent: deny
-  - action: utter_anything_else
-- story: need help with a technical question
-  steps:
-  - intent: greet
-  - action: action_greet_user
-  - intent: need_help_broad
-  - action: utter_ask_more_details
-  - intent: technical_question
-  - action: action_docs_search
-
-# stories that should be rules but currently can't (see https://github.com/RasaHQ/rasa/issues/8176)
-- story: explain -> can't explain # the default "rule"; longer rules will handle cases where an explanation exists
-  steps:
-  - intent: explain
-  - action: utter_no_further_info
-  # wait_for_user_input: false
-# - story: explain -> can't explain (at conversation start)
-  # conversation_start: true
-  # steps:
-  # - intent: explain
-  # - action: utter_no_further_info
-  # - action: utter_possibilities
-- story: explain in FAQ
-  steps:
-  - action: action_set_faq_slot
-  - intent: explain
-  - action: action_explain_faq
-  # wait_for_user_input: false

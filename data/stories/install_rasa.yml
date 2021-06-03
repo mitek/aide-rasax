@@ -2,12 +2,12 @@ version: "2.0"
 stories:
 - story: install rasa
   steps:
-  - intent: install_rasa
+  - intent: install_aide
   - action: utter_ask_which_product
 
 - story: install rasa x
   steps:
-  - intent: install_rasa
+  - intent: install_aide
   - action: utter_ask_which_product
   - intent: faq
     entities:
@@ -18,7 +18,7 @@ stories:
 
 - story: install rasa open source
   steps:
-  - intent: install_rasa
+  - intent: install_aide
     entities:
     - product: rasa
   - slot_was_set:
@@ -29,7 +29,7 @@ stories:
 
 - story: install rasa x server
   steps:
-  - intent: install_rasa
+  - intent: install_aide
     entities:
     - product: x
   - slot_was_set:
@@ -94,7 +94,7 @@ stories:
 
 - story: install rasa x local
   steps:
-  - intent: install_rasa
+  - intent: install_aide
     entities:
     - product: x
   - slot_was_set:

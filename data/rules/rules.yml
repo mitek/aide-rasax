@@ -1,42 +1,44 @@
 version: "2.0"
 rules:
-- rule: why rasa 1
+- rule: handoff intent from other bot's handoff triggers greeting
+  steps:
+  - intent: handoff
+  - action: utter_greet
+
+- rule: answer bot challenge
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: start open incident form
+  steps:
+  - or:
+    - intent: open_incident
+    - intent: password_reset
+    - intent: problem_email
+  - action: open_incident_form
+  - active_loop: open_incident_form
+
+- rule: submit open incident form
   condition:
-  - slot_was_set:
-    - current_api: null
+    - active_loop: open_incident_form
   steps:
-  - intent: why_rasa
-  - action: utter_why_rasa
-  - action: utter_ask_more
-- rule: why rasa 2
+  - action: open_incident_form
+  - active_loop: null
+  - action: action_open_incident
+
+- rule: start incident status form
   steps:
-  - intent: why_rasa
-    entities:
-    - current_api: tensorflow
-  - slot_was_set:
-    - current_api: __other__
-  - action: utter_why_rasa
-  - action: utter_ask_more
-- rule: why rasa 3
+  - intent: incident_status
+  - action: incident_status_form
+  - active_loop: incident_status_form
+- rule: submit incident status form
+  condition:
+    - active_loop: incident_status_form
   steps:
-  - intent: why_rasa
-    entities:
-    - current_api: luis
-  - slot_was_set:
-    - current_api: luis
-  - action: utter_why_rasa
-  - action: utter_switch_luis
-  - action: utter_ask_more_migrate
-- rule: why rasa 4
-  steps:
-  - intent: why_rasa
-    entities:
-    - current_api: dialogflow
-  - slot_was_set:
-    - current_api: dialogflow
-  - action: utter_why_rasa
-  - action: utter_switch_dialogflow
-  - action: utter_ask_more_migrate
+  - action: incident_status_form
+  - active_loop: null
+  - action: action_check_incident_status
 - rule: ask for more details
   steps:
   - intent: need_help_broad

@@ -1,8 +1,6 @@
-version: '2.0'
-config:
-  store_entities_as_slots: true
+version: "2.0"
 session_config:
-  session_expiration_time: 480
+  session_expiration_time: 0.0
   carry_over_slots_to_new_session: true
 intents:
 - affirm
@@ -13,6 +11,7 @@ intents:
 - ask_why_contribute
 - book_demo
 - broken
+- bot_challenge
 - bye
 - canthelp
 - chitchat:
@@ -28,15 +27,23 @@ intents:
 - feedback
 - get_started_intro
 - get_started_playground
+- goodbye
 - greet
+- handoff
+- help
 - how_to_get_started
 - human_handoff
-- install_rasa
+- incident_status
+- inform
+- install_aide
 - need_help_broad
 - next_step
 - nlu_generation_tool_recommendation
 - nlu_info
+- open_incident
 - out_of_scope
+- password_reset
+- problem_email
 - pipeline_recommendation
 - react_negative
 - react_positive
@@ -48,28 +55,57 @@ intents:
 - technical_question
 - thank
 - trigger_rephrase
+- trigger_handoff
 - why_rasa
 - nlu_fallback
 - trigger_response_selector:
     use_entities: false
+
 entities:
 - amount-of-money
+- caller_id
 - company
-- current_api
 - email
 - entity
 - feedback_value
+- handoff_to
 - job_function
 - language
 - location
 - name
 - nlu_part
 - number
+- priority
 - product
 - user_type
 - install_type
 - retrieval_intent
+
 slots:
+  confirm:
+    type: bool
+    influence_conversation: false
+  previous_email:
+    type: text
+    influence_conversation: false
+  caller_id:
+    type: text
+    influence_conversation: false
+  incident_title:
+    type: text
+    influence_conversation: false
+  priority:
+    type: text
+    influence_conversation: false
+  problem_description:
+    type: text
+    influence_conversation: false
+  requested_slot:
+    type: text
+    influence_conversation: false
+  handoff_to:
+    type: text
+    influence_conversation: false
   retrieval_intent:
     type: any
   budget:
@@ -80,11 +116,6 @@ slots:
     type: bool
   company:
     type: any
-  current_api:
-    type: categorical
-    values:
-    - dialogflow
-    - luis
   email:
     type: any
   entity_extractor:
@@ -119,9 +150,6 @@ slots:
     type: bool
   person_name:
     type: any
-  problem_description:
-    type: text
-    influence_conversation: false
   product:
     type: categorical
     values:
@@ -152,7 +180,76 @@ slots:
     type: bool
   faq:
     type: any
+
+
 responses:
+  utter_out_of_scope:
+  - text: Простите, я не знаю как ответить на это. Наберите "помощь".
+  utter_greet:
+  - text: Привет! Я помощник.
+  - text: Я помощник.
+  - text: Привет, я ассистент.
+  utter_goodbye:
+  - text: До свидания!
+  utter_iamabot:
+  - text: Я робот, если коротко - бот.
+  utter_ask_email:
+  - text: Какой у вас емейл адрес?
+  utter_ask_incident_title:
+  - text: Как определим тему?
+  utter_ask_problem_description:
+  - text: Опишите проблему
+  utter_ask_priority:
+  - text: Какая срочность у этой проблемы?
+    buttons:
+      - payload: /inform{"priority":"низкий"}
+        title: низкая
+      - payload: /inform{"priority":"средний"}
+        title: средняя 
+      - payload: /inform{"priority":"высокий"}
+        title: высокая
+  utter_no_priority:
+  - text: Простите, "{priority}" - это неправильный приоритет. Попробуйте еще раз.
+  utter_no_email:
+  - text: Простите, "{email}" не зарегистрирован в системе или написан с ошибкой. Попробуйте еще раз.
+  utter_help:
+  - text: "Я могу:
+      \n- Записать и передать вашу информацию
+      \n- Перевести разговор на человека 
+      \n- Узнать статус вашего запроса, если вы ожидаете какой-то ответ" 
+  utter_welcome:
+  - text: Здравствуйте!
+  utter_default:
+  - text: Мне не удалось понять что вы сказал. Можете повторить?
+  - text: Простите, не понял. Можете перефразировать?
+  - text: Я не понял, скажите еще раз?
+  - text: Боюсь, что я не понял что вы сказали. Попробуйте еще раз.
+  - text: Я не очень понял что вы имеете ввиду. Повторите еще раз?
+  utter_ask_use_previous_email:
+  - text: Хотите использовать для идентификации тот же емейл адрес, что и в прошлый раз? {previous_email}?
+  utter_ask_confirm:
+  - text: "Я могу записать в свою записную книжку ваш запрос 
+          \n    Ваш email: {email}
+          \n    Описание проблемы: {problem_description}
+          \n    Кратко: {incident_title}
+          \n    Срочность: {priority}"
+    buttons:
+    - title: Да, правильно
+      payload: /affirm
+    - title: Нет, отменить
+      payload: /deny
+  utter_incident_creation_canceled:
+  - text: Хорошо, отменено.
+  utter_ask_whatelse:
+    - text: Что я еще могу сделать для вас?
+  utter_ask_handoff:
+  - text: Похоже вы хотите перевести разговор к человеку.
+  utter_handoff:
+  - text: Хорошо, перевожу.
+  utter_wouldve_handed_off:
+  - text: Если вы говорили со мной через чат, я вас переключаю обратно {handoffhost}.
+  utter_no_handoff:
+  - text: Поскольку вы не сконфигурировали адресата для перевода, я не могу вас никуда переключить!
   utter_already_subscribed:
   - text: Looks like {email} is already subscribed - good choice! If you haven't received a newsletter in a while, maybe check your spam folder 🗑
   utter_also_explain_core:
@@ -164,19 +261,17 @@ responses:
   utter_anything_else:
   - text: Is there anything else I can help you with?
   utter_ask_budget:
-  - text: What's your annual budget for conversational AI? 💸
+  - text: Какой у вас бюджет на разговорчивый ИИ? 💸
   utter_ask_business_email:
-  - text: What's your business email?
+  - text: Скажите свой рабочий емейл адрес.
   utter_ask_company:
-  - text: What company do you work for?
+  - text: На какую компанию вы работаете?
   utter_ask_continue_newsletter:
-  - text: Do you still want to subscribe to the newsletter?
+  - text: Вы все еще хотите подписаться на рассылку?
   utter_ask_continue_rasa_init:
   - text: Do you want to go ahead with the steps to create a contextual assistant?
   utter_ask_continue_sales:
   - text: Do you still want to talk to sales?
-  utter_ask_problem_description:
-  - text: Can you describe the problem you're having?
   utter_ask_docs_help:
   - buttons:
     - payload: /affirm
@@ -184,8 +279,6 @@ responses:
     - payload: /deny
       title: 👎
     text: Did that help?
-  utter_ask_email:
-  - text: What's your email address?
   utter_ask_entities:
   - text: What kind of entities do you want to extract?
   utter_ask_explain_nlucorex:
@@ -220,7 +313,7 @@ responses:
     buttons:
     - payload: /get_started_playground
       title: Try out Rasa in the online Rasa Playground
-    - payload: /install_rasa
+    - payload: /install_aide
       title: Install Rasa on your own computer
     - payload: /trigger_response_selector{{"retrieval_intent":"chitchat/ask_whatisrasa"}}
       title: Find out more about Rasa
@@ -272,13 +365,6 @@ responses:
   - text: You can’t speak to a human directly in this chat, but you can email us at hi@rasa.com.
   utter_crf:
   - text: For custom entities like that, I would suggest using the [CRFEntityExtractor](https://rasa.com/docs/rasa/nlu/components/#crfentityextractor) component. Read more about how to annotate entities in your data [here](https://rasa.com/docs/nlu/dataformat/).
-  utter_default:
-  - text: Sorry, I didn't get that 🤷. Could you please rephrase?
-  - text: I didn't understand, could you rephrase that?
-  - text: I'm sorry, but I didn't understand you. Could you please rephrase what you just said?
-  - text: I'm afraid I didn't get what you just said. Could you rephrase that?
-  - text: I didn't quite get that, could you rephrase your message?
-  - text: Could you rephrase your message? I didn't get it, I'm sorry.
   utter_direct_to_forum_for_help:
   - text: I've made a note of the problem you're experiencing. In the meantime, if you're still stuck, please ask for help on our [forum](https://forum.rasa.com/).
   utter_docu:
@@ -339,10 +425,6 @@ responses:
   - text: That's great! 🙌
   - text: Awesome! 🎉
   - text: Cool, let's do it 🚀
-  utter_greet:
-  - text: Hey there, my name is Sara.
-  - text: Hi, I'm Sara!
-  - text: Hi! My name's Sara.
   utter_greet_name:
   - text: Hi, {name}!
   - text: Hello, {name}!
@@ -387,8 +469,6 @@ responses:
   - text: Check out [part 1](https://blog.rasa.com/rasa-nlu-in-depth-part-1-intent-classification/) of the Rasa NLU In Depth series from our software engineer Tobias to learn more about intent classification.
   utter_nlu_tools:
   - text: We recommend using Rasa X to easily create and classify NLU data from within a UI.
-  utter_no_email:
-  - text: Hmm, I'm not sure that's a valid email, please make sure to include the full address 😅
   utter_no_guide_for_switch:
   - text: Sorry, but we don't have a migration guide for that tool yet. You can still follow the [tutorial](https://rasa.com/docs/rasa/user-guide/rasa-tutorial/) to build a Rasa assistant based on your existing one, though!
   utter_no_more_steps:
@@ -514,33 +594,61 @@ responses:
   - text: Because Rasa is open source, you can customize your bot and explore its inner workings as much as you'd like. There's no vendor lock in, and no hidden algorithms.
   utter_why_rasa_compliant:
   - text: If data security and compliance is a priority for you, Rasa has your back! You can deploy Rasa either in the cloud or on premise and maintain complete control over your assistant & its data.
-actions:
-- action_trigger_response_selector
-- action_default_ask_affirmation
-- action_default_fallback
-- action_restart_with_button
-- action_docs_search
-- action_explain_sales_form
-- action_set_faq_slot
-- action_explain_faq
-- action_forum_search
-- action_get_community_events
-- action_greet_user
-- action_pause
-- action_set_onboarding
-- action_store_bot_language
-- action_store_entity_extractor
-- action_store_problem_description
-- action_store_unknown_nlu_part
-- action_store_unknown_product
-- action_tag_docs_search
-- action_tag_feedback
-- action_submit_subscribe_newsletter_form
-- action_submit_sales_form
-- action_submit_suggestion_form
-- validate_subscribe_newsletter_form
-- validate_sales_form
+
 forms:
+  open_incident_form:
+#    required_slots:
+    email:
+      - type: from_entity
+        entity: email
+      - type: from_intent
+        intent: affirm
+        value: true
+      - type: from_intent
+        intent: deny
+        value: false
+    priority:
+      - type: from_entity
+        entity: priority
+    problem_description:
+      - type: from_text
+        not_intent:
+          - incident_status
+          - bot_challenge
+          - help
+          - affirm
+          - deny
+    incident_title:
+      - type: from_trigger_intent
+        intent: password_reset
+        value: "Проблема сброса пароля"
+      - type: from_trigger_intent
+        intent: problem_email
+        value: "Проблема с емейлом"
+      - type: from_text
+        not_intent:
+          - incident_status
+          - bot_challenge
+          - help
+          - affirm
+          - deny
+    confirm:
+      - type: from_intent
+        intent: affirm
+        value: true
+      - type: from_intent
+        intent: deny
+        value: false
+  incident_status_form:
+    email:
+      - type: from_entity
+        entity: email
+      - type: from_intent
+        intent: affirm
+        value: true
+      - type: from_intent
+        intent: deny
+        value: false
   playground_form:
     problem_description:
     - type: from_text
@@ -585,3 +693,39 @@ forms:
     - intent: enter_data
       type: from_text
 e2e_actions: []
+
+actions:
+- action_ask_email
+- action_check_incident_status
+- action_handoff
+- action_handoff_options
+- action_open_incident
+- validate_open_incident_form
+- validate_incident_status_form
+
+- action_trigger_response_selector
+- action_default_ask_affirmation
+- action_default_fallback
+- action_restart_with_button
+- action_docs_search
+- action_explain_sales_form
+- action_set_faq_slot
+- action_explain_faq
+- action_forum_search
+- action_get_community_events
+- action_greet_user
+- action_pause
+- action_set_onboarding
+- action_store_bot_language
+- action_store_entity_extractor
+- action_store_problem_description
+- action_store_unknown_nlu_part
+- action_store_unknown_product
+- action_tag_docs_search
+- action_tag_feedback
+- action_submit_subscribe_newsletter_form
+- action_submit_sales_form
+- action_submit_suggestion_form
+- validate_subscribe_newsletter_form
+- validate_sales_form
+

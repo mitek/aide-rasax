@@ -1,5 +1,321 @@
 version: "2.0"
 nlu:
+
+   
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - you are a bot right
+    - aren't you a bot
+    - Are you a bot?
+    - are you a BOT
+    - are you a bot?
+    - are you a chatbot
+    - are you a rasa bot?
+    - are you a real bot?
+    - are you a robot
+    - are you ai
+    - are you artificial
+    - are you artificial intelligence
+    - are you bot
+    - are you bot?
+    - are you rasa bot?
+    - are you real
+    - are you real lol
+    - are you really a bot
+    - are you robot
+    - are you sure that you're a bot?
+    - bot?
+    - cuz you are a bot
+    - i guess you are a chatbot
+    - oh are you chatbot?
+    - tell me, are you a bot?
+    - what are you, a bot?
+    - you are a robot
+    - you are ai
+    - you are chatbot
+    - you're a bot
+    - you robo
+    - real bot then?
+    - are you really a bbot?
+    - ты бот?
+    - ты робот?
+    - ты реально робот?
+    - ты бездушная тварь?
+    - ты ИИ
+    - потому что ты бот
+    - тупая программа
+    - наш банк
+    - стоматологическая клиника 
+    - наша клиника
+
+- intent: password_reset
+  examples: |
+    - смена пароля
+    - помогите поменять пароль
+    - другой пароль нужен
+    - пароль не подходит
+    - пароль не работает
+    - сброс пароля
+    - снова забыл пароль
+    - проблема с паролем, помогите
+    - как сбросить пароль
+    - пароль не подходит. можно сбросить?
+    - я хочу сменить пароль
+    - как сменить пароль
+    - не могу поменять пароль
+    - пароль как сменить?
+    - сменить пароль
+    - па роль сброс
+    - я забыл пароль
+    - пароль секретный
+    - секретное слово
+    - забыл секретное слово
+    - заветное слово забыл
+    - забыл как входить
+    - не помню ничего
+    - а как войти? где пароль?
+    - ничего не понятно, где взять пароль?
+    - а что такое пароль?
+    - куда я записал пароль?
+    - я не помню в какой компании работаю
+    - а какая это компания?
+
+- intent: open_incident
+  examples: |
+    - надо открыть инцидент
+    - хочу оставить информацию
+    - оставить информацию
+    - информационное сообщение 
+    - есть информация
+    - поделиться информацией
+    - передать важное сообщение
+    - передай информацию
+    - передай 
+    - надо передать информацию
+    - надо передать информацию! это [очень важно]{"entity": "priority", "value": "высокий"}
+    - у меня проблема, открой тикет
+    - открыть инцидент на test@test.com
+    - открыть [высокий]{"entity": "priority", "value": "высокий"} проблему
+    - открыть тикет, с [низкий](priority) приоритет
+    - я хочу открыть тикет, это [очень важно]{"entity": "priority", "value": "высокий"}
+    - открой инцидент
+    - открой инциндент
+    - открой проблему
+    - открой запрос
+    - открой ситуацию
+    - я хочу открыть проблему
+    - я хочу открыть инцидент
+    - могу я открыть тикет?
+    - у меня проблема
+    - есть проблема
+    - есть вопрос
+    - у меня вопрос
+    - это [очень важно]{"entity": "priority", "value": "высокий"}
+    - это [довольно важно]{"entity": "priority", "value": "высокий"}
+    - открыть инцидент
+    - открыть тикет
+    - есть тема, надо порешать
+    - надо порешать тему
+    - тему одну пообсуждать
+    - тему обговорить
+    - есть темка для разговора
+    - тема есть
+    - open an incident
+    - open an incedent
+    - i want to open an incident
+    - i wanna open a incident
+    - I want to open a ticket
+    - can I open a ticket
+    - pls help me open tix support
+    - ticket support incident open now can you do that for me
+
+ 
+- intent: help
+  examples: |
+    - I need help
+    - what can you help me with
+    - can you help me
+    - what can you do
+    - I need some help
+    - help me
+    - can you please help me
+    - problem
+    - big problem
+    - How can you help me
+    - How you help me?
+    - I need some help
+    - What are my options
+    - What are you able to do?
+    - What can I ask you?
+    - What can I do?
+    - What can you demo
+    - What can you do for me?
+    - What can you do?
+    - What can you tell me?
+    - What do you do
+    - anything els
+    - are there any other options?
+    - can I ask you anything else?
+    - can you do anything else?
+    - can you help me?
+    - come back
+    - cool! can I do something else here?
+    - hello what can you do for me
+    - на что ты способен?
+    - о чем тебя спросить?
+    - демо
+    - а что ты умеешь?
+    - что ты делаешь?
+    - вернись
+    - вернулся
+    - круто! что еще?
+    - але?
+    - что ты можешь?
+    - помощь
+    - хелп
+    - помогите
+    - помогите мне
+    - как вы можете помочь?
+    - нужна помощь
+    - хотел посоветоваться
+    - что ты делаешь?
+    - что ты умеешь?
+    - как это работает
+    - ничего не понятно
+    - ааа 
+    - аааа
+    - ааааа
+- intent: problem_email
+  examples: |
+    - my outlook application won't open
+    - I'm having issues with outlook.
+    - issues with outlook
+    - outlook application will not open
+    - there's a problem with my email
+    - something is broken with outlook
+    - I can't log in to my email
+    - can't log in to outlook
+    - my email won't let me log in
+    - i have a problem with my email
+    - can't get to slack
+    - i cant open my email
+    - i can't able to login
+    - I'm having trouble logging into my email
+    - can you help me with me with my email please
+    - what can you do about my email it's not working
+    - can you fix outlook for me I don't know what to do
+    - something isn't right with my e-mail
+    - can you help me with my e-mail account
+    - my internet mail isn't working
+    - outlook is showing me a weird message
+    - email isn't loading can you help
+    - у меня нет емейла
+    - у меня не работает почта
+    - почтовый адрес не помню
+    - а что такое емейл?
+    - у меня нет интернета
+    
+- intent: inform
+  examples: |
+    - мой емейл test@example.com
+    - мой емейл abraham.lincoln@example.com
+    - name.name@example.com
+    - это admin@example.com
+    - aileen.mottern@example.com
+    - [высокий](priority)
+    - [низкий](priority)
+    - [средний](priority)
+    - это [низкий](priority) приоритет
+    - это [средний](priority)
+    - это [высокий](priority) приоритет
+    - [эскалировано]{"entity": "priority", "value": "высокий"}
+    - [эскалацация]{"entity": "priority", "value": "высокий"}
+    - [супер важно](priority)
+    - иван
+    - приоритет [высокий](priority)
+    - test@gmail.com
+    - xyz@example.com
+    - my email is ella@rasa.com
+    - abraham.lincoln@example.com
+    - steve
+    - sara@rasa.com
+    - [срочно]{"entity": "priority", "value": "высокий"}
+    - [критично]{"entity": "priority", "value": "высокий"}
+
+- intent: incident_status
+  examples: |
+    - что с моим вопросом
+    - какой статус инцидента?
+    - что с тикетом
+    - как мой тикет поживает
+    - поищи тикет на abraham.lincoln@example.com
+    - статус вопроса
+    - проверить статус
+    - проверить статус тикета
+    - статус проблемы
+    - какой статус
+    - что по моей теме?
+    - по теме моей есть продвижение?
+    - по моей теме есть движение?
+    - есть по теме новости?
+    - сколько можно ждать уже?
+    - а мою проблему решили?
+    - решили проблему?
+    - узнать статус проблемы
+    - скажите какой статус
+    - какой статус, подскажите
+    - есть новости по моей теме?
+    - уж я уж не знаю что делать
+    - жду, жду, где ответ?
+    - я оставлял информацию, какой статус?
+    - какой ответ по оставленной информации?
+    - моя информация была полезна?
+    - есть ответ?
+    - что с ответом?
+    - ответ готов?
+    - какой ответ?
+
+- intent: human_handoff
+  examples: |
+    - хочу переключиться на человека
+    - хочу поговорить с хозяином
+    - хочу человека
+    - реального человека
+    - дай живого человека
+    - чат с человеком
+    - переведи на человека
+    - поговорить с человеком
+    - переведи
+    - можно перевести на человека?
+    - поговорить с человеком
+    - дай человека
+    - дай другого
+    - дай не бота
+    - дай хозяина
+    - нужен человек
+    - поговорить с живым
+    - надо человека 
+    - я не хочу бота
+    - я не буду говорить с машиной
+    - на тебя одни боты работыют?
+    - мне может помочь человек?
+    - передай человеку
+    - я не буду говорить с ботом
+    - я хочу поговорить с человеком
+    - я хочу кого то еще
+    - я хочу поговорить с кем то еще
+    - сервис агент
+    - человечек нужен
+    - а где человек?
+    - а есть кто живой?
+    - дай живого
+    - живность нужна
+    - ты скучный, надо человека
+    - а живой есть кто
 - intent: broken
   examples: |
     - it's not working
@@ -19,23 +335,13 @@ nlu:
     - the bot won't train
 - intent: why_rasa
   examples: |
-    - why should i use rasa instead of google [dialogflow](current_api)
     - why rasa
     - why should I use rasa?
     - why should I switch to rasa?
     - what's so great about using Rasa?
-    - how is rasa's NLU better than [watson](current_api) 's
-    - why should i use rasa instead of IBM [watson](current_api) ?
-    - Is it better to use rasa or [luis](current_api)?
-    - Is rasa better than google [dialogflow](current_api)?
     - what sets rasa apart?
     - give me a reason to use Rasa
-    - why should I switch to rasa from [dialogflow](current_api)
-    - why should I switch from [luis](current_api)
-    - give me a reason to switch to Rasa from [luis](current_api)
     - Why switch to Rasa?
-    - why switch from [dialogflow](current_api)?
-    - why not use [watson](current_api)?
     - why would you opt for rasa
     - why use rasa
     - why should I switch
@@ -1179,13 +1485,11 @@ nlu:
     - I am [Aniket](name)
     - general and sales
     - [rasa](product)
-    - [botpress](current_api)
     - simple bpt
     - education bot
     - contexual
     - Sorry  it's not [suleman](name) is [Shehzad](name)
     - [x](product)
-    - [dialogueflow](current_api)
     - T10
     - the company is called t10
     - [local](install_type)
@@ -1505,7 +1809,7 @@ nlu:
     - let me speak to a real person
     - let me speak to a real person please
     - i want to talk to a real person
-- intent: install_rasa
+- intent: install_aide
   examples: |
     - how do I get rasa [core](product)
     - how do i get rasa [core](product)
@@ -1897,49 +2201,8 @@ nlu:
     - github link?
 - intent: switch
   examples: |
-    - How to migrate from [DialogFlwo](current_api)
-    - Do you have any tutorials how to migrate from [dialogflow](current_api)?
-    - How to migrate a bot from [DialogFlow](current_api) to Rasa?
-    - How to migrate from [DialogFlow](current_api) to Rasa?
-    - How to migrate from [DialogFlow](current_api)?
-    - How to migrate from [Luis](current_api)?
-    - How to migrate to [DialogFlow](current_api)?
-    - I am using [dialogflow](current_api) - how can I migrate
-    - I currently use [LUIS](current_api)
-    - I currently use [dialog flow](current_api)
-    - I use [DialogFlow](current_api)
-    - I use [luis](current_api)
-    - I use [wit.ai](current_api)
-    - I want to change from [dialogflow](current_api) to rasa
-    - I want to convert my [dialog flow](current_api) bot to rasa
-    - I want to move from [LUIS.ai](current_api) to Rasa
-    - I want to switch from [dialog flow](current_api)
-    - I want to switch from [dialogflow](current_api) to rasa
-    - Migration please
-    - Yes I want to switch from [LUIS](current_api) to rasa
-    - [DialogFlow](current_api)
-    - [LUIS](current_api)
-    - [bot framework](current_api)
-    - [chatfuel](current_api)
-    - [luis.ai](current_api)
-    - [luis](current_api)
-    - [luis](current_api) bot can migrate to raza bot ?
-    - [wit](current_api)
-    - can i migrate my [luis](current_api) bot to raza
-    - can i switch from [luis](current_api) to rasa?
-    - how can i migrate from [dialogflow](current_api)?
-    - how do you switch from [dialogflow](current_api)
-    - how to export [dialogflow](current_api) data to rasa
-    - i am switching from [luis](current_api)
-    - i can migrate microsoft [luis](current_api) bot to raza?
-    - i want to switch from [luis](current_api) to rasa
-    - i'm migrating from [LUIS](current_api)
-    - im migrating from [dialogflow](current_api)
-    - im moving [luis](current_api)
-    - migration from [LUIS](current_api)
-    - migration from [dialogflow](current_api)
     - switching
-    - switching from [DialogFlow](current_api)
+    - switching from 
     - migrate to rasa
     - how to migrate my bot to rasa
     - switch to rasa from another platform
@@ -1947,10 +2210,10 @@ nlu:
     - switch to rasa
     - from which tools can I migrate to rasa?
     - can I migrate to rasa from another tool?
-    - [dialogflow](current_api) and implementation from scratch
-    - how to migrate to [dialogueflow](current_api)
-    - switch from [dilogueflow](current_api)
-    - how do i migrate from [dialogflow](current_api)
+    - and implementation from scratch
+    - how to migrate to 
+    - switch from 
+    - how do i migrate from 
 - intent: technical_question
   examples: |
     - having trouble with rasa installation
@@ -2186,6 +2449,34 @@ nlu:
     - hey, i said restart
     - restart session pls
     - restart ps
+
+- synonym: высокий
+  examples: |
+    - срочно 
+    - действительно важно
+    - важный
+    - очень важный
+    - важнейший
+    - супер срочный
+    - супер срочно
+    - мега срочно
+    - горим
+    - все пропало
+    - всё пропало
+    - эскалация
+    - эскалировано
+    - критично
+    - критичный
+    - катастрофа
+    - катастрофичный
+    - срочно
+    - срочный
+    - ахтунг-ахтунг
+    - ахтунг надо
+    - срочно давай
+    - уже иди делай
+    - бегом выполнять
+    - я плохо объяснил?
 - synonym: english
   examples: |
     - English
@@ -2339,3 +2630,5 @@ nlu:
 - regex: zipcode
   examples: |
     - [0-9]{5}
+
+
