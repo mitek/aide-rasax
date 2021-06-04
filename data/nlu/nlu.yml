@@ -1,7 +1,5 @@
 version: "2.0"
 nlu:
-
-   
 - intent: bot_challenge
   examples: |
     - are you a bot?
@@ -12,7 +10,6 @@ nlu:
     - aren't you a bot
     - Are you a bot?
     - are you a BOT
-    - are you a bot?
     - are you a chatbot
     - are you a rasa bot?
     - are you a real bot?
@@ -49,9 +46,8 @@ nlu:
     - потому что ты бот
     - тупая программа
     - наш банк
-    - стоматологическая клиника 
+    - стоматологическая клиника
     - наша клиника
-
 - intent: password_reset
   examples: |
     - смена пароля
@@ -83,25 +79,24 @@ nlu:
     - куда я записал пароль?
     - я не помню в какой компании работаю
     - а какая это компания?
-
 - intent: open_incident
   examples: |
     - надо открыть инцидент
     - хочу оставить информацию
     - оставить информацию
-    - информационное сообщение 
+    - информационное сообщение
     - есть информация
     - поделиться информацией
     - передать важное сообщение
     - передай информацию
-    - передай 
+    - передай
     - надо передать информацию
-    - надо передать информацию! это [очень важно]{"entity": "priority", "value": "высокий"}
+    - надо передать информацию! это [очень важно]{"entity": "priority", "value": "\u0432\u044b\u0441\u043e\u043a\u0438\u0439"}
     - у меня проблема, открой тикет
     - открыть инцидент на test@test.com
-    - открыть [высокий]{"entity": "priority", "value": "высокий"} проблему
+    - открыть [высокий](priority) проблему
     - открыть тикет, с [низкий](priority) приоритет
-    - я хочу открыть тикет, это [очень важно]{"entity": "priority", "value": "высокий"}
+    - я хочу открыть тикет, это [очень важно]{"entity": "priority", "value": "\u0432\u044b\u0441\u043e\u043a\u0438\u0439"}
     - открой инцидент
     - открой инциндент
     - открой проблему
@@ -114,8 +109,8 @@ nlu:
     - есть проблема
     - есть вопрос
     - у меня вопрос
-    - это [очень важно]{"entity": "priority", "value": "высокий"}
-    - это [довольно важно]{"entity": "priority", "value": "высокий"}
+    - это [очень важно]{"entity": "priority", "value": "\u0432\u044b\u0441\u043e\u043a\u0438\u0439"}
+    - это [довольно важно]{"entity": "priority", "value": "\u0432\u044b\u0441\u043e\u043a\u0438\u0439"}
     - открыть инцидент
     - открыть тикет
     - есть тема, надо порешать
@@ -132,8 +127,7 @@ nlu:
     - can I open a ticket
     - pls help me open tix support
     - ticket support incident open now can you do that for me
-
- 
+    - открыть инцицент
 - intent: help
   examples: |
     - I need help
@@ -147,7 +141,6 @@ nlu:
     - big problem
     - How can you help me
     - How you help me?
-    - I need some help
     - What are my options
     - What are you able to do?
     - What can I ask you?
@@ -182,11 +175,10 @@ nlu:
     - как вы можете помочь?
     - нужна помощь
     - хотел посоветоваться
-    - что ты делаешь?
     - что ты умеешь?
     - как это работает
     - ничего не понятно
-    - ааа 
+    - ааа
     - аааа
     - ааааа
 - intent: problem_email
@@ -218,7 +210,6 @@ nlu:
     - почтовый адрес не помню
     - а что такое емейл?
     - у меня нет интернета
-    
 - intent: inform
   examples: |
     - мой емейл test@example.com
@@ -232,8 +223,8 @@ nlu:
     - это [низкий](priority) приоритет
     - это [средний](priority)
     - это [высокий](priority) приоритет
-    - [эскалировано]{"entity": "priority", "value": "высокий"}
-    - [эскалацация]{"entity": "priority", "value": "высокий"}
+    - [эскалировано]{"entity": "priority", "value": "\u0432\u044b\u0441\u043e\u043a\u0438\u0439"}
+    - [эскалацация]{"entity": "priority", "value": "\u0432\u044b\u0441\u043e\u043a\u0438\u0439"}
     - [супер важно](priority)
     - иван
     - приоритет [высокий](priority)
@@ -243,9 +234,8 @@ nlu:
     - abraham.lincoln@example.com
     - steve
     - sara@rasa.com
-    - [срочно]{"entity": "priority", "value": "высокий"}
-    - [критично]{"entity": "priority", "value": "высокий"}
-
+    - [срочно]{"entity": "priority", "value": "\u0432\u044b\u0441\u043e\u043a\u0438\u0439"}
+    - [критично]{"entity": "priority", "value": "\u0432\u044b\u0441\u043e\u043a\u0438\u0439"}
 - intent: incident_status
   examples: |
     - что с моим вопросом
@@ -278,7 +268,6 @@ nlu:
     - что с ответом?
     - ответ готов?
     - какой ответ?
-
 - intent: human_handoff
   examples: |
     - хочу переключиться на человека
@@ -291,14 +280,13 @@ nlu:
     - поговорить с человеком
     - переведи
     - можно перевести на человека?
-    - поговорить с человеком
     - дай человека
     - дай другого
     - дай не бота
     - дай хозяина
     - нужен человек
     - поговорить с живым
-    - надо человека 
+    - надо человека
     - я не хочу бота
     - я не буду говорить с машиной
     - на тебя одни боты работыют?
@@ -316,6 +304,75 @@ nlu:
     - живность нужна
     - ты скучный, надо человека
     - а живой есть кто
+    - Can I speak to anyone who can really help me?
+    - Could I talk to [Tyrone King](name)?
+    - I don't wanna talk to a bot
+    - I dont like to talk to a machine
+    - I want to talk to a human
+    - I want to talk to the founders
+    - are there also humans working for your company?
+    - can I speak to a person?
+    - can i please speak to a human?
+    - can you forward me to your team
+    - can you please connect me to a real rasa employee?
+    - can you put me in touch with a human?
+    - do you have human support ?
+    - gimme a proper human
+    - give me a human
+    - give me a human now
+    - human handoff
+    - i dont wanna talk to a bot
+    - i want to speak to a [manager](job_function)
+    - i want to speak to a real person
+    - i want to speak to customer service
+    - i want to talk to a human
+    - i want to talk to a person
+    - i want to talk to human
+    - i want to talk to someone at rasa
+    - i want to talk to someone else
+    - i want to talk to someone who is smarter than you
+    - i would like to speak to a person
+    - i'd rather speak with a real rasa employee
+    - id like to talk to a real rasa employee
+    - let me speak with a real person please
+    - let me talk to a human
+    - let me talk to a real person
+    - please give me a human
+    - service agent
+    - someone from customer care
+    - speak to a real person
+    - talking to a bot is stupid
+    - that's annoying I'd like to speak to someone real
+    - thats not helping, can i talk to human?
+    - wrong i want to speak to a human
+    - can i speak to human
+    - can i speak to your human
+    - i want to chat with human
+    - How do I talk to a human
+    - talk with a human
+    - Can i talk to a human instead
+    - nevermind.... you're not human ... I need to talk to a live person
+    - Can you get a human to assist me?
+    - Can i talk to a human?
+    - Can I talk to a human
+    - Can I speak to a human?
+    - can i speak to a human
+    - no, i want to talk to human
+    - can you hand a conversation over to a human?
+    - can I talk to human?
+    - can I talk to human
+    - talk to human
+    - i want human :(
+    - can i talk to human
+    - i want to talk to a human \
+    - i want to speak to human
+    - can i talk to a real person?
+    - connect me to a real person
+    - I need a real person
+    - can i took with a real person
+    - let me speak to a real person
+    - let me speak to a real person please
+    - i want to talk to a real person
 - intent: broken
   examples: |
     - it's not working
@@ -1738,77 +1795,7 @@ nlu:
     - can you help me build my bot?
     - start
     - how to build bot with rasa x
-- intent: human_handoff
-  examples: |
-    - Can I speak to anyone who can really help me?
-    - Could I talk to [Tyrone King](name)?
-    - I don't wanna talk to a bot
-    - I dont like to talk to a machine
-    - I want to talk to a human
-    - I want to talk to the founders
-    - are there also humans working for your company?
-    - can I speak to a person?
-    - can i please speak to a human?
-    - can you forward me to your team
-    - can you please connect me to a real rasa employee?
-    - can you put me in touch with a human?
-    - do you have human support ?
-    - gimme a proper human
-    - give me a human
-    - give me a human now
-    - human handoff
-    - i dont wanna talk to a bot
-    - i want to speak to a [manager](job_function)
-    - i want to speak to a real person
-    - i want to speak to customer service
-    - i want to talk to a human
-    - i want to talk to a person
-    - i want to talk to human
-    - i want to talk to someone at rasa
-    - i want to talk to someone else
-    - i want to talk to someone who is smarter than you
-    - i would like to speak to a person
-    - i'd rather speak with a real rasa employee
-    - id like to talk to a real rasa employee
-    - let me speak with a real person please
-    - let me talk to a human
-    - let me talk to a real person
-    - please give me a human
-    - service agent
-    - someone from customer care
-    - speak to a real person
-    - talking to a bot is stupid
-    - that's annoying I'd like to speak to someone real
-    - thats not helping, can i talk to human?
-    - wrong i want to speak to a human
-    - can i speak to human
-    - can i speak to your human
-    - i want to chat with human
-    - How do I talk to a human
-    - talk with a human
-    - Can i talk to a human instead
-    - nevermind.... you're not human ... I need to talk to a live person
-    - Can you get a human to assist me?
-    - Can i talk to a human?
-    - Can I talk to a human
-    - Can I speak to a human?
-    - can i speak to a human
-    - no, i want to talk to human
-    - can you hand a conversation over to a human?
-    - can I talk to human?
-    - can I talk to human
-    - talk to human
-    - i want human :(
-    - can i talk to human
-    - i want to talk to a human \
-    - i want to speak to human
-    - can i talk to a real person?
-    - connect me to a real person
-    - I need a real person
-    - can i took with a real person
-    - let me speak to a real person
-    - let me speak to a real person please
-    - i want to talk to a real person
+    - lets start
 - intent: install_aide
   examples: |
     - how do I get rasa [core](product)
@@ -2202,7 +2189,7 @@ nlu:
 - intent: switch
   examples: |
     - switching
-    - switching from 
+    - switching from
     - migrate to rasa
     - how to migrate my bot to rasa
     - switch to rasa from another platform
@@ -2211,9 +2198,9 @@ nlu:
     - from which tools can I migrate to rasa?
     - can I migrate to rasa from another tool?
     - and implementation from scratch
-    - how to migrate to 
-    - switch from 
-    - how do i migrate from 
+    - how to migrate to
+    - switch from
+    - how do i migrate from
 - intent: technical_question
   examples: |
     - having trouble with rasa installation
@@ -2449,10 +2436,14 @@ nlu:
     - hey, i said restart
     - restart session pls
     - restart ps
-
 - synonym: высокий
   examples: |
-    - срочно 
+    - очень важно
+    - довольно важно
+    - эскалировано
+    - эскалацация
+    - срочно
+    - критично
     - действительно важно
     - важный
     - очень важный
@@ -2464,12 +2455,9 @@ nlu:
     - все пропало
     - всё пропало
     - эскалация
-    - эскалировано
-    - критично
     - критичный
     - катастрофа
     - катастрофичный
-    - срочно
     - срочный
     - ахтунг-ахтунг
     - ахтунг надо
@@ -2505,7 +2493,6 @@ nlu:
   examples: |
     - CORE
     - Core
-    - core
     - dialogue management
     - Dialogue management
     - Dialogue Management
@@ -2606,18 +2593,6 @@ nlu:
     - RASA X
     - X
     - rasax
-- synonym: playground
-  examples: |
-    - Rasaplayground
-    - RASAPlayground
-    - Rasa Playground
-    - rasa playground
-    - RASA playgrounds
-    - playgrounds
-    - Playground
-    - rasaplaygrounds
-    - interactive playground
-    - Interactive Playground
 - synonym: local
   examples: |
     - locally
@@ -2630,5 +2605,3 @@ nlu:
 - regex: zipcode
   examples: |
     - [0-9]{5}
-
-
