@@ -11,16 +11,17 @@ nlu:
     - ага
     - хорошо, да
     - хорошо
+    - да
     - разумеется
     - правильно
     - подтверждаю
-    - ясен пень
+    - ясен пень 
     - конечно
     - да да
     - дадада
     - оу йес
     - йес бейби!
-    - давай
+    - давай 
     - давай давай
     - гоу гоу
     - гоу
@@ -28,305 +29,306 @@ nlu:
     - окок
     - точно
     - присайзли
+    - согласен
     - в яблочко
     - ай ай
     - ну типа да
     - типа да
     - вроде бы да
     - вроде так
-    - так как то
+    - так как то 
     - как-то так
-    - Accept
-    - Awesome!
-    - Good
-    - Great
-    - I accept
-    - I accept.
-    - I agree
-    - I am using it
-    - I changed my mind. I want to accept it
-    - I do
-    - I get it
-    - I guess so
-    - I have used it in the past
-    - I will
-    - I'd absolutely love that
-    - I'm sure I will!
-    - I'm using it
-    - Nice
-    - OK
-    - Ofcourse
-    - Oh yes
-    - Oh, ok
-    - Ok
-    - Ok let's start
-    - Ok.
-    - Okay
-    - Okay!
-    - PLEASE
-    - SURE
-    - Sure
-    - Sweet
-    - That would be great
-    - YES
-    - YUP
-    - Yea
-    - Yeah
-    - Yeah sure
-    - Yep
-    - Yep that's fine
-    - Yep!
-    - Yepp
-    - Yes
-    - Yes I do
-    - Yes please
-    - Yes please!
-    - Yes, I accept
-    - Yes.
-    - Yup
-    - a little
-    - absolutely
-    - accept
-    - accepted
-    - agreed
-    - ah ok
-    - alright
-    - alright, cool
-    - amayzing
-    - amazing!
-    - awesome
-    - awesome!
-    - confirm
-    - cool story bro
-    - definitely yes without a doubt
-    - done
-    - fair enough
-    - fcourse
-    - fine
-    - fuck yeah!
-    - go
-    - go ahead
-    - go for it
-    - going super well
-    - good.
-    - great
-    - great lets do that
-    - great!
-    - hell yeah
-    - hell yes
-    - hm, i'd like that
-    - how nice!
-    - i accept
-    - i agree
-    - i am!
-    - i want that
-    - i will!
-    - it is ok
-    - its okay
-    - ja
-    - ja cool
-    - ja thats great
-    - jezz
-    - jo
-    - k
-    - kk
-    - lets do it
-    - lets do this
-    - not bad
-    - of course
-    - ofcoure i do
-    - ofcourse
-    - oh awesome!
-    - oh cool
-    - oh good !!
-    - oh super
-    - ok
-    - ok cool
-    - ok fine
-    - ok friend
-    - ok good
-    - ok great
-    - ok i accept
-    - ok sara
-    - ok, I behave now
-    - ok, I understood
-    - ok, Sara
-    - ok...
-    - okay
-    - okay cool
-    - okay sure
-    - okay..
-    - oki doki
-    - okie
-    - ook
-    - oui
-    - perfect
-    - please
-    - si
-    - sort of
-    - sure
-    - sure thing
-    - sure!
-    - that is cool
-    - that ok
-    - that sounds fine
-    - that's great
-    - thats fine
-    - thats good
-    - thats great
-    - top
-    - uh-huh
-    - very much
-    - well yes
-    - y
-    - ya
-    - ya cool
-    - ya go for it
-    - ya i want
-    - ya please
-    - ya thats cool
-    - yaah
-    - yap
-    - yaps
-    - yas
-    - yay
-    - ye
-    - ye splease
-    - yea
-    - yeah
-    - yeah do that
-    - yeah sure
-    - yeah'=
-    - yeah, why not
+    - Пойдет!
+    - Потрясающие!
+    - Хорошо
+    - Большой
+    - Я принимаю
+    - Я принимаю.
+    - Я согласен
+    - я использую это
+    - Я передумал. Я хочу принять это
+    - Я делаю
+    - я понял
+    - Полагаю, что так
+    - Я использовал это в прошлом
+    - Я буду
+    - Мне бы это очень понравилось
+    - Я уверен, что буду!
+    - Я использую это
+    - Хороший
+    - ОК
+    - Конечно
+    - О да
+    - Ох, хорошо
+    - ОК
+    - Хорошо, давайте начнем
+    - ОК.
+    - Хорошо
+    - Хорошо!
+    - ПОЖАЛУЙСТА
+    - КОНЕЧНО
+    - Конечно
+    - Сладкий
+    - Это было бы прекрасно
+    - ДА
+    - АГА
+    - Да
+    - Ага
+    - Да, конечно
+    - Ага
+    - Ага, все в порядке
+    - Ага!
+    - Йепп
+    - Да
+    - Да
+    - Да, пожалуйста
+    - Да, пожалуйста!
+    - Да, я принимаю
+    - Да.
+    - Ага
+    - маленький
+    - абсолютно
+    - принимать
+    - принял
+    - согласовано
+    - Ах хорошо
+    - хорошо
+    - хорошо, круто
+    - удивительно
+    - удивительный!
+    - классно
+    - классно!
+    - подтверждать
+    - классная история братан
+    - определенно да без сомнения
+    - Выполнено
+    - справедливо
+    - курс
+    - отлично
+    - да бля!
+    - идти
+    - вперед, продолжать
+    - Действуй
+    - все идет отлично
+    - хорошо.
+    - большой
+    - отлично, давай сделаем это
+    - большой!
+    - черт возьми
+    - Да, черт возьми
+    - хм, мне бы это понравилось
+    - как мило!
+    - я принимаю
+    - я согласен
+    - я!
+    - Я хочу чтобы
+    - Я буду!
+    - все в порядке
+    - все нормально
+    - я
+    - да круто
+    - и это здорово
+    - Джезз
+    - Джо
+    - к
+    - кк
+    - давай сделаем это
+    - давай сделаем это
+    - неплохо
+    - конечно
+    - конечно я делаю
+    - конечно
+    - о, круто!
+    - о, круто
+    - о, хорошо !!
+    - о супер
+    - ОК
+    - ладно, круто
+    - хорошо
+    - ОК друг
+    - хорошо
+    - Ок, отлично
+    - хорошо, я принимаю
+    - хорошо Сара
+    - хорошо, я веду себя сейчас
+    - хорошо, я понял
+    - хорошо, Сара
+    - ОК...
+    - хорошо
+    - хорошо
+    - да конечно
+    - хорошо..
+    - Хорошо
+    - хорошо
+    - ок
+    - ой
+    - идеально
+    - пожалуйста
+    - си
+    - вроде, как бы, что-то вроде
+    - Конечно
+    - верная вещь
+    - Конечно!
+    - это круто
+    - это нормально
+    - звучит здорово
+    - Замечательно
+    - это хорошо
+    - это хорошо
+    - Замечательно
+    - вершина
+    - Ага
+    - очень
+    - Ну да
+    - у
+    - я
+    - круто
+    - я иду на это
+    - я хочу
+    - пожалуйста
+    - да, это круто
+    - ага
+    - трепло
+    - тявкает
+    - да
+    - ура
+    - да
+    - Да, пожалуйста
+    - да
+    - Ага
+    - да сделай это
+    - Да, конечно
+    - да '=
+    - Да, почему бы не
     - yeeeeezzzzz
-    - yeeees
-    - yep
-    - yep i want that
-    - yep if i have to
-    - yep please
-    - yep that's nice
-    - yep thats cool
-    - yep, will do thank you
-    - yep. :/
-    - yes
-    - yes ...
-    - yes I do
-    - yes accept please
-    - yes baby
-    - yes cool
-    - yes give me information
-    - yes go ahead
-    - yes go for it
-    - yes great
-    - yes i accept
-    - yes i agree
-    - yes i have built a bot before
-    - yes i have!
-    - yes it is
-    - yes it was okay
-    - yes of course
-    - yes pleae
-    - yes please
-    - yes please!
-    - yes pls
-    - yes sirfr
-    - yes that's great
-    - yes that's what i want
-    - yes you can
-    - yes'
-    - yes, I'd love to
-    - yes, cool
-    - yes, give me information, please
-    - yes,i am
-    - yes.
-    - yesh
-    - yess
-    - yessoo
-    - yesss
-    - yesssss
-    - yesyestyes
-    - yesyesyes
-    - yez
-    - yop
-    - you asked me a yes or no question, which i answered with yes
-    - you got me, I accept, if you want me to
-    - yres
+    - уууу
+    - Ага
+    - да, я хочу это
+    - да, если мне нужно
+    - да пожалуйста
+    - да, это мило
+    - да это круто
+    - да, сделаю спасибо
+    - Ага. 
+    - да
+    - да ...
+    - Да
+    - да примите пожалуйста
+    - Да, детка
+    - Да круто
+    - да дайте мне информацию
+    - Да, начинай
+    - да дерзай
+    - Да, отлично
+    - да я принимаю
+    - Да, я согласен
+    - да, я раньше создавал бота
+    - да!
+    - Да, это
+    - да все было нормально
+    - Да, конечно
+    - да, пожалуйста
+    - Да, пожалуйста
+    - Да, пожалуйста!
+    - да пожалуйста
+    - да сэрфр
+    - да это здорово
+    - да вот чего я хочу
+    - Да, ты можешь
+    - да'
+    - Да, с удовольствием
+    - Да круто
+    - да, дайте информацию, пожалуйста
+    - да
+    - да.
+    - да
+    - да
+    - да
+    - дасс
+    - дасссс
+    - да
+    - да да да
+    - да
+    - ой
+    - вы задали мне вопрос «да» или «нет», на который я ответил утвердительно
+    - вы меня поймали, я принимаю, если вы хотите, чтобы я
+    - лет
     - ys
-    - yup
+    - Ага
     - yyeeeh
-    - Okay cool
-    - ok..
-    - considering
-    - More a less
-    - sounds good!
-    - really
+    - Хорошо
+    - ОК..
+    - учитывая
+    - Больше меньше
+    - звучит неплохо!
+    - В самом деле    
 - intent: react_positive
   examples: |
-    - cool beans
-    - sweet
-    - Cool
-    - cool
-    - cool :)
-    - cool!
-    - coolio
+    - круче чем яйца
+    - это бомба 
+    - сладкий
+    - Прохладный
+    - здорово
+    - здорово :)
+    - здорово!
+    - кулио
     - :)
-    - :D
-    - HAHA
-    - I am happy
-    - LOL
-    - Lol
-    - Lol thats funny
-    - Looks nice
-    - WOW
-    - Wow
-    - You are great
-    - You're cute.
-    - You're nice.
-    - You're really cool
-    - hAHAHA
-    - ha ha
-    - haha
-    - hahah
-    - hahaha
-    - happy
-    - i am feeling happy
-    - i am happy
-    - i am happy today
-    - i am very happy with your response
-    - i love you
-    - it's pretty cool
-    - lol
-    - love you
-    - okay Rasabot, you're cool
-    - rasa is awesome
-    - such a great demo
-    - that is funny
-    - that was a great interaction
-    - thats funny
-    - today was a nice day
-    - wow
-    - you are a badass bot!
-    - you are awesome
-    - you are cool
-    - you are cool man
-    - you are doin great
-    - you are funny
-    - you are great
-    - you are my new bestfriend
-    - you seem pretty cool :D
-    - I like you
-    - I love you
-    - you are realy intelligent
-    - I like Rasa
-    - hèhè
-    - like u
-    - you are so smart
-    - That's awesome.
-    - Got it
-    - you good
-    - Great information
-    - I mean to say that I liked the explanation
-    - Super! I love Rasa
+    - ХАХА
+    - Я счастлив
+    - РЖУ НЕ МОГУ
+    - Ржу не могу
+    - Лол, это смешно
+    - Выглядит хорошо
+    - УХ ТЫ
+    - Ух ты
+    - Ты замечательный
+    - Ты милая.
+    - Ты хороший.
+    - Ты действительно крут
+    - ХАХАХА
+    - ха-ха
+    - ха-ха
+    - ха-ха
+    - хахаха
+    - счастливый
+    - я чувствую себя счастливым
+    - я счастлив
+    - Сегодня я счастлив
+    - очень доволен вашим ответом
+    - Я люблю вас
+    - это довольно круто
+    - ржу не могу
+    - люблю вас
+    - ладно, Aide бот, ты крут
+    - раса потрясающая
+    - такая отличная демонстрация
+    - это забавно
+    - это было отличное взаимодействие
+    - Забавно
+    - сегодня был хороший день
+    - Ух ты
+    - ты крутой бот!
+    - ты обалденный
+    - ты крутой
+    - ты классный мужик
+    - ты молодец
+    - ты забавный
+    - ты замечательный
+    - ты мой новый лучший друг
+    - ты выглядишь довольно круто D
+    - Вы мне нравитесь
+    - Я люблю вас
+    - ты действительно умный
+    - Мне нравится Aide
+    - хэхэ
+    - как ты
+    - ты такой умный
+    - Это потрясающе.
+    - Понятно
+    - ты хорош
+    - Отличная информация
+    - Я хочу сказать, что мне понравилось объяснение
+    - Супер! Я люблю Aide 
 - intent: bye
   examples: |
     - до свидания
@@ -351,76 +353,66 @@ nlu:
     - бай
     - бай бай
     - хэв э найс дей
-    - Bye
-    - Bye bye
-    - adios
-    - adios?
-    - bye
-    - bye .
-    - bye :P
-    - bye bot
-    - bye bye
-    - bye bye bot
-    - bye for now
-    - bye udo
-    - bye was nice talking to you
-    - bye!
-    - byee
-    - catch you later
-    - ciao
-    - cya
-    - farewell
-    - good bye
-    - good bye rasa bot!
-    - good night
-    - goodbye
-    - goodbye.
-    - goodnight
-    - gotta go
-    - k byyye #slay
-    - ok Bye
-    - ok bye
-    - ok, bye
-    - ok.bye
-    - see u later
-    - see ya
-    - see you
-    - see you . bye
-    - take care
-    - then bye
-    - tlak to you later
-    - toodle-oo
-    - Exit
-    - Close this talk
-    - byr
+    - Пока-пока
+    - прощай?
+    - до свидания .
+    - пока
+    - пока бот
+    - пока-пока
+    - а сейчас до свидания
+    - пока удо
+    - пока было приятно с тобой поговорить
+    - до свидания!
+    - увидимся позже
+    - Чао
+    - циа
+    - прощание
+    - до свидания
+    - доброй ночи
+    - до свидания
+    - доброй ночи
+    - пора идти
+    - k byyye 
+    - хорошо, пока
+    - хорошо, пока
+    - увидимся
+    - Увидимся
+    - Увидимся . до свидания
+    - до скорого
+    - тогда пока
+    - так тебе позже
+    - Выход
+    - Закройте этот разговор
+    - byr     
 - intent: canthelp
   examples: |
-    - I think you cant help me
-    - and that's it?
-    - and you call yourself bot company? pff
-    - do you get anything?
-    - exit
-    - exit now
-    - hey, you promised to contact me, but nobody did, I really need to finish that car insurance bot!!!!
-    - hm i don't think you can do what i want
-    - i guess you can't help me then
-    - nothing else?
-    - ok i guess you can't help me
-    - ok then you cant help me
-    - ok, but that doesnt help me
-    - stop
-    - stop go back
-    - stop this conversation
-    - that was shit, you're not helping
-    - that's not what i want
-    - this conversation is not really helpful
-    - this is leading to nothing
-    - you can't help me
-    - you can't help me with what i need
-    - you cannot help me with what I want
-    - you cant help me
-    - quit
-    - that does not help
+    - Думаю, ты мне не поможешь
+    - вот и все?
+    - а вы называете себя бот-компанией? пфф
+    - ты что-нибудь получишь?
+    - выход
+    - выйти сейчас
+    - эй, ты обещал связаться со мной, но никто этого не сделал, мне действительно нужно доделать этого бота по страхованию автомобилей !!!!
+    - хм, я не думаю, что ты можешь делать то, что я хочу
+    - я думаю, ты не сможешь мне помочь тогда
+    - ничего больше?
+    - хорошо, я думаю, ты не можешь мне помочь
+    - хорошо, тогда ты не можешь мне помочь
+    - хорошо, но это мне не помогает
+    - останавливаться
+    - перестань возвращаться
+    - прекратить этот разговор
+    - это было дерьмо, ты не помогаешь
+    - это не то, что я хочу
+    - этот разговор не особо полезен
+    - это ни к чему не приводит
+    - ты не можешь мне помочь
+    - ты не можешь мне помочь с тем, что мне нужно
+    - ты не можешь мне помочь с тем, что я хочу
+    - ты не можешь мне помочь
+    - покидать
+    - это не помогает 
+    - это полное гавно
 - intent: deny
   examples: |
     - нет
@@ -458,131 +450,126 @@ nlu:
     - не точно, не знаю
     - не помню
     - а так ли это? не помню
-    - I don't want to
-    - I don't want to give it to you
-    - I don't want to say
-    - I dont want to tell
-    - I'm not giving you my email address
-    - I'm not going to give it to you
-    - NEIN
-    - NO
-    - NO DON"T WANT THIS!
-    - Nah
-    - Neither
-    - Never
-    - Nevermind
-    - No
-    - No thank you
-    - No, not really.
-    - No, thank you
-    - No.
-    - Nopes
-    - Not really
-    - absolutely not
-    - decline
-    - definitely not
-    - deny
-    - i decline
-    - i don not like this
-    - i don't think so
-    - i don't want either of those
-    - i don't want to
-    - i don't want to give you my email
-    - i dont want to
-    - i dont want to accept :P lol
-    - i guess it means - no
-    - i'm afraid not
-    - i'm not sure
-    - it is going pretty badly
-    - it sucks
-    - it sux
-    - n
-    - na
-    - nah
-    - nah I'm good
-    - nah not for me
-    - nah, first time
-    - nah, i'm good
-    - nehi
-    - nein
-    - neither
-    - never
-    - never mind
-    - no
-    - no :(
-    - no I dont want
-    - no I haven't decided yet if I want to sign up
-    - no and no again
-    - no bots at all
-    - no go
-    - no i can't
-    - no i don't accept
-    - no i dont want to
-    - no i dont want to accept :P lol
-    - no i won't
-    - no ma'am
-    - no sir
-    - no sorry
-    - no thank s
-    - no thank you
-    - no thanks
-    - no way
-    - no you did it wrong
-    - no!!!!
-    - no, i hate it
-    - no, my frst time
-    - no, thank you
-    - no, thanks
-    - no, thankyou
-    - no. u r idiot
-    - non
-    - noooooooooo
-    - noooooooooooooooooooooooooooooooooooooooo
-    - nop
-    - nope
-    - nope!
-    - nope. i am good
-    - not going well at all
-    - not really
-    - not right now
-    - not yet
-    - nö
-    - sorry not right now
-    - still dont want to tell
-    - thanks but no thanks
-    - this sucks
-    - very bad
-    - I do not need help installing
-    - I don't wanna tell the name of my company
-    - no stop
-    - stop it, i do not care!!!
-    - none of them
-    - I don't agree
+    - Я не хочу отдавать это тебе
+    - я не хочу говорить
+    - не хочу рассказывать
+    - Я не даю вам свой адрес электронной почты
+    - Я не собираюсь тебе его отдавать
+    - НЕИН
+    - НЕТ
+    - НЕТ ЭТОГО НЕ ХОЧУ!
+    - Неа
+    - Ни один
+    - Никогда
+    - Не берите в голову
+    - Нет
+    - Нет, спасибо
+    - Нет, не совсем.
+    - Нет, спасибо
+    - Нет.
+    - Нет
+    - Не совсем
+    - точно нет
+    - отклонить
+    - точно нет
+    - отказываться от
+    - я отказываюсь
+    - мне это не нравится
+    - я так не думаю
+    - я не хочу ни того, ни другого
+    - я не хочу
+    - я не хочу давать вам свою электронную почту
+    - я не хочу
+    - думаю это значит - нет
+    - Боюсь, что нет
+    - Я не уверен
+    - дела идут очень плохо
+    - отстой
+    - это отстой
+    - на
+    - Неа
+    - нет, я в порядке
+    - не для меня
+    - нет, в первый раз
+    - нет, я в порядке
+    - нехи
+    - неин
+    - ни один
+    - никогда
+    - не берите в голову
+    - нет
+    - нет :(
+    - нет не хочу
+    - нет, я еще не решил, хочу ли я зарегистрироваться
+    - нет и снова нет
+    - ботов вообще нет
+    - нет идти
+    - нет я не могу
+    - нет, я не принимаю
+    - нет, я не хочу
+    - нет, я не хочу принимать
+    - нет, не буду
+    - нет, мэм
+    - нет, сэр
+    - нет извините
+    - нет, спасибо
+    - нет, спасибо
+    - нет, спасибо
+    - ни за что
+    - нет, ты сделал это неправильно
+    - нет!!!!
+    - нет я ненавижу это
+    - нет, мой первый раз
+    - нет, спасибо
+    - нет, спасибо
+    - нет, спасибо
+    - нет. ты идиот
+    - не
+    - неееет
+    - нет
+    - Неа
+    - Неа!
+    - Неа. У меня все хорошо
+    - совсем не ладится
+    - не совсем
+    - не прямо сейчас
+    - еще нет
+    - нет
+    - извините, не сейчас
+    - все еще не хочу рассказывать
+    - Спасибо, но нет
+    - это отстой
+    - очень плохо
+    - Мне не нужна помощь в установке
+    - Я не хочу называть название своей компании
+    - не останавливайся
+    - перестань, мне все равно !!!
+    - ни один из них
+    - я не согласен
 - intent: explain
   examples: |
-    - can you elaborate
-    - could you explain why you need that
-    - could you tell me more
-    - explain it to me
-    - explain that
-    - i want more information
-    - i would like to know why you need that
-    - please elaborate
-    - please explain
-    - why do you need to know that
-    - why is that necessary
-    - give me more details
-    - why
-    - what do you mean
-    - what does that mean
-    - how come?
+    - не могли бы вы уточнить
+    - не могли бы вы объяснить, зачем вам это нужно?
+    - не могли бы вы рассказать мне больше
+    - объясни мне
+    - объяснить, что
+    - мне нужна дополнительная информация
+    - я хотел бы знать, зачем вам это нужно
+    - пожалуйста, дополните
+    - пожалуйста, объясни
+    - зачем тебе это знать
+    - зачем это нужно
+    - расскажите подробнее
+    - Зачем
+    - что ты имеешь в виду
+    - что это обозначает
+    - почему?
 - intent: greet
   examples: |
     - привет
     - здрав будь
     - хэллу
     - хай
-    - здравствуйте
     - прив
     - привы
     - хэй
@@ -596,6 +583,45 @@ nlu:
     - морнинг
     - гут морнинг
     - нихао
+    - здра
+    - здрасьте
+    - здравствуйте
+    - здравствуйте, товарищ
+    - доброе утро
+    - добрый день
+    - добрый вечер
+    - доброй ночи
+    - день добрый
+    - это база торпедных катеров?
+    - алоха
+    - ну здравствуй
+    - ну привет
+    - ну здоров
+    - Привет
+    - Привет
+    - доброе утро
+    - Добрый вечер
+    - Привет
+    - всем привет
+    - Привет
+    - Приветствую
+    - Привет
+    - вертолет
+    - Привет!
+    - Привет'
+    - Привет,
+    - Привет бот
+    - Привет
+    - Hieeeeeeeeeeeee
+    - Hola
+    - Как жизнь?
+    - Как дела
+    - Как дела, мой бот
+    - Как дела?
+    - айыы ваддуп
+    - Bonjour
+    - хэй мэн
+    - Ну привет ;)     
     - Bom dia
     - Bonjour
     - Good Morning
@@ -610,186 +636,127 @@ nlu:
     - Hallo
     - Hei
     - Hellllooooooo
-    - Hello
-    - Hello Bot
-    - Hello Rasa
-    - Hello Sara
-    - Hello sara
-    - Hello!
-    - Hey
-    - Hey Sara
-    - Hey bot
-    - Heya
-    - Heylo
-    - Hi
-    - Hi Sara
-    - Hi Sara!
-    - Hi bot
-    - Hi man
-    - Hi rasa
-    - Hi sara
-    - Hi sara..
-    - Hi there
-    - Hi!
-    - Hi'
-    - Hi,
-    - Hi, bot
-    - Hieee
+    - привет
+    - здрав будь
+    - хэллу
+    - хай
+    - прив
+    - привы
+    - хэй
+    - здоров
+    - здоровеньки булы
+    - йоу
+    - бонжорно
+    - бонджорно
+    - гутен
+    - гутен морген
+    - морнинг
+    - гут морнинг
+    - нихао
+    - здра
+    - здрасьте
+    - здравствуйте
+    - здравствуйте, товарищ
+    - доброе утро
+    - добрый день
+    - добрый вечер
+    - доброй ночи
+    - день добрый
+    - это база торпедных катеров?
+    - алоха
+    - ну здравствуй
+    - ну привет
+    - ну здоров
+    - Привет
+    - Привет
+    - доброе утро
+    - Добрый вечер
+    - Привет
+    - всем привет
+    - Привет
+    - Приветствую
+    - Привет
+    - вертолет
+    - Привет!
+    - Привет'
+    - Привет,
+    - Привет бот
+    - Привет
     - Hieeeeeeeeeeeee
     - Hola
-    - I said, helllllloooooO!!!!
-    - Well hello there ;)
-    - What is up?
-    - Whats up
-    - Whats up my bot
-    - Whats up?
-    - ayyyy whaddup
-    - bonjour
-    - ey boss
-    - good evening
-    - good moring
-    - good morning
-    - greet
-    - greetings
-    - hai
-    - hallo
-    - hallo sara
-    - halloo
-    - halloooo
-    - halo
-    - halo sara
-    - heeey
-    - heelio
-    - hell9o
-    - hellio
-    - hello
-    - hello Sara
-    - hello everybody
-    - hello friend
-    - hello hi
-    - hello is anybody there
-    - hello it is me again
-    - hello robot
-    - hello sara
-    - hello sweatheart
-    - hello sweet boy
-    - hello there
-    - hello world
-    - hello, my name is [Charles Pfeffer](name)
-    - hello?
-    - hello]
-    - hellooo
-    - helloooo
-    - helo
-    - hey
-    - hey bot
-    - hey bot!
-    - hey dude
-    - hey hey
-    - hey let's talk
-    - hey rasa
-    - hey sara
-    - hey ther
-    - hey there
-    - hey there boy
-    - hey there..
-    - hey, let's talk
-    - hey, sara!
-    - heya
-    - heyho
-    - heyo
-    - hhola
-    - hi
-    - hi !
-    - hi Mister
-    - hi again
-    - hi can you speak ?
-    - hi folks
-    - hi friend
-    - hi friends
-    - hi hi
-    - hi i'm [Sandra Hernandez](name)
-    - hi im [Amanda Anderson](name)
-    - hi mrs rasa
-    - hi pal!
-    - hi sara
-    - hi there
-    - hi there it's me
-    - hi!
-    - hi?
-    - hieee
-    - hii
-    - hiihihi
-    - hiii
-    - hlo
-    - hola
-    - howdy
-    - jojojo
-    - jop
-    - konichiwa
-    - merhaba
-    - ola sara
-    - rasa hello
-    - salut
-    - sup
-    - wasssup
-    - wasssup!
-    - what up
-    - whats popping
-    - whats up
-    - yo
-    - yoo
-    - ssup?
-    - helleo
+    - Как жизнь?
+    - Как дела
+    - Как дела, мой бот
+    - Как дела?
+    - айыы ваддуп
+    - Bonjour
+    - хэй мэн
+    - Ну привет ;)     
+    - Bom dia
+    - Bonjour
+    - Good Morning
+    - Good morning
+    - Good mourning
+    - Guten Morgen
+    - HELLO
+    - HEY
+    - HEllo
+    - HI
+    - HI Sara
+    - Hallo
+    - Hei
+    - Hellllooooooo
+
+    
 - intent: react_negative
   examples: |
-    - I am feeling bad
-    - I am sad
-    - I am super sad
-    - I'm sad
-    - I'm super sad
-    - Now I'm sad
-    - This is bad
-    - You are quite bad
-    - bad
-    - bad boy
-    - crappy joke
-    - documentation of rasa is very bad
-    - i am angry over you
-    - i am feel sad
-    - i am sad
-    - i am sad about that
-    - i am very sad
-    - i feel sad
-    - i sad
-    - i'm sad
-    - rasa is bad
-    - sad
-    - so sad
-    - so sad :(
-    - super sad
-    - u broke my heart
-    - very very sad
-    - you are bad
-    - you are bad bot
-    - you make me sad
-    - You are mad
-    - You are rude
-    - bots are bad
-    - i don't care!!!!
-    - i dont like bots
-    - this is a really frustrating experience
-    - you're rather dull
-    - i am so worry
-    - i will leave
-    - Although I understand your still in development, I feel a little bit disappointed.
-    - Surely you're not so smart lik i thought
-    - iam not feeling good
-    - not good
-    - Thats so rude
-    - sadly
-    - That tool here isnt good
-    - boring
+    - плохо себя чувствую
+    - Мне грустно
+    - Мне очень грустно
+    - Мне грустно
+    - Мне очень грустно
+    - Теперь мне грустно
+    - Это плохо
+    - Ты совсем плохой
+    - Плохо
+    - Плохой парень
+    - дерьмовая шутка
+    - документация расы очень плохая
+    - я злюсь на тебя
+    - мне грустно
+    - Мне грустно
+    - мне грустно по этому поводу
+    - мне очень грустно
+    - мне грустно
+    - мне грустно
+    - Мне грустно
+    - раса плохая
+    - грустный
+    - очень грустно
+    - очень грустно :(
+    - супер грустно
+    - ты разбил мне сердце
+    - очень очень печально
+    - ты плохой
+    - ты плохой бот
+    - ты меня огорчаешь
+    - Ты сумасшедший
+    - Ты грубый
+    - боты плохие
+    - мне все равно !!!!
+    - я не люблю ботов
+    - это действительно разочаровывающий опыт
+    - ты довольно тупой
+    - я так волнуюсь
+    - я оставлю
+    - Хотя я понимаю, что вы все еще в разработке, я немного разочарован.
+    - Неужели ты не такой умный, как я думал
+    - Я не чувствую себя хорошо
+    - нехорошо
+    - Это так грубо
+    - грустно
+    - Этот инструмент здесь не годится
+    - скучно
 - intent: thank
   examples: |
     - круто, спасибо
@@ -853,44 +820,40 @@ nlu:
     - thanks f
 - intent: need_help_broad
   examples: |
-    - need help on chatbot
-    - I have a question
-    - I have a question about [Rasa NLU](product)
-    - I have a question about the functioning of the device
-    - I have a question for you
-    - I have a question.
-    - hello I have a question
-    - I have a question?
-    - Sure. I have a question for you
-    - Yes, I have a question
-    - yes, I have a question
-    - I am stuck and I need help
-    - I have a few questions
-    - I have a few questions on my pay check
-    - there is an issue during installation
-    - i am stuck
-    - i am stuck with error
-    - I got stuck with the installation
-    - i m stuck while importing data
-    - I am stuck with action
-    - I am stuck with fallback
-    - i  am stuck with an erorr
-    - im stuck
-    - hi sara, i get the following error when trying to install rasa on my macbook
-    - i have errors in installaition
-    - i am facing a particular error,could u help me?
-    - it is showing error while installing
-    - I am seeing an error
-    - I get errors while installation
-    - error message when installing rasa
-    - Rasa installation error
-    - getting some errors
-    - rasa init error
-    - no i get a error while installing
-    - i have an error on install
-    - i got some error during installation
-    - lots of errors
-    - i got error while installing rasa
-    - I have error during the installation
-    - i get error when initializing a project
-    - I'm getting an error while installing Rasa
+    - нужна помощь по чат-боту
+    - У меня вопрос по работе устройства
+    - У меня к тебе есть вопрос
+    - У меня вопрос.
+    - привет у меня есть вопрос
+    - Конечно. У меня к тебе есть вопрос
+    - Да, у меня вопрос
+    - да, у меня есть вопрос
+    - Я застрял, и мне нужна помощь
+    - У меня есть несколько вопросов
+    - У меня есть несколько вопросов по чеку.
+    - возникла проблема при установке
+    - Я застрял
+    - я застрял с ошибкой
+    - Застрял с установкой
+    - я застрял при импорте данных
+    - Я зациклен на действии
+    - Я застрял с запасным вариантом
+    - я застрял с эрорром
+    - Я застрял
+    - у меня есть ошибки при установке
+    - Я столкнулся с конкретной ошибкой, не могли бы вы мне помочь?
+    - при установке выдает ошибку
+    - Я вижу ошибку
+    - Я получаю ошибки при установке
+    - сообщение об ошибке при установке rasa
+    - Ошибка установки Aide
+    - появляются ошибки
+    - ошибка инициализации Aide
+    - нет, при установке возникает ошибка
+    - у меня ошибка при установке
+    - при установке произошла ошибка
+    - много ошибок
+    - у меня ошибка при установке rasa
+    - У меня ошибка при установке
+    - я получаю ошибку при инициализации проекта
+    - Я получаю сообщение об ошибке при установке Rasa

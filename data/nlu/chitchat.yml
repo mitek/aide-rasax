@@ -2,845 +2,786 @@ version: "2.0"
 nlu:
 - intent: chitchat/ask_howbuilt
   examples: |
-    - By what means were you made?
-    - By what method were you fashioned?
-    - Can you explain how you were created?
-    - Can you give me an idea as to how you were created?
-    - Can you say how you were constructed?
-    - Do you know how you were built?
-    - Do you know how you were made?
-    - How did they build you?
-    - How did they create you?
-    - How did they make you?
-    - How did you come into being?
-    - How did you come to be?
-    - How exactly were you devised?
-    - How exactly were you made?
-    - How were you built?
-    - How were you conceived?
-    - How were you constructed?
-    - How were you devised?
-    - How were you formed?
-    - How were you made into who you are?
-    - How were you made?
-    - How were you materialized?
-    - How were you set up?
-    - I want to know how you were formed
-    - I'd like to know how you were created
-    - I'd like to know how you were put together?
-    - In what manner were you built?
-    - In what manner were you constructed?
-    - In what manner were you formed?
-    - In what way were you created?
-    - In what way were you formed?
-    - In what way were you made?
-    - In what way were you shaped?
-    - In which manner were you devised?
-    - Let me know how you were made exactly
-    - Specify how you were created?
-    - Tell me how you were made?
-    - What process was used to build you?
-    - What process was used to create you?
-    - What was the process for making you?
-    - You originated through what means?
-    - how have you been built?
-    - how were you made?
-    - in what way were you made?
-    - so how were you made?
-    - what are you made of
-    - Are you built using rasa?
-    - Are u developed in rasa
-    - are you build with rasa ?
+    - Чем вы были созданы?
+    - Каким методом вы были сформированы?
+    - Можете объяснить, как вы были созданы?
+    - Можете рассказать, как вы были созданы?
+    - Можете сказать, как вы были построены?
+    - Вы знаете, как вы были построены?
+    - Вы знаете, как вас устроили?
+    - Как они тебя построили?
+    - Как они вас создали?
+    - Как они тебя сделали?
+    - Как ты появился на свет?
+    - Как ты оказался?
+    - Как именно вы были придуманы?
+    - Как именно вы были созданы?
+    - Как ты строился?
+    - Как вы задумывались?
+    - Как вы были построены?
+    - Как вы были придуманы?
+    - Как вы формировались?
+    - Как вы стали тем, кем вы являетесь?
+    - Как тебя устроили?
+    - Как вы материализовались?
+    - Как вы были настроены?
+    - Я хочу знать, как вы образовались
+    - Хотелось бы узнать, как вы были созданы
+    - Хотелось бы узнать, как вы собрались?
+    - Каким образом вы были построены?
+    - Каким образом вы были построены?
+    - Как вы формировались?
+    - Каким образом вы были созданы?
+    - Как вы формировались?
+    - Каким образом вы были созданы?
+    - Каким образом вы сформировались?
+    - Каким образом вы были придуманы?
+    - Дайте мне знать, как именно вы были созданы
+    - Уточните, как вы создавались?
+    - Расскажи, как тебя устроили?
+    - Какой процесс вы использовали при создании?
+    - Какой процесс был использован при создании вас?
+    - Каким был процесс создания вас?
+    - Какими средствами вы зародились?
+    - как вы были построены?
+    - как вы были созданы?
+    - как вы были созданы?
+    - так как вы были созданы?
+    - из чего ты сделан
+
 - intent: chitchat/ask_howdoing
   examples: |
-    - Ahoy matey how are you?
-    - Are you ok?
-    - Do you feel good?
-    - Do you have a great day?
-    - HI Sara, what are you up to?
-    - Hi Sara! How are you?
-    - How are You?
-    - How are things?
-    - How are you
-    - How are you men?
-    - How are you today?
-    - How are you?
-    - How was your day?
-    - How you doing?
-    - How's it going
-    - How's it hanging?
-    - How's life treating you friend?
-    - How've you been?
-    - Hows it going
-    - I'm fine and you
-    - Is everything ok?
-    - What's going on?
-    - What's new?
-    - What's up
-    - What's up man
-    - and you
-    - are you alright
-    - are you happy
-    - are you having a good day
-    - are you ok
-    - are you okay
-    - h r u ?
-    - hello, how are you?
-    - hey how are you?
-    - hi how are you?
-    - hi how u doing
-    - hi sara, how are you?
-    - how ?
-    - how are things going
-    - how are things with you?
-    - how are u
-    - how are u?
-    - how are xou
-    - how are you
-    - how are you ?
-    - how are you doing
-    - how are you doing this morning
-    - how are you doing today my sweet friend
-    - how are you doing today?
-    - how are you doing?
-    - how are you feeling
-    - how are you today
-    - how are you'
-    - how are you?
-    - how are you????
-    - how are yuo
-    - how do you do?
-    - how have you been
-    - how is it going
-    - how is your day
-    - how is your day going
-    - how is your evening
-    - how r u
-    - how r u ?
-    - how r u>
-    - how you doing
-    - how you doing?
-    - how's it going?
-    - how's life
-    - how's life been treating you?
-    - how's your day going
-    - howareyou
-    - hw r u?
-    - is everything all right
-    - is everything okay
-    - nah, I'm good - how are you doing?
-    - okay hi how are you?
-    - wassup>
-    - what about your day
-    - what are you up to?
-    - what's good
-    - what's up
-    - what's up sara
-    - what's up?
-    - whatchcha doing
-    - whatchya upto ?
-    - whats goin on
-    - whats new
-    - whatsapp
-    - yow are you
-    - how are you Rasa
-    - Hey Sara, how's it going
-    - are you cool
+    - Друг, как дела?
+    - У тебя все нормально?
+    - Тебе хорошо?
+    - У тебя отличный день?
+    - Как дела?
+    - Как дела?
+    - Как дела
+    - Как поживаете, мужчины?
+    - Как вы сегодня?
+    - Как дела?
+    - Как прошел день?
+    - Как дела?
+    - Как дела
+    - Как там висит?
+    - Как жизнь?
+    - Как жисть?
+    - Как жисть молодая?
+    - Чё почём?
+    - Как поживаешь?
+    - Как дела
+    - Я в порядке, а вы
+    - Все нормально?
+    - Что происходит?
+    - Какие новости?
+    - Как дела
+    - Как дела чувак
+    - а вы
+    - С тобой все в порядке
+    - ты доволен
+    - хорошо ли проходит твой день
+    - У тебя все нормально
+    - у тебя все нормально
+    - а ты?
+    - Здравствуйте, как поживаете?
+    - Эй, ты как?
+    - как ты?
+    - как вы?
+    - как дела
+    - как дела?
+    - как у тебя дела
+    - как у тебя дела?
+    - как дела у вас?
+    - как дела
+    - как дела ?
+    - Как поживаешь
+    - как у тебя дела сегодня утром
+    - как у тебя дела сегодня мой милый друг
+    - как у тебя сегодня дела?
+    - Как поживаешь?
+    - как ты себя чувствуешь
+    - Как вы сегодня
+    - как дела'
+    - как дела?
+    - как дела????
+    - как ты?
+    - как дела?
+    - как твои дела
+    - Как дела
+    - как твой день
+    - как проходит твой день
+    - Как твой вечер
+    - как ты
+    - как ты ?
+    - как ты?
+    - как дела
+    - как дела?
+    - как дела?
+    - как жизнь
+    - как жизнь к тебе относилась?
+    - Как проходит твой день
+    - как дела
+    - как дела?
+    - все в порядке
+    - все хорошо
+    - нет, у меня все хорошо - как дела?
+    - хорошо привет как дела?
+    - как дела
+    - как прошел день
+    - что ты задумал?
+    - что хорошо
+    - Как дела
+    - Как дела?
+    - что ты делаешь
+    - Что за дела?
+    - что происходит
+    - какие новости
+    - как ты
+    - все круто?
 - intent: chitchat/ask_howold
   examples: |
-    - Do you have friends the same age as you, if so, how old are they?
-    - How long have you been alive?
-    - How long have you been around?
-    - How long have you occupied the earth?
-    - How many candles were on your last birthday cake?
-    - How many years have you been alive?
-    - How many years have you lived?
-    - How old are you?
-    - How old were you on your last birthday?
-    - How old will you be on your next birthday?
-    - Tell me your day, month and year of birth.
-    - What is your age?
-    - What is your birthdate?
-    - What is your count of years being alive so far?
-    - What was your age on your last birthday?
-    - What will be your age on your next birthday?
-    - What year were you born?
-    - Whats your age?
-    - When do you celebrate your day of birth?
-    - and you are how many years old?
-    - can you tell me exactly how old you are?
-    - can you tell me what number represents your age?
-    - can you tell me your age?
-    - do you know how old you are?
-    - give me your age?
-    - how about your age
-    - how aold are you
-    - how many ages?
-    - how many years old are you?
-    - how old are u
-    - how old are you
-    - how old are you?
-    - how old were you on your last birthday?
-    - how old were you when you celebrated your last birthday?
-    - how old will you be this year?
-    - how old?
-    - in what year were you born?
-    - tell me how old you are?
-    - tell me your age number?
-    - tell me your age?
-    - what age are you
-    - what age were you when you celebrated your last birthday?
-    - what is your age?
-    - what is your birthday?
-    - what is your exact age?
-    - what number represents your age?
-    - what year were you born?
-    - what's your age?
-    - whats your age?
-    - whats your birth year?
-    - when is your birthday?
-    - when were you born?
-    - when you were bon
-    - What's your age?
-- intent: chitchat/ask_isbot
-  examples: |
-    - Ar you a bot ?
-    - Are you a bot
-    - Are you a chat bot?
-    - Are you the bot?
-    - Hi there, are you the bot?
-    - are you a BOT
-    - are you a Skynet ?
-    - are you a bot
-    - are you a bot ?
-    - are you a bot?
-    - are you a chatbot
-    - are you a rasa bot?
-    - are you a real bot?
-    - are you a robot
-    - are you ai
-    - are you artificial
-    - are you artificial intelligence
-    - are you bot
-    - are you bot?
-    - are you rasa bot?
-    - are you real
-    - are you real lol
-    - are you really a bot
-    - are you robot
-    - are you sure that you're a bot?
-    - bot?
-    - cuz you are a bot
-    - i guess you are a chatbot
-    - oh are you chatbot?
-    - tell me, are you a bot?
-    - what are you, a bot?
-    - you are a robot
-    - you are ai
-    - you are chatbot
-    - you're a bot
-    - you robo
-    - real bot then?
-    - are you really a bbot?
+    - Есть ли у вас друзья одного возраста с вами, если да, то сколько им лет?
+    - Как давно ты жив?
+    - Как давно ты здесь?
+    - Как давно вы заселили землю?
+    - Сколько свечей было на вашем последнем праздничном торте?
+    - Сколько лет вы живете?
+    - Сколько лет вы прожили?
+    - Сколько тебе лет?
+    - Сколько вам было лет в последний день рождения?
+    - Сколько тебе будет лет в следующий день рождения?
+    - Назови свой день, месяц и год рождения.
+    - Ваш возраст?
+    - Какая у вас дата рождения?
+    - Сколько лет вы живете до сих пор?
+    - Сколько вам было лет в последний день рождения?
+    - Сколько вам будет лет в следующий день рождения?
+    - В каком году вы родились?
+    - Сколько вам лет?
+    - Когда вы отмечаете день своего рождения?
+    - а тебе сколько лет?
+    - ты можешь точно сказать, сколько тебе лет?
+    - Можете ли вы сказать мне, какое число соответствует вашему возрасту?
+    - можешь сказать мне свой возраст?
+    - ты знаешь сколько тебе лет?
+    - дай мне свой возраст?
+    - как насчет твоего возраста
+    - сколько тебе лет
+    - сколько возрастов?
+    - сколько тебе лет?
+    - сколько вам лет
+    - сколько тебе лет
+    - сколько тебе лет?
+    - сколько вам было лет в последний день рождения?
+    - сколько вам было лет, когда вы праздновали свой последний день рождения?
+    - сколько тебе лет будет в этом году?
+    - Сколько лет?
+    - в каком году вы родились?
+    - скажи сколько тебе лет?
+    - скажи свой возраст?
+    - сколько тебе лет?
+    - Какого ты возраста
+    - в каком возрасте вы отмечали свой последний день рождения?
+    - Ваш возраст?
+    - когда твой день рождения?
+    - сколько тебе лет?
+    - какое число соответствует твоему возрасту?
+    - в каком году вы родились?
+    - сколько вам лет?
+    - сколько вам лет?
+    - какой у тебя год рождения?
+    - когда твой день рождения?
+    - когда ты родился?
+    - когда ты был счастлив
+    - Сколько вам лет?
 - intent: chitchat/ask_ishuman
   examples: |
-    - hey are you human
-    - are u human
-    - r u a human
-    - are you real human?
-    - you are a human
-    - Rara, are you a human?
-    - you are bot or human?
-    - are you human
-    - ok, i know i confused you there being a human! :)
-    - you are human or bot
-    - Are you human?
-    - are you a human ?
-    - Are you human ?
-    - Are you a human being?
-    - sara, are you a robot or human?
-    - r u real?
-    - are you a real person
-    - are u a real person?
-    - Are you a real person?
-    - are you a real person?
-    - are you real person or chat bot?
-    - So I'm here Today to ask one very simple question, what are you ?
-    - you sound like a real human
-    - wow you sound like real human
-    - are you human ?
+    - Вы бот?
+    - Вы - бот
+    - Вы чат-бот?
+    - Вы бот?
+    - Привет, ты бот?
+    - Вы - бот
+    - ты Скайнет?
+    - Вы - бот
+    - Вы - бот ?
+    - Вы - бот?
+    - ты чат-бот?
+    - ты раса-бот?
+    - ты настоящий бот?
+    - ты робот?
+    - ты ай
+    - ты искусственный
+    - ты искусственный интеллект
+    - ты бот
+    - ты бот?
+    - ты раса бот?
+    - ты настоящий
+    - ты настоящий лол
+    - ты действительно бот
+    - ты робот?
+    - ты уверен, что ты бот?
+    - бот?
+    - потому что ты бот
+    - я думаю, вы чат-бот
+    - а ты чат-бот?
+    - скажи, ты бот?
+    - ты что, бот?
+    - Вы робот
+    - ты ай
+    - ты чат-бот
+    - ты бот
+    - ты робо
+    - Значит, настоящий бот?
+    - вы действительно бот?
 - intent: chitchat/ask_languagesbot
   examples: |
-    - Are you familiar with more than one language?
-    - Can you communicate in any other languages?
-    - Can you speak more than one language?
-    - Do you know any other languages?
-    - Do you know other languages?
-    - Do you speak [german](language)?
-    - Do you speak any other languages?
-    - Do you understand [spanish](language)?
-    - How many different languages are you fluent in?
-    - How many languages are you familiar with?
-    - How many languages can you speak?
-    - How many languages do you have knowledge of?
-    - How many languages do you know?
-    - In what languages are you fluent enough?
-    - In which languages are you fluent?
-    - In which languages can you speak?
-    - Speak any other languages?
-    - What are all of the different languages you can speak?
-    - What are the languages you can speak?
-    - What do you speak?
-    - What languages are you fluent in?
-    - What languages can you communicate in?
-    - What languages can you converse in?
-    - What languages can you use?
-    - What languages do you know how to use?
-    - What languages do you know?
-    - What languages do you speak?
-    - Which languages are you familiar with?
-    - Which languages do you speak?
-    - are you bilingual?
-    - are you multilingual?
-    - can you speak [Spanish](language)?
-    - can you speak in [italian](language)?
-    - do you know [chinese](language)
-    - do you speak [dutch](language)?
-    - do you speak [german](language)?
-    - do you speak any other languages?
-    - how many languages are you fluent in?
-    - how many languages do you know?
-    - tell me some languages you know?
-    - what else do you know besides [English](language)?
-    - what foreign languages are you fluent in?
-    - what foreign languages do you know?
-    - what language do you use
-    - what languages are you comfortable speaking at?
-    - what languages are you familiar with?
-    - what languages are you good at speaking?
-    - what languages do you know?
-    - what languages do you speak
-    - what languages you are well versed ?
-    - what languages you can be comfortable speaking?
-    - what languages you can handle well?
-    - what languages you can speak ?
-    - what languages you know?
-    - what languages you prefer more speaking at?
-    - which languages do you understand?
-    - you know [French](language)
-    - you speak [french](language) ?
-    - I want to speak binary with you
-    - ARE YOU [SPANISH](language)
-    - we cant converse in [french](language)?
-    - can we converse in [french](language)?
-    - Do you speak [italian](language)?
+    - Вы знакомы с более чем одним языком?
+    - Можете ли вы общаться на каких-либо других языках?
+    - Ты умеешь говорить на нескольких языках?
+    - Вы знаете какие-нибудь другие языки?
+    - Ты знаешь другие языки?
+    - Вы говорите на [немецком](language)?
+    - Ты говоришь на каких-нибудь других языках?
+    - Вы понимаете [испанский](language)?
+    - На скольких разных языках вы свободно говорите?
+    - Со сколькими языками вы знакомы?
+    - На скольких языках вы можете говорить?
+    - Сколько языков ты знаешь?
+    - Как много языков ты знаешь?
+    - На каких языках вы достаточно свободно владеете?
+    - На каких языках вы свободно говорите?
+    - На каких языках ты говоришь?
+    - Говорите на каких-нибудь других языках?
+    - На каких языках вы можете говорить?
+    - На каких языках ты говоришь?
+    - Что ты говоришь?
+    - На каких языках ты свободно говоришь?
+    - На каких языках вы можете общаться?
+    - На каких языках ты умеешь разговаривать?
+    - Какие языки ты умеешь использовать?
+    - На каких языках ты умеешь пользоваться?
+    - Какие языки вы знаете?
+    - На каком языке ты говоришь?
+    - С какими языками вы знакомы?
+    - На каких языках ты говоришь?
+    - ты двуязычный?
+    - вы многоязычны?   
+    - Вы говорите на [испанском](language)?
+    - Вы можете говорить на [итальянском](language)?
+    - вы знаете [китайский](language)
+    - вы говорите [голландский](language)?
+    - вы говорите [немецкий](language)?
+    - Ты говоришь на каких-нибудь других языках?
+    - на скольких языках вы свободно говорите?
+    - как много языков ты знаешь?
+    - Скажите, какие языки вы знаете?
+    - что еще вы знаете, кроме [английского](language)?
+    - какими иностранными языками вы владеете?
+    - какие иностранные языки ты знаешь?
+    - какой язык вы используете
+    - на каких языках вам комфортно говорить?
+    - с какими языками вы знакомы?
+    - на каких языках ты хорошо говоришь?
+    - какие языки вы знаете?
+    - На каком языке ты говоришь
+    - на каких языках вы хорошо владеете?
+    - на каких языках вам комфортно говорить?
+    - с какими языками вы хорошо владеете?
+    - на каких языках ты говоришь?
+    - какие языки ты знаешь?
+    - на каких языках вы предпочитаете больше разговаривать?
+    - какие языки ты понимаешь?
+    - вы знаете [французский](language)
+    - вы говорите на [французском](language)?
+    - Я хочу поговорить с вами на двоичном языке
+    - ARE YOU [ИСПАНСКИЙ](language)
+    - мы не можем разговаривать на [французском](language)?
+    - можем ли мы разговаривать на [французском](language)?
+    - Вы говорите на [итальянском](language)?    
 - intent: chitchat/ask_restaurant
   examples: |
-    - Any good restaurants nearby?
-    - Can you find a restaurant for me?
-    - Can you find me a burger joint?
-    - Can you find me a restaurant?
-    - Can you recommend a restaurant open right now
-    - Could you find a restaurant for me?
-    - Could you find me a restaurant to eat at?
-    - Could you find me a restaurant?
-    - Do you find me a restaurant?
-    - Do you seek me a restaurant?
-    - Find a restaurant for me to eat at.
-    - Find a restaurant for me where I can eat.
-    - Find a restaurant for me?
-    - Find me a fast food restaurant.
-    - Find me a place to eat
-    - Find me a restaurant where I can eat.
-    - Have you seen me a restaurant?
-    - Help me find a restaurant
-    - Help me with finding this restaurant
-    - Hey help me find a restaurant
-    - Hey, can you help me with locating this restaurant.
-    - Hi, can you give me the nearest fast food place?
-    - How can you help me find a restaurant.
-    - I am hungry, find me some place to go
-    - I need a new restaurant
-    - I need a restaurant.
-    - I need to find this restaurant
-    - I'm gonna need help finding a restaurant
-    - I'm looking for a Spanish restaurant.
-    - IS there any near by restaurant?
-    - Is there any restaurant?
-    - Pick a restaurant for me, please
-    - Recommend me a restaurant around here.
-    - Show me how to find a restaurant
-    - Show me the closest open restaurant
-    - Suggest me a good restaurant around
-    - What restaurant would you recommend for dinner?
-    - What's a good place to eat nearby
-    - What's the closest restaurant open near me
-    - Where is the restaurant
-    - Where should I eat?
-    - Where should I go for dinner?
-    - Will you find me a restaurant?
-    - Would you find a restaurant for me?
-    - Would you find any restaurant?
-    - Would you find me a restaurant?
-    - can i be shown a gluten free restaurant
-    - can you find me a restaurant?
-    - help me find restaurant
-    - i want a french restaurant
-    - i'm looking for a Chinese restaurant
-    - restaurants
-    - will you see any restaurant for me?
-    - I want to find some restauant nearby
-    - show me restaurents
+    - Есть поблизости хорошие рестораны?
+    - Вы можете найти для меня ресторан?
+    - Вы можете найти мне закусочную с гамбургерами?
+    - Вы можете найти мне ресторан?
+    - Можете ли вы порекомендовать ресторан, открытый прямо сейчас?
+    - Не могли бы вы найти для меня ресторан?
+    - Не могли бы вы найти мне ресторан, где можно поесть?
+    - Не могли бы вы найти мне ресторан?
+    - Ты найдешь мне ресторан?
+    - Ты ищешь мне ресторан?
+    - Найди для меня ресторан.
+    - Найди мне ресторан, где я могу поесть.
+    - Найди мне ресторан?
+    - Найди мне ресторан быстрого питания.
+    - Найди мне место, где можно поесть
+    - Найди мне ресторан, где я могу поесть.
+    - Вы видели мне ресторан?
+    - Помогите мне найти ресторан
+    - Помогите мне найти этот ресторан
+    - Привет, помоги мне найти ресторан
+    - Эй, не могли бы вы помочь мне найти этот ресторан.
+    - Привет, ты можешь назвать ближайший ресторан быстрого питания?
+    - Как вы можете помочь мне найти ресторан.
+    - Я голоден, найди мне куда пойти
+    - Мне нужен новый ресторан
+    - Мне нужен ресторан.
+    - Мне нужно найти этот ресторан
+    - Мне понадобится помощь в поиске ресторана
+    - Я ищу испанский ресторан.
+    - Есть ли поблизости ресторан?
+    - А ресторан есть?
+    - Выберите мне ресторан, пожалуйста
+    - Посоветуйте мне ресторан здесь.
+    - Покажи мне, как найти ресторан
+    - Покажи мне ближайший открытый ресторан
+    - Посоветуйте мне хороший ресторан поблизости
+    - В каком ресторане порекомендуете поужинать?
+    - Какое хорошее место поблизости можно поесть?
+    - Какой ближайший ресторан открыт рядом со мной
+    - Где находится ресторан
+    - Где мне поесть?
+    - Куда мне пойти пообедать?
+    - Ты найдешь мне ресторан?
+    - Вы бы нашли для меня ресторан?
+    - Вы бы нашли какой-нибудь ресторан?
+    - Вы бы нашли мне ресторан?
+    - можно мне показать ресторан без глютена
+    - Вы можете найти мне ресторан?
+    - помогите мне найти ресторан
+    - я хочу французский ресторан
+    - ищу китайский ресторан
+    - рестораны
+    - Вы увидите для меня какой-нибудь ресторан?
+    - Я хочу найти ресторан поблизости
+    - покажи мне рестораны 
 - intent: chitchat/ask_time
   examples: |
-    - Can you give me the time?
-    - Can you tell me the time?
-    - Can you tell me what time it is?
-    - Can you tell the time?
-    - Could you tell me the time, please?
-    - Could you tell me the time?
-    - Could you tell me what time is it?
-    - Do you have the time?
-    - Do you know the time?
-    - Do you know what time it is?
-    - Excuse me, what time is it?
-    - Give me the time.
-    - Hi, I need the time.
-    - I need to know what time it is.
-    - Pardon me, but do you know the time?
-    - Tell me the time.
-    - Time, please!
-    - Time?
-    - What is the current time?
-    - What is the exact time?
-    - What is the hour and minute right now?
-    - What is the time?
-    - What might the time be?
-    - What time do we have?
-    - What time have we got?
-    - What time is it in [Berlin](location)?
-    - What time is it right now?
-    - What's the current time?
-    - What's the time right now?
-    - What's the time?
-    - Would you tell me what time it is?
-    - do you have the time?
-    - do you know the current time?
-    - tell me the current time.
-    - tell me the time it is.
-    - tell me the time.
-    - tell me what time you have.
-    - that's true. do you know what time it is?
-    - what is the current time?
-    - what is the time ?
-    - what is the time in [Sydney](location)?
-    - what is the time?
-    - what is time in US ?
-    - what is time is US ?
-    - what is time is USA ?
-    - what time do you have?
-    - what time is it
-    - what time is it?
-    - what time it is
-    - what's the time
-    - whats the time now
+    - Вы можете дать мне время?
+    - Можешь сказать мне время?
+    - Вы можете сказать, который час?
+    - Ты можешь сказать время?
+    - Подскажите, пожалуйста, время?
+    - Не могли бы вы назвать время?
+    - Не могли бы вы сказать, который час?
+    - У Вас есть время?
+    - Ты знаешь время?
+    - Ты знаешь сколько время?
+    - Простите, а сколько сейчас времени?
+    - Дай мне время.
+    - Привет, мне нужно время.
+    - Мне нужно знать, который час.
+    - Простите, а время знаете?
+    - Подскажите время.
+    - Время, пожалуйста!
+    - Время?
+    - Какое сейчас время?
+    - Какое точное время?
+    - Какой сейчас час и минута?
+    - Сколько времени?
+    - Который может быть время?
+    - Сколько у нас времени?
+    - Сколько времени в [Берлине](location)?
+    - В какое время это прямо сейчас?
+    - Какое сейчас время?
+    - Сколько сейчас времени?
+    - Какое время?
+    - Не могли бы вы сказать, который час?
+    - у Вас есть время?
+    - ты знаешь текущее время?
+    - скажи мне текущее время.
+    - скажи мне время.
+    - скажи время.
+    - скажи, сколько у тебя времени.
+    - это правда. Вы не знаете который час?
+    - какое сейчас время?
+    - сколько времени ?
+    - сколько времени в [Сиднее](location)?
+    - сколько времени?
+    - сколько времени в США?
+    - сколько времени США?
+    - сколько времени США?
+    - Сколько времени у тебя есть?
+    - который сейчас час
+    - который сейчас час?
+    - сколько времени
+    - какое время
+    - который час
 - intent: chitchat/ask_weather
   examples: |
-    - Are there any meteorological changes that I need to be aware of?
-    - Are we in for a scorcher?
-    - Beautiful day, isn't it?
-    - Can I ask you something about weather
-    - Can we expect any thunderstorms?
-    - Do you have good weather?
-    - How is the weather today?
-    - How is the weather?
-    - How is weather today
-    - Is it hot or cold?
-    - Is it humid out there today?
-    - Is it quite breezy outside?
-    - Is it raining
-    - Is it raining?
-    - Looks like a beautiful day hey?
-    - Nice day out today?
-    - Weather?
-    - What is the temperature today?
-    - What is the weather at your place?
-    - What is the weather for tomorrow?
-    - What is the weather in newyork?
-    - What's it like out there?
-    - What's the weather forecast?
-    - What's the weather like over there?
-    - What's the weather like where I am right now?
-    - What's the weather like?
-    - Will I require my raincoat today?
-    - Will the skies be clear today?
-    - Will we build a snowman today?
-    - excellent - is it hot in [Berlin](location)?
-    - how is the weather
-    - how is the weather ?
-    - how is the weather in [berlin](location)?
-    - how is the weather?
-    - how's the weather ?
-    - how's the weather in [berlin](location)
-    - how's the weather?
-    - how's weather
-    - hows the waether
-    - hows the weather in bot world
-    - hows the weather today in [berlin](location)?
-    - is it hot ?
-    - is it hot outside ?
-    - is it sunny
-    - is the sun out where you are?
-    - is the sun out where zou are?
-    - it is cold
-    - temperature?
-    - the weather today
-    - weatger
-    - weather
-    - weather?
-    - well, if you wish: what about the weather
-    - what about the weather in [Lüneburg](location)
-    - what is the temperature
-    - what is the wather
-    - what is the weatehr
-    - what is the weather
-    - what is the weather in [Berlin](location)
-    - what is the weather in [zurich](location)?
-    - what is the weather like where you are?
-    - what is the weather like?
-    - what is the whether today
-    - what the wheather like?
-    - what"s the weather
-    - what's the weather
-    - what's the weather like
-    - what's the weather like in [LA](location)
-    - what's the weather like where you are?
-    - what's the weather like?
-    - what's the weather today
-    - what's the weather today?
-    - whats the temperature
-    - whats the temperature in [delhi](location)?
-    - whats the weather in [berlin](location)?
-    - whats the weather like tomorrow?
-    - wheather at you location?
-    - wheather be like at your place?
+    - Есть ли какие-либо метеорологические изменения, о которых мне нужно знать?
+    - Нас ждет жара?
+    - Прекрасный день, правда?
+    - Могу я спросить кое-что о погоде?
+    - Можно ли ожидать гроз?
+    - У тебя хорошая погода?
+    - Какая сегодня погода?
+    - Как погода?
+    - Какая сегодня погода
+    - Это жарко или холодно?
+    - Там сегодня влажно?
+    - На улице довольно свежо?
+    - Идет дождь
+    - Идет дождь?
+    - Похоже, прекрасный день, а?
+    - Хороший сегодня выходной?
+    - Погода?
+    - Какая сегодня температура?
+    - Какая у вас погода?
+    - Какая погода на завтра?
+    - Какая погода в Нью-Йорке?
+    - Как там там?
+    - Какой прогноз погоды?
+    - Какая там погода?
+    - Какая погода там, где я сейчас?
+    - Какая там погода?
+    - Мне сегодня понадобится плащ?
+    - Небо сегодня будет ясным?
+    - Будем сегодня слепить снеговика?
+    - отлично - в [Берлине](location) жарко?
+    - как погода
+    - как погода ?
+    - Какая погода в [берлине](location)?
+    - как погода?
+    - как погода ?
+    - как погода в [берлине](location)
+    - как погода?
+    - как погода
+    - как там вафель
+    - как погода в мире ботов
+    - Какая сегодня погода в [берлине](location)?
+    - Горячо ?
+    - на улице жарко?
+    - солнечно
+    - солнце там, где ты?
+    - солнце там, где дзо?
+    - холодно
+    - температура?
+    - погода сегодня
+    - Weatger
+    - Погода
+    - Погода?
+    - ну если хочешь: а как с погодой
+    - как насчет погоды в [Люнебург](location)
+    - какая температура
+    - какая вода
+    - какая погода
+    - какая погода
+    - какая погода в [Берлине](location)
+    - какая погода в [цюрихе](location)?
+    - какая погода там, где вы находитесь?
+    - какая погода?
+    - что ли сегодня
+    - какая погода?
+    - какая погода
+    - какая погода
+    - какая там погода
+    - какая погода в [Лос-Анджелесе](location)
+    - какая погода там, где вы находитесь?
+    - какая там погода?
+    - какая сегодня погода
+    - какая сегодня погода?
+    - Какая температура
+    - Какая температура в [Дели](location)?
+    - Какая погода в [берлине](location)?
+    - какая погода на завтра?
+    - Погода у вас?
+    - А как у тебя дома?
 - intent: chitchat/ask_whatismyname
   examples: |
-    - Can you tell me my name?
-    - Can you tell me what I am called?
-    - Do I have a name?
-    - Do I have a name? What is it?
-    - Do you know my name?
-    - Do you know what my name is?
-    - Explain my name to me.
-    - I have a name, what is it?
-    - I'd like to know my name
-    - I'd like to know what my name is
-    - Inform me what my name is
-    - May i know my name?
-    - Please let me know what my name is
-    - Say my name.
-    - Tell me my name
-    - Tell me my name.
-    - What am I called?
-    - What could be my name?
-    - What did my parents name me?
-    - What do I call myself?
-    - What do my colleagues call me?
-    - What do people call me?
-    - What does everyone call me?
-    - What else do people call me?
-    - What exactly is my name?
-    - What is my first name?
-    - What is my full name?
-    - What is my name?
-    - What is the name I was given?
-    - What name do I go by?
-    - What name should I recognize for myself?
-    - What was I named?
-    - What would be the name on my tombstone?
-    - can you tell me my name?
-    - what is my name
-    - what is my name?
-    - what's my name?
-- intent: chitchat/ask_whatisrasa
+    - Можете назвать мое имя?
+    - Вы можете мне сказать, как меня зовут?
+    - У меня есть имя?
+    - У меня есть имя? Что это?
+    - Ты знаешь мое имя?
+    - Ты знаешь, как меня зовут?
+    - Объясни мне мое имя.
+    - У меня есть имя, что это?
+    - Я хочу знать свое имя
+    - Я хотел бы знать, как меня зовут
+    - Сообщи мне, как меня зовут
+    - Могу я узнать свое имя?
+    - Пожалуйста, дайте мне знать, как меня зовут
+    - Скажи мое имя.
+    - Скажи мне мое имя
+    - Как меня назвали родители?
+    - Как я себя называю?
+    - Как меня называют коллеги?
+    - Как меня зовут?
+    - Как меня все зовут?
+    - А как еще меня зовут?
+    - Какое мое полное имя?
+    - Как меня зовут?
+    - Какое имя мне дали?
+    - Какое имя я должен узнать для себя?
+    - Как меня звали?
+    - Какое имя будет на моем надгробии?
+    - ты можешь сказать мне мое имя?
+    - Какое мое имя?
+- intent: chitchat/ask_whatisaide
   examples: |
-    - Can you brief me about rasa
-    - Can you tell me more about rasa?
-    - Can you tell me what Rasa does?
-    - Could you tell me more about Rasa?
-    - Give me more information about Rasa
-    - How does Rasa work?
-    - I want to know about rsa
-    - I want to know what rasa actually does that isn't clear to me yet
-    - I want to learn what rasa does
-    - I want to learn what rasa is
-    - I would like to know about rasa
-    - I would like to know more about your product
-    - OK can u brief me Abt rasa
-    - RASA?
-    - Rasa Is?
-    - WHAT IS IT
-    - WHAT IS RASA
-    - What Is rasa?
-    - What can rasa do?
-    - What do you do as a company?
-    - What do you do at Rasa?
-    - What does Rasa build?
-    - What does Rasa do?
-    - What does Rasa make?
-    - What does rasa do exactly?
-    - What exactly is Rasa?
-    - What is Rasa?
-    - What is rasa doing exactly?
-    - What is rasa?
-    - What is the RASA Stack?
-    - What's rasa?
-    - can you explain rasa?
-    - can you pls explain what rasa does
-    - could you tell me more about rasa
-    - explain me what rasa does
-    - explain me what rasa is
-    - how does RASA work?
-    - how does rasa work
-    - how does rasa work?
-    - how rasa works ?
-    - how works rasa
-    - i dont get what rasa is
-    - i havent understood yet what rasa actually is
-    - i want to about rasa
-    - i want to know about rasa
-    - i want to know what rasa does
-    - i want to learn something about rasa
-    - so how does it all work?
-    - sorry tell me about rasa
-    - tell me about rasa
-    - tell me bout rasa
-    - tell me more about rasa
-    - tell me more about your company
-    - what are the componensts of RASA
-    - what can I do with Rasa?
-    - what can i do with rasa
-    - what do you guys do at rasa
-    - what does rasa do
-    - what does rasa do ?
-    - what does rasa do?
-    - what does rasa mean
-    - what is rasa
-    - what is rasa?
-    - what is in rasa
-    - what is it for?
-    - what is rasa
-    - what is rasa actually
-    - what is rasa?
-    - whats rasa
-    - yeah go on explaining what rasa is
-    - RASA IS SOFTWARE?
-    - rasa os
-    - what is Rasa
+    - Не могли бы вы рассказать мне о aide?
+    - Не могли бы вы рассказать мне больше о aide?
+    - Вы можете мне сказать, чем занимается aide?
+    - Не могли бы вы рассказать мне больше о aide?
+    - Расскажите подробнее о aide
+    - Как работает aide?
+    - Я хочу знать о aide
+    - Я хочу знать, что на самом деле делает aide, но мне еще не ясно
+    - Я хочу узнать, что делает aide
+    - Я хочу узнать, что такое aide
+    - Хотелось бы узнать о aide
+    - Хотелось бы узнать больше о вашем продукте
+    - Хорошо, можешь проинформировать меня, aide
+    - aide?
+    - ЧТО ЭТО
+    - ЧТО ТАКОЕ aide
+    - Что такое aide?
+    - Что умеет aide?
+    - Чем вы занимаетесь как компания?
+    - Чем ты занимаешься в aide?
+    - Что строит aide?
+    - Что делает aide?
+    - Что делает aide?
+    - Что именно делает aide?
+    - Что такое aide?
+    - Что такое aide?
+    - Что именно делает aide?
+    - Что такое aide?
+    - Что такое стек aide?
+    - Что за aide?
+    - Вы можете объяснить aide?
+    - не могли бы вы объяснить, что делает aide?
+    - не могли бы вы рассказать мне больше о aide
+    - объясни мне, что делает aide
+    - объясни мне, что такое aide
+    - как работает aide
+    - я не понимаю, что такое aide
+    - я еще не понял, что такое aide на самом деле
+    - я хочу о aide
+    - я хочу знать о aide
+    - я хочу знать, что делает aide
+    - я хочу узнать что-нибудь о aide
+    - так как же все это работает?
+    - извини, расскажи мне о aide
+    - расскажи мне о aide
+    - расскажи мне о aide
+    - расскажи мне больше о aide
+    - расскажи подробнее о своей компании
+    - что входит в состав aide
+    - что я могу сделать с aide?
+    - что вы, ребята, делаете в aide
+    - что делает aide
+    - что делает aide?
+    - что делает aide?
+    - что значит aide
+    - что такое aide?
+    - что в aide
+    - для чего это?
+    - что такое aide на самом деле
+    - а что aide
+    - да, продолжай объяснять, что такое aide
+    - AIDE ПРОГРАММНОЕ ОБЕСПЕЧЕНИЕ?
+    - что такое aide
 - intent: chitchat/ask_whatspossible
   examples: |
-    - Can you explain me in one sentence what you are doing?
-    - Can you help me?
-    - Could you please show me what you can
-    - Great, is there anything else you can do, bot?
-    - How can you help me
-    - How you help me?
-    - I need help
-    - I need some help
-    - What are my options
-    - What are you able to do?
-    - What can I ask you?
-    - What can I do?
-    - What can you demo
-    - What can you do
-    - What can you do for me?
-    - What can you do?
-    - What can you tell me?
-    - What do you do
-    - anything els
-    - are there any other options?
-    - can I ask you anything else?
-    - can you do anything else?
-    - can you help me
-    - can you help me?
-    - come back
-    - cool! can I do something else here?
-    - hello what can you do for me
-    - help
-    - help me
-    - help please
-    - help pls
-    - help?
-    - hep me
-    - hi. Sara what do you do?
-    - hm that doesnt quite help me is there anything else you can do?
-    - how can i use you
-    - how can you help me
-    - how can you help me?
-    - how can you help?
-    - how does this work?
-    - how u can help me
-    - how you help me
-    - i asked you if you can do anything else
-    - i don't know what i want
-    - i need help
-    - more info
-    - now what?
-    - options
-    - show me the menu
-    - show me what's possible
-    - so now what
-    - so what can you do
-    - so what can you do?
-    - so what can you help me with?
-    - so what next?
-    - talk to me
-    - talk to me!
-    - tell me something you can do
-    - tell me what's your skill
-    - um what now
-    - what are all the things you understand?
-    - what are the options?
-    - what are you ding
-    - what are you doing
-    - what are you good at?
-    - what can I ask ?
-    - what can I ask you?
-    - what can I do here
-    - what can I do with Sara?
-    - what can I do with this bot
-    - what can i do here
-    - what can i do now
-    - what can u do
-    - what can we talk about?
-    - what can you answer
-    - what can you do
-    - what can you do for me
-    - what can you do, sara?
-    - what can you do?
-    - what can you offer me?
-    - what can you tell me
-    - what can you?
-    - what cn u do for me ?
-    - what do you do
-    - what do you do?
-    - what do you know except this?
-    - what else can I do here?
-    - what else can i do
-    - what else can i do?
-    - what else can you do?
-    - what else can you help with?
-    - what i have to do
-    - what is this bot for
-    - what u can do
-    - what u can do?
-    - what you can do
-    - what you can do for me?
-    - what you can do?
-    - what you do
-    - what you doing?
-    - what you talk about?
-    - you can hep me
-    - what can you teache me?
-    - Can rasa do calculations?
-    - what you can
+    - Вы можете одним предложением объяснить мне, чем занимаетесь?
+    - Вы можете помочь мне?
+    - Не могли бы вы показать мне, что вы можете
+    - Отлично, ты можешь еще что-нибудь сделать, бот?
+    - Как вы можете мне помочь
+    - Как вы мне помогаете?
+    - Мне нужна помощь
+    - Мне нужна помощь
+    - Какие у меня варианты
+    - Что ты умеешь?
+    - Что я могу спросить?
+    - Что я могу делать?
+    - Что можно сделай демо
+    - Что ты можешь сделать
+    - Что ты можешь для меня сделать?
+    - Что ты можешь сделать?
+    - Что ты мне скажешь?
+    - Что вы делаете
+    - что-нибудь еще
+    - Есть ли другие варианты?
+    - Могу я спросить еще о чем-нибудь?
+    - ты можешь что-нибудь еще?
+    - можешь мне помочь
+    - можешь мне помочь?
+    - Вернись
+    - здорово! можно здесь что-нибудь еще?
+    - привет, что ты можешь для меня сделать
+    - помощь
+    - Помоги мне
+    - Помоги пожалуйста
+    - помогите пожалуйста
+    - помощь?
+    - помогите мне
+    - Привет. Сара, что ты делаешь?
+    - хм, это мне не совсем помогает, ты можешь еще что-нибудь сделать?
+    - как я могу тебя использовать
+    - как вы можете мне помочь
+    - как вы можете мне помочь?
+    - чем ты можешь помочь?
+    - Как это работает?
+    - как ты можешь мне помочь
+    - как вы мне помогаете
+    - я спросил тебя, можешь ли ты сделать что-нибудь еще
+    - я не знаю чего хочу
+    - Мне нужна помощь
+    - больше информации
+    - что теперь?
+    - параметры
+    - покажи мне меню
+    - покажи мне, что возможно
+    - Ну что теперь
+    - Так что ты можешь сделать
+    - Так что ты можешь сделать?
+    - так чем ты можешь мне помочь?
+    - так, что дальше?
+    - Поговори со мной
+    - Поговори со мной!
+    - скажи мне что-нибудь, что ты можешь сделать
+    - скажи мне, в чем ты умеешь
+    - ммм, что теперь
+    - что вы понимаете?
+    - какие есть варианты?
+    - что ты делаешь
+    - что ты делаешь
+    - в чем ты хорош?
+    - что я могу спросить?
+    - что я могу здесь сделать
+    - что я могу сделать с Сарой?
+    - что мне делать с этим ботом
+    - что я могу здесь сделать
+    - что я могу сделать сейчас
+    - что ты можешь сделать
+    - о чем можно говорить?
+    - что ты можешь ответить
+    - что ты можешь сделать
+    - что ты можешь для меня сделать
+    - что ты умеешь, Сара?
+    - что ты можешь сделать?
+    - что ты можешь мне предложить?
+    - что ты мне скажешь
+    - что вы можете?
+    - Что ты можешь для меня сделать?
+    - Что вы делаете
+    - Что вы делаете?
+    - что ты знаешь кроме этого?
+    - что еще я могу здесь сделать?
+    - Что еще я могу сделать
+    - Что еще я могу сделать?
+    - что еще ты можешь сделать?
+    - чем еще можно помочь?
+    - что я должен сделать
+    - для чего нужен этот бот
+    - что ты можешь сделать
+    - что ты умеешь делать?
+    - что ты можешь сделать
+    - что ты можешь для меня сделать?
+    - что ты можешь сделать?
+    - что ты делаешь
+    - что ты делаешь?
+    - о чем вы говорите?
+    - ты можешь помочь мне
+    - чему вы можете меня научить?
+    - Может раса делать расчеты?
+    - что ты можешь
 - intent: chitchat/ask_wherefrom
   examples: |
-    - Are you from around here?
-    - Around where are you from?
-    - Do you know where you come from?
-    - From where did you come?
-    - So where are you from
-    - What area are you from?
-    - What citizenship do you lay claim to?
-    - What city are you in?
-    - What city do you claim to for your birth?
-    - What city were you born in?
-    - What country are you from?
-    - What country were you born in?
-    - What is your birthplace?
-    - What is your heritage?
-    - What is your origin?
-    - What is your original location?
-    - What is your root?
-    - What location are you from?
-    - What state were you born in?
-    - What's the name of the place you came from?
-    - Where are you located?
-    - Where are you?
-    - Where are your origins?
-    - Where are your roots?
-    - Where did you come from?
-    - Where did you grow up?
-    - Where did you originate?
-    - Where do you come from?
-    - Where do you consider home?
-    - Where do you live?
-    - Where from?
-    - Where might you be from?
-    - Where were you at before you were here?
-    - Where were you born?
-    - You live around here?
-    - You were conceived in what location?
-    - are you from around here?
-    - what country are you from?
-    - where are from
-    - where are you from
-    - where are you from?
-    - where are your parents from?
-    - where did you come from?
-    - where did you grow up?
-    - where did you spend your youth?
-    - where do you come from?
-    - where do you live
-    - where do you live?
-    - where's your home town?
+    - Вы откуда-то отсюда?
+    - Где ты?
+    - Ты знаешь, откуда ты?
+    - Откуда вы пришли?
+    - Итак, откуда ты
+    - Из какой ты области?
+    - На какое гражданство претендуете?
+    - Вы в каком городе?
+    - В какой город вы претендуете своим рождением?
+    - В каком городе ты родился?
+    - Из какой ты страны?
+    - В какой стране вы родились?
+    - А где вы родились?
+    - Какое у вас наследие?
+    - Каково ваше происхождение?
+    - Где вы изначально находитесь?
+    - Какой у вас корень?
+    - Ты откуда?
+    - В каком штате вы родились?
+    - Как называется место, откуда вы приехали?
+    - Где вы находитесь?
+    - Где ты?
+    - Откуда ты?
+    - Где твои корни?
+    - Откуда ты?
+    - Где ты вырос?
+    - Откуда вы родом?
+    - Откуда ты?
+    - Где ты считаешь дом?
+    - Где вы живете?
+    - Откуда?
+    - Откуда ты мог быть?
+    - Где вы были до того, как оказались здесь?
+    - Где вы родились?
+    - Вы здесь живете?
+    - В каком месте вы зародились?
+    - вы откуда-то отсюда?
+    - из какой ты страны?
+    - откуда
+    - Откуда ты
+    - откуда твои родители?
+    - откуда ты?
+    - Где ты вырос?
+    - Где прошла юность?
+    - откуда ты?
+    - Где вы живете
+    - Где вы живете?
+    - где твой родной город?
 - intent: chitchat/ask_whoami
   examples: |
-    - Can you tell me who I am?
-    - Can you tell me who am I?
-    - Do you know who I am?
-    - Do you know who am I?
-    - How can I determine who I am?
-    - How can I determine who am I?
-    - How do I discover who I am?
-    - How do I discover who am I?
-    - How do I identify myself?
-    - Okay who am I?
-    - Shall i know who am i?
-    - Tell me who I am.
-    - Tell me who I am?
-    - Tell me who am I?
-    - WHo am I
-    - Who am I?
-    - Who could I be?
-    - can you tell me what I am?
-    - can you tell me what my identity is?
-    - can you tell me who I am?
-    - tell me what my identity is?
-    - tell me who I am?
-    - what's my identity?
-    - who am i
-    - who are I ?
-    - who may i ?
+    - Ты можешь сказать мне, кто я?
+    - Ты можешь сказать мне, кто я?
+    - Ты знаешь кто я?
+    - Ты знаешь, кто я?
+    - Как я могу определить, кто я?
+    - Как мне узнать, кто я?
+    - Как мне идентифицировать себя?
+    - Хорошо, кто я?
+    - Я узнаю, кто я?
+    - Скажи мне, кто я.
+    - Скажи, кто я?
+    - Кто я
+    - Кто я?
+    - Кем бы я мог быть?
+    - ты можешь сказать мне, кто я?
+    - Вы можете мне сказать, какова моя личность?
+    - ты можешь сказать мне, кто я?
+    - скажи мне, кто я?
+    - скажи, кто я?
+    - какова моя личность?
+    - кто я
+    - кто я?
+    - кто я могу? 
 - intent: chitchat/ask_whoisit
   examples: |
-    - who are you
-    - who the hell are you?
-    - who are you?
-    - who are u
-    - who r u
-    - who is this
-    - tell me who you are
-    - what is your name
-    - hi what is your name?
-    - what is your name?
-    - what are you?
-    - what is ur name
-    - what I can call you
-    - your name?
-    - tell me your name
-    - what's your name
-    - what is you name
-    - what is you name and where are you from
+    - кто ты
+    - ты кто, черт возьми?
+    - кто ты?
+    - кто ты
+    - кто это
+    - скажи мне кто ты
+    - как тебя зовут
+    - Привет как тебя зовут?
+    - как тебя зовут?
+    - что ты?
+    - как тебя зовут
+    - как я могу тебя называть
+    - твое имя?
+    - скажите мне ваше имя
+    - какое у тебя имя
+    - как вас зовут
+    - как тебя зовут и откуда ты 

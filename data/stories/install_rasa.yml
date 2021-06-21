@@ -60,7 +60,7 @@ stories:
     - install_type: local
   - slot_was_set:
     - install_type: local
-  - action: utter_rasa_x_local_installation
+  - action: utter_aide_local_installation
 
 - story: Server Rasa X installation
   steps:
@@ -80,7 +80,7 @@ stories:
     - install_type: local
   - slot_was_set:
     - install_type: local
-  - action: utter_rasa_x_local_installation
+  - action: utter_aide_local_installation
 
 - story: Server Rasa X installation
   steps:
@@ -105,7 +105,7 @@ stories:
     - install_type: local
   - slot_was_set:
     - install_type: local
-  - action: utter_rasa_x_local_installation
+  - action: utter_aide_local_installation
 
 
 - story: Installation went well

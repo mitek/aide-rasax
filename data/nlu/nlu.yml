@@ -1,53 +1,5 @@
 version: "2.0"
 nlu:
-- intent: bot_challenge
-  examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
-    - you are a bot right
-    - aren't you a bot
-    - Are you a bot?
-    - are you a BOT
-    - are you a chatbot
-    - are you a rasa bot?
-    - are you a real bot?
-    - are you a robot
-    - are you ai
-    - are you artificial
-    - are you artificial intelligence
-    - are you bot
-    - are you bot?
-    - are you rasa bot?
-    - are you real
-    - are you real lol
-    - are you really a bot
-    - are you robot
-    - are you sure that you're a bot?
-    - bot?
-    - cuz you are a bot
-    - i guess you are a chatbot
-    - oh are you chatbot?
-    - tell me, are you a bot?
-    - what are you, a bot?
-    - you are a robot
-    - you are ai
-    - you are chatbot
-    - you're a bot
-    - you robo
-    - real bot then?
-    - are you really a bbot?
-    - ты бот?
-    - ты робот?
-    - ты реально робот?
-    - ты бездушная тварь?
-    - ты ИИ
-    - потому что ты бот
-    - тупая программа
-    - наш банк
-    - стоматологическая клиника
-    - наша клиника
 - intent: password_reset
   examples: |
     - смена пароля
@@ -79,6 +31,28 @@ nlu:
     - куда я записал пароль?
     - я не помню в какой компании работаю
     - а какая это компания?
+    - мне нужно сбросить пароль
+    - нужна помощь в сбросе пароля
+    - Я не могу сбросить свой пароль
+    - нужна помощь с моим паролем
+    - возникли проблемы со сбросом моего пароля
+    - долбанный пароль не работает
+    - сбросить пароль
+    - сброс пароля
+    - забыл пароль и не могу его сбросить
+    - Помогите сбросить пароль, пожалуйста
+    - У меня так много проблем со сбросом пароля
+    - Можете ли вы сбросить мой пароль?
+    - Мой пароль не работает, что мне делать
+    - Как мне изменить пароль?
+    - сброс пароля?
+    - снова забыл пароль, что теперь
+    - пароль помочь исправить
+    - покажи мне, как снова установить пароль
+    - подскажите, как сменить пароль
+    - Измени пароль
+    - Я забыл свой пароль, что мне делать
+    - забыл пароль, помогите сбросить его, пожалуйста     
 - intent: open_incident
   examples: |
     - надо открыть инцидент
@@ -119,15 +93,13 @@ nlu:
     - тему обговорить
     - есть темка для разговора
     - тема есть
-    - open an incident
-    - open an incedent
-    - i want to open an incident
-    - i wanna open a incident
-    - I want to open a ticket
-    - can I open a ticket
-    - pls help me open tix support
-    - ticket support incident open now can you do that for me
-    - открыть инцицент
+    - открыть инцедент
+    - я хочу открыть инцидент
+    - я хочу открыть инцидент
+    - Я хочу открыть тикет
+    - могу ли я открыть билет
+    - пожалуйста, помогите мне открыть службу поддержки 
+    - инцидент поддержки билетов открыт сейчас, вы можете сделать это для меня     - открыть инцицент
 - intent: help
   examples: |
     - I need help
@@ -183,28 +155,28 @@ nlu:
     - ааааа
 - intent: problem_email
   examples: |
-    - my outlook application won't open
-    - I'm having issues with outlook.
-    - issues with outlook
-    - outlook application will not open
-    - there's a problem with my email
-    - something is broken with outlook
-    - I can't log in to my email
-    - can't log in to outlook
-    - my email won't let me log in
-    - i have a problem with my email
-    - can't get to slack
-    - i cant open my email
-    - i can't able to login
-    - I'm having trouble logging into my email
-    - can you help me with me with my email please
-    - what can you do about my email it's not working
-    - can you fix outlook for me I don't know what to do
-    - something isn't right with my e-mail
-    - can you help me with my e-mail account
-    - my internet mail isn't working
-    - outlook is showing me a weird message
-    - email isn't loading can you help
+    - мое приложение Outlook не открывается
+    - У меня проблемы с Outlook.
+    - проблемы с Outlook
+    - приложение Outlook не открывается
+    - проблема с моей электронной почтой
+    - что-то сломано с Outlook
+    - Я не могу войти в свою электронную почту
+    - не могу войти в Outlook
+    - моя электронная почта не позволяет мне войти в систему
+    - у меня проблема с электронной почтой
+    - не могу войти в Slack
+    - я не могу открыть свою электронную почту
+    - я не могу войти
+    - Мне не удается войти в свою электронную почту
+    - не могли бы вы помочь мне с моей электронной почтой, пожалуйста
+    - что вы можете сделать с моей электронной почтой, она не работает
+    - можешь поправить Outlook для меня я не знаю что делать
+    - что-то не так с моей электронной почтой
+    - вы можете помочь мне с моей учетной записью электронной почты
+    - моя интернет-почта не работает
+    - Outlook показывает мне странное сообщение
+    - электронная почта не загружается, вы можете помочь 
     - у меня нет емейла
     - у меня не работает почта
     - почтовый адрес не помню
@@ -304,525 +276,270 @@ nlu:
     - живность нужна
     - ты скучный, надо человека
     - а живой есть кто
-    - Can I speak to anyone who can really help me?
-    - Could I talk to [Tyrone King](name)?
-    - I don't wanna talk to a bot
-    - I dont like to talk to a machine
-    - I want to talk to a human
-    - I want to talk to the founders
-    - are there also humans working for your company?
-    - can I speak to a person?
-    - can i please speak to a human?
-    - can you forward me to your team
-    - can you please connect me to a real rasa employee?
-    - can you put me in touch with a human?
-    - do you have human support ?
-    - gimme a proper human
-    - give me a human
-    - give me a human now
-    - human handoff
-    - i dont wanna talk to a bot
-    - i want to speak to a [manager](job_function)
-    - i want to speak to a real person
-    - i want to speak to customer service
-    - i want to talk to a human
-    - i want to talk to a person
-    - i want to talk to human
-    - i want to talk to someone at rasa
-    - i want to talk to someone else
-    - i want to talk to someone who is smarter than you
-    - i would like to speak to a person
-    - i'd rather speak with a real rasa employee
-    - id like to talk to a real rasa employee
-    - let me speak with a real person please
-    - let me talk to a human
-    - let me talk to a real person
-    - please give me a human
-    - service agent
-    - someone from customer care
-    - speak to a real person
-    - talking to a bot is stupid
-    - that's annoying I'd like to speak to someone real
-    - thats not helping, can i talk to human?
-    - wrong i want to speak to a human
-    - can i speak to human
-    - can i speak to your human
-    - i want to chat with human
-    - How do I talk to a human
-    - talk with a human
-    - Can i talk to a human instead
-    - nevermind.... you're not human ... I need to talk to a live person
-    - Can you get a human to assist me?
-    - Can i talk to a human?
-    - Can I talk to a human
-    - Can I speak to a human?
-    - can i speak to a human
-    - no, i want to talk to human
-    - can you hand a conversation over to a human?
-    - can I talk to human?
-    - can I talk to human
-    - talk to human
-    - i want human :(
-    - can i talk to human
-    - i want to talk to a human \
-    - i want to speak to human
-    - can i talk to a real person?
-    - connect me to a real person
-    - I need a real person
-    - can i took with a real person
-    - let me speak to a real person
-    - let me speak to a real person please
-    - i want to talk to a real person
+    - Могу я поговорить с кем-нибудь, кто действительно может мне помочь?
+    - Могу я поговорить с [Тайроном Кингом] (имя)?
+    - Я не хочу разговаривать с ботом
+    - Я не люблю разговаривать с машиной
+    - Я хочу поговорить с человеком
+    - Я хочу поговорить с учредителями
+    - В вашей компании тоже работают люди?
+    - могу я поговорить с человеком?
+    - Могу я поговорить с человеком?
+    - можешь переслать меня в свою команду?
+    - Не могли бы вы связать меня с настоящим сотрудником rasa?
+    - вы можете связать меня с человеком?
+    - есть ли у вас человеческая поддержка?
+    - дай мне настоящего человека
+    - дай мне человека
+    - дай мне человека сейчас
+    - передача человека
+    - я не хочу разговаривать с ботом
+    - я хочу поговорить с [менеджером](job_function)
+    - я хочу поговорить с реальным человеком
+    - я хочу поговорить со службой поддержки клиентов
+    - я хочу поговорить с человеком
+    - я хочу поговорить с человеком
+    - я хочу поговорить с человеком
+    - я хочу поговорить с кем-нибудь в aide
+    - я хочу поговорить с кем-нибудь еще
+    - я хочу поговорить с кем-то, кто умнее тебя
+    - я хотел бы поговорить с человеком
+    - я бы лучше поговорил с настоящим сотрудником aide
+    - Мне нравится разговаривать с настоящим сотрудником aide
+    - позвольте мне поговорить с реальным человеком, пожалуйста
+    - позволь мне поговорить с человеком
+    - позвольте мне поговорить с реальным человеком
+    - пожалуйста, дайте мне человека
+    - сервисный агент
+    - кто-то из отдела обслуживания клиентов
+    - поговорить с реальным человеком
+    - разговаривать с ботом глупо
+    - это раздражает, я бы хотел поговорить с кем-нибудь настоящим
+    - это не помогает, я могу поговорить с человеком?
+    - неправильно я хочу поговорить с человеком
+    - могу я поговорить с человеком
+    - могу я поговорить с твоим человеком
+    - я хочу поговорить с человеком
+    - Как мне поговорить с человеком
+    - поговорить с человеком
+    - Могу я вместо этого поговорить с человеком?
+    - да ладно .... ты не человек ... Мне нужно поговорить с живым человеком
+    - Можете ли вы попросить человека помочь мне?
+    - Могу я поговорить с человеком?
+    - Могу я поговорить с человеком
+    - Могу я поговорить с человеком?
+    - могу я поговорить с человеком
+    - нет, я хочу поговорить с человеком
+    - Можете ли вы передать разговор человеку?
+    - могу я поговорить с человеком?
+    - могу я поговорить с человеком
+    - поговорить с человеком
+    - я хочу человека :(
+    - могу я поговорить с человеком
+    - я хочу поговорить с человеком \
+    - я хочу поговорить с человеком
+    - могу я поговорить с реальным человеком?
+    - свяжи меня с реальным человеком
+    - Мне нужен настоящий человек
+    - могу ли я взять с собой реального человека
+    - позвольте мне поговорить с реальным человеком
+    - позвольте мне поговорить с реальным человеком, пожалуйста
+    - я хочу поговорить с реальным человеком
 - intent: broken
   examples: |
-    - it's not working
-    - I think it's broken
-    - [Rasa playgrounds](product) isn't working for me
-    - [Playground](product) is broken
-    - [rasa](product) is not working
-    - help me can you fix it
-    - it's broken
-    - it's not training
-    - the [playground](product) is not training
-    - [Rasa X](product) isn't working for me
-    - [Rasa Open Source](product) is not training at all
-    - For some reason, [Rasa X](product) never loads and I don't know why
-    - help me please it's not working
-    - it won't train
-    - the bot won't train
-- intent: why_rasa
+    - это не работает
+    - Думаю, всё сломано
+    - [aide](product) мне не подходят
+    - [aide](product) не работает
+    - помогите мне, вы можете исправить это
+    - оно сломано
+    - это не тренировка
+    - [aide](product) мне не подходит
+    - [aide](product) вообще не обучающий
+    - По какой-то причине [aide](product) не загружается, и я не знаю, почему
+    - Помогите, пожалуйста, не работает
+    - не тренируется
+    - бот не тренируется 
+- intent: why_aide
   examples: |
-    - why rasa
-    - why should I use rasa?
-    - why should I switch to rasa?
-    - what's so great about using Rasa?
-    - what sets rasa apart?
-    - give me a reason to use Rasa
-    - Why switch to Rasa?
-    - why would you opt for rasa
-    - why use rasa
-    - why should I switch
-    - I meant why you over competitors ?
-    - why to use RASA
-    - why is Rasa useful
-    - why is rasa better?
-    - why RASA?
-    - why should i choose rasa
-    - why is rasa so good?
-    - why is rasa good
-    - why do I need rasa
-    - why should I use Rasa
-    - why only rasa
-    - why to use rasa
-    - why should I migrate to rasa?
-    - why migrate?
-    - why switch?
-    - why not use ibm watson
-    - why people go for Rasa chatbot?
-    - why to use rasa over other available platform
-    - i want to know more about nlu and why is it better than watson or luis
-    - why is rasa a good nlp libarary
-    - and why i should not use Tenserflow?
-    - why would i use your product
-    - why is rasa interesting
-    - Why rasa?
-    - Why choose rasa?
-- intent: ask_how_contribute
-  examples: |
-    - Can I assist?
-    - Can I help improve your code at all?
-    - How can I add code to Rasa
-    - How can I assist the cause?
-    - How can I be a contributor?
-    - How can I be helpful?
-    - How can I be more involved?
-    - How can I contribute to your code
-    - How can I help with the code?
-    - How can I help you?
-    - How can be of assistance?
-    - How can one contribute to this cause?
-    - How can one contribute?
-    - How does one go about making their contribution?
-    - I want to help improve Rasa
-    - I want to help the cause.
-    - I want to make Rasa better
-    - I want to offer assistance
-    - I want to put some of my effort in.
-    - I would like to contribute.
-    - I'm ready to contribute.
-    - I'm ready to help.
-    - In what manner can one contribute?
-    - In what way can I contribute.
-    - In what ways can I help?
-    - Is there a way I can assist?
-    - Is there a way to contribute?
-    - Is there any way I can contribute?
-    - Is there some way I can help improve your code?
-    - Is there some way I can help?
-    - Tell me how I can contribute
-    - There must be a way I can put forth my ideas to the situation.
-    - What can I do to help?
-    - What could I do to be helpful?
-    - What could I do to contribute?
-    - What should I do fo this project?
-    - What should I work on?
-    - What ways are there to contribute?
-    - What ways can one make a contribution?
-    - are there ways I can contribute?
-    - how can I contribute?
-    - how can I help improve your code
-    - how can I help improve your code?
-    - how can I help?
-    - how can I improve Rasa
-    - how can i contribute to Rasa
-    - how can i contribute to it
-    - how contribute to Rasa
-    - how do I contribute?
-    - how help Rasa
-    - how to improve Rasa
-    - in what ways can I help out?
-    - what can I do?
-- intent: ask_question_in_forum
-  examples: |
-    - Can we stop at the forum so I can ask a question
-    - Help me to find the forum.
-    - Hey I want to ask a question in the forum
-    - How do I ask a question on the forum?
-    - How do I create a thread on the forum?
-    - How do I find the forum?
-    - How do I post my question on the forum?
-    - How do I post on the forum?
-    - How do i write a forum question?
-    - How to I post a question on the forum?
-    - I have an inquiry for the forum
-    - I have something to ask about at the forum.
-    - I need someone in the forum to help me
-    - I need to ask a question in the forum.
-    - I need to ask something of the forum
-    - I need to ask the forum something
-    - I need to get information from the forum
-    - I want to ask a question in the forum
-    - I want to ask the forum for an answer
-    - I want to get help in the forum
-    - I want to make a forum post.
-    - I wonder if the forum can answer my question.
-    - Is the forum the right place to ask questions?
-    - Lets go to the forum so I can ask my question.
-    - Take me to the forum help section.
-    - Where can I ask a question on the forum?
-    - Where can I find the forum
-    - Where can I post on the forum?
-    - Where do I ask questions?
-    - Where do I post my question?
-    - Where do I post questions in the forum?
-    - Where is the forum
-    - Where should I ask my question on the forum?
-    - Will the forum take my question?
-    - can someone show me the forum?
-    - how can I get help in the forum
-    - how can I leave a query in the forum?
-    - how can I post a question in the forum?
-    - how do I access the forum?
-    - i need information from posters in the forum
-    - ok send me to the forum
-    - to the forum
-- intent: ask_which_events
-  examples: |
-    - Any other event like rasa meetup in future?
-    - Does Rasa host any events?
-    - Can you tell me what kinds of events you have?
-    - Could you please list the kinds of events that you have?
-    - Do you have a user group
-    - Give me the events you have.
-    - I want to meet Rasa
-    - Is there a Rasa meetup
-    - Is there a meetup
-    - Is there any Rasa meetups?
-    - Tell me all of the events you have.
-    - Tell me the events you have
-    - What are all of the events you have?
-    - What are the events available?
-    - What are the events now?
-    - What are the events that you have?
-    - What do you know about rasa meetups?
-    - What events are scheduled for today?
-    - What events are there?
-    - What is on the calendar for this month?
-    - What kinds of events are happening here?
-    - What kinds of events are on your calendar?
-    - What kinds of events are on your schedule?
-    - What kinds of events are scheduled?
-    - What kinds of events do you host here?
-    - What types of events are planned?
-    - Where can I meet Rasas
-    - Which community events do you have
-    - Which events are available?
-    - Which events do you have?
-    - Which events you got?
-    - You have rasa meetups?
-    - can you explain what the events are?
-    - can you tell all of the events?
-    - does the community have meet ups?
-    - how can I meet eh community?
-    - so what events are there?
-    - so what exactly are these events?
-    - what are the events?
-    - what are the names of all the events?
-    - what events are there going to be?
-    - what events will there be?
-    - what kind of events are there?
-    - what kind of events will be held?
-    - what sort of social events are we throwing?
-    - where can I see a calendar of community events?
-    - What are the events in [Detroit](location)?
-    - When are the events in [Paris](location)?
-    - what are the events in [Berlin](location)?
-    - What are the events in [Switzerland](location)?
-    - When are the events in [paris](location)?
-    - what are the events in [berlin](location)?
-    - What are the events for [Detroit](location)?
-    - When are the events for [Paris](location)?
-    - what are the events for [China](location)?
-    - What are the events for [New York](location)?
-    - When are the events for [paris](location)?
-    - what are the events for [berlin](location)?
-    - Assuming that there is an upcoming event, when is that event?
-    - At what time is the next event scheduled?
-    - At which date the next community event will take place?
-    - By chance do you know the date of next community event?
-    - Do you know the exact date for the next community event?
-    - Do you know when is the next event in [Montreal](location)?
-    - If there is an upcoming event when is it?
-    - Is next community event held in 2019?
-    - Is there a Rasa event in [San Francisco](location)
-    - Is there an event in [Montreal](location)?
-    - Is there any special in next community event?
-    - On what day is the next event scheduled?
-    - Tell me when the next community event is happening;
-    - What and when is the next event?
-    - What even is coming up next and when is it please?
-    - What is the date of the next community event?
-    - What's the next community event
-    - What's the next rasa event
-    - When does the upcoming event occur?
-    - When is it planned the next event in [Montreal](location)?
-    - When is it scheduled the next community event?
-    - When is it that the next event occurs?
-    - When is the next community event?
-    - When is the next event in [Berlin](location)
-    - When is the next event scheduled?
-    - When is the next user group meetup
-    - When will the next event occur in the community?
-    - Where is next community event held?
-    - do you have an event in [Berlin](location)
-    - is there an event in [Montreal](location)
-    - what community events are there?
-    - what date is the next community event?
-    - when is our next group event going to take place?
-    - when is the event within the community gonna happen?
-    - when is the next community event gonna be?
-    - when is the next event?
-    - when is the next group event going to be?
-    - when will our next group event be?
-    - when will the community event take place?
-    - when will the next community event be?
-    - will there be an event in my city?
-    - When is the next event in [california](location)?
-    - What is the next event in [Paris](location)?
-    - When is the next event in [detroit](location)?
-    - What is the next event in [san francisco](location)?
-    - When is the next event for [Detroit](location)?
-    - What is the next event for [Seattle](location)?
-    - When is the next event for [India](location)?
-    - What is the next event for [paris](location)?
-- intent: ask_why_contribute
-  examples: |
-    - What can I bring to help your code
-    - What is the benefit of contributing to your code
-    - Why add to your business?
-    - Why aid your opportunity?
-    - Why be a part of your mission?
-    - Why contribute to Rasa?
-    - Why do I want to help with your code
-    - Why help Rasa's organization?
-    - Why should I add to your code
-    - Why should I contribute
-    - Why should I contribute to Rasa
-    - Why should I contribute to your code?
-    - Why should I devote effort to working on your code
-    - Why should I devote time to your code
-    - Why should I help to improve Rasa
-    - what are the benefits of helping
-    - what do I get if I contribute
-    - what will i get for the contribution?
-    - why help out?
-    - why offer my assistance?
-    - why should I help?
+    - почему помощник
+    - зачем мне использовать помощника?
+    - зачем мне переходить на помощника?
+    - что такого хорошего в использовании помощника?
+    - что отличает помощника?
+    - дайте мне повод использовать помощника
+    - Зачем переходить на помощника?
+    - почему бы вам выбрать помощника
+    - зачем использовать помощника
+    - почему я должен переключаться
+    - Я имел в виду, почему вы над конкурентами?
+    - зачем использовать AIDE
+    - чем полезен помощник
+    - почему помощник лучше?
+    - почему АИДЕ?
+    - почему я должен выбрать помощника
+    - почему помощник такой хороший?
+    - почему помощник хороший
+    - зачем мне помощник
+    - зачем мне использовать помощника
+    - почему только помощник
+    - зачем использовать помощника
+    - зачем мне переходить на помощника?
+    - зачем мигрировать?
+    - зачем переключаться?
+    - почему бы не использовать IBM Watson
+    - почему люди выбирают помощника чат-бота?
+    - зачем использовать помощник вместо другой доступной платформы
+    - я хочу узнать больше о nlu и почему он лучше, чем watson или luis
+    - почему помощник - хорошая библиотека НЛП
+    - а почему мне не следует использовать Tenserflow?
+    - зачем мне использовать ваш продукт
+    - чем интересен помощник
+    - Почему помощник?
+    - Почему выбирают помощника?
 - intent: book_demo
   examples: |
-    - I would like to have a demo scheduled
-    - Is there a live demo of rasa somewhere ?
-    - Can i have a deno
-    - bookin
-    - I want to see a demonstration of rasa enterprise
-    - How can I try out rasa enterprise
+     - Я бы хотел запланировать демонстрацию
+     - Я бы хотел запланировать демо
+     - Есть ли где-нибудь живая демка помощника?
+     - Есть ли где-нибудь живая демка aide?
+     - Можно назначить демо
+     - Я хочу увидеть демонстрацию 
+     - Как мне попробовать помощника? 
 - intent: contact_sales
   examples: |
-    - But I wanted a sales call
-    - Can I have a call tomorrow at 3pm?
-    - Can I have a call?
-    - HOW CAN I BOOK A SALES CALL ?
-    - How can i contact the team ?
-    - I also want to book a sales call
-    - I wanna have a subscription for your product
-    - I wanna talk to your sales guy
-    - I wanna talk to your sales people.
-    - I want a sales call
-    - I want an offer for your platform
-    - I want to book a call
-    - I want to book a call with your sales team
-    - I want to buy the rasa platform
-    - I want to contact sales
-    - I want to contact the sales team
-    - I want to get in touch with your sales guys
-    - I want to learn more about your pricing
-    - I want to speak with sales
-    - I want to talk to sales
-    - I want to talk to someone about your pricing system
-    - I want to talk to your sales guys
-    - I want to talk to your sales people
-    - I want to talk to your sales team
-    - I want to talk with sales about our project
-    - I would like to book a call
-    - I would like to book a sales call
-    - I would like to contact your sales team please
-    - I would like to have a call with sales team
-    - I would like to talk to someone from your sales team
-    - i want to buy the enterprise edition
-    - i would like rasa enterprise
-    - purchase rasa enterprise
-    - buy rasa enterprise
-    - Ok I want to talk to your sales team immediately
-    - Please connect me to someone from sales
-    - Please schedule a sales call
-    - Sales
-    - a call
-    - a sales call with [Rufus Gardner](name) would be nice
-    - are there different packages customers can book?
-    - book
-    - book a call
-    - book a sale call
-    - book a sales
-    - book a sales call
-    - book an appointment
-    - book call
-    - book sales call
-    - booking a sales call
-    - booking a sall
-    - booking sales ca;;
-    - booking sales call
-    - but I want a sales call
-    - call
-    - call sales
-    - call with sales team
-    - can i get a ssales call
-    - can i speak to the sales team
-    - can i talk to a sales representative
-    - can i talk to your disagreeable sales man?
-    - can someone call me please?
-    - can you connect me to sales
-    - connect me to your sales department
-    - connect to sales
-    - connect to the sales team
-    - contact
-    - contact any sales person
-    - contact call with sales
-    - contact sales
-    - contact sales for me
-    - contact to sales
-    - get me the sales team
-    - give me someone who can explain your business model
-    - have a call
-    - have a call with the sales team
-    - hm ok then i want to talk to the sales dude
-    - hmmm sales
-    - how does your pricing work?
-    - how to book a sales call
-    - how to book a sales call>
-    - how to book a sales call?
-    - i choose the call
-    - i choose the call with sales
-    - i need a call from sales
-    - i need the call request
-    - i need to know how i can book support
-    - i need to speak to your sales team
-    - i need to talk to sales
-    - i need your data source
-    - i think I want to talk to your sales folks
-    - i want one platform please
-    - i want a sales call
-    - i want someone to call me
-    - i want ti booking about booking sales
-    - i want to be connected to your sales team
-    - i want to be in touch with sales
-    - i want to book a appointment
-    - i want to book a sales call
-    - i want to bookk a sales call
-    - i want to buy the rasa platform
-    - i want to call
-    - i want to chat to sales
-    - i want to connect to sales
-    - i want to connect to your sales team
-    - i want to connect your sales
-    - i want to contact sales
-    - i want to contact sales now
-    - i want to contact sales support
-    - i want to contact your sales team
-    - i want to have a call with sales
-    - i want to talk to sales
-    - i would like a call with [Mr Hughes](name)
-    - i would like to talk to sales please
-    - i'd like to call [Johnnie Essig](name)
-    - i'd like to talk to a sales person
-    - i'd like to talk to sales
-    - id like a call please
-    - id like to talk to someone who can explain me what i can do with rasa
-    - iwant booking sales
-    - just gimme a call
-    - let me call the sales team
-    - let me contact sales
-    - let me have the call
-    - let me talk sales
-    - let me talk to sales
-    - let me talk to your sales guys
-    - let me talk to your sales people
-    - let me talk to your sales people!
-    - let' contact sales now
-    - lets talk to sales
-    - next the sales contact
-    - obviously talk to your awesome sales team
-    - ok i want to talk to your sales guys
-    - ok sales
-    - ok, well, then a sales call with the fabulous [Theodora Estrada](name)
-    - please can you book call for me
-    - please connect me to sales
-    - request a call
-    - request call
-    - request call with sales team
-    - request sales call
-    - request sales team
-    - sales
-    - sales call
-    - sales contact
-    - sales department
-    - sales pl
-    - sales please
-    - sales sales sales
-    - sales team
-    - sales team connection
-    - sign me up, my email is Elizabeth@yahoo.com
-    - talk to sales team
-    - we started working with rasa but now we need support
+    - Но я хотел позвонить по продажам
+    - Можно мне позвонить завтра в 15:00?
+    - Можно мне позвонить?
+    - КАК Я МОГУ ЗАБРОНИРОВАТЬ ЗВОНОК?
+    - Как я могу связаться с продажами?
+    - как поговорить с сейлами?
+    - как поговорить с сейлом?
+    - дайте сейла
+    - хочу сейла
+    - хочу сейлз
+    - Я также хочу заказать звонок для продажи
+    - Я хочу оформить подписку на ваш продукт
+    - Я хочу поговорить с твоим продавцом
+    - Я хочу поговорить с вашими продавцами.
+    - Я хочу позвонить по телефону
+    - Мне нужно предложение для вашей платформы
+    - Я хочу заказать звонок
+    - Я хочу позвонить в ваш отдел продаж
+    - Я хочу купить ваш продукт
+    - Хочу обратиться в отдел продаж
+    - Я хочу связаться с отделом продаж
+    - Я хочу связаться с вашими продавцами
+    - Я хочу узнать больше о ваших ценах
+    - Я хочу поговорить с отделом продаж
+    - Я хочу поговорить с сейлз
+    - Я хочу поговорить с кем-нибудь о вашей системе ценообразования
+    - Я хочу поговорить с вашими сейлами
+    - Я хочу поговорить с вашими продавцами
+    - Я хочу поговорить с вашим отделом продаж
+    - Я хочу поговорить с отделом продаж о нашем проекте.
+    - Я хочу заказать звонок
+    - Я хочу заказать телефонный звонок
+    - Я хотел бы связаться с вашим отделом продаж, пожалуйста
+    - Я хочу позвонить в отдел продаж
+    - Я хотел бы поговорить с кем-нибудь из вашего отдела продаж
+    - хочу купить корпоративную версию
+    - Хорошо, я хочу немедленно поговорить с вашим отделом продаж
+    - Пожалуйста, свяжите меня с кем-нибудь из отдела продаж
+    - Запланируйте телефонный звонок
+    - Продажи
+    - вызов
+    - было бы неплохо позвонить [Ивану Иванову](name)
+    - Есть ли разные пакеты, которые клиенты могут забронировать?
+    - книга
+    - заказать звонок
+    - заказать объявление о продаже
+    - забронировать распродажу
+    - заказать звонок по продажам
+    - записаться на прием
+    - заказать звонок
+    - звонок для продажи книги
+    - бронирование телефонного звонка
+    - бронирование салона
+    - бронирование продаж ca ;;
+    - звонок для бронирования
+    - но я хочу позвонить по телефону
+    - вызов
+    - звоните в отдел продаж
+    - позвонить в отдел продаж
+    - можно мне позвонить сейлам?
+    - могу я поговорить с отделом продаж
+    - могу я поговорить с торговым представителем
+    - Могу я поговорить с вашим неприятным продавцом?
+    - Кто-нибудь может мне позвонить, пожалуйста?
+    - вы можете подключить меня к продажам
+    - свяжите меня с вашим отделом продаж
+    - подключиться к продажам
+    - связаться с отделом продаж
+    - обратитесь к любому продавцу
+    - контактный звонок с продажами
+    - связаться с отделом продаж
+    - свяжитесь со мной в отдел продаж
+    - связаться с отделом продаж
+    - найди мне команду продаж
+    - дайте мне кого-нибудь, кто может объяснить вашу бизнес-модель
+    - позвонить в отдел продаж
+    - хм, тогда я хочу поговорить с продавцом
+    - как у вас работает ценообразование?
+    - как заказать коммерческий звонок
+    - как заказать коммерческий звонок>
+    - как заказать коммерческий звонок?
+    - выбираю звонок с продажами
+    - мне нужен звонок из отдела продаж
+    - мне нужно знать, как я могу заказать поддержку
+    - мне нужно поговорить с вашим отделом продаж
+    - мне нужно поговорить с продавцом
+    - мне нужен ваш источник данных
+    - Думаю, я хочу поговорить с вашими продавцами
+    - я хочу одну платформу, пожалуйста
+    - я хочу позвонить по телефону
+    - я хочу, чтобы мне позвонили
+    - Я хочу, чтобы я забронировал информацию о бронировании продаж
+    - я хочу быть на связи с вашим отделом продаж
+    - я хочу быть в курсе продаж
+    - я хочу записаться на прием
+    - я хочу заказать коммерческий звонок
+    - я хочу записаться на звонок
+    - я хочу позвонить
+    - хочу поговорить с продажами
+    - хочу подключиться к продажам
+    - я хочу связаться с вашим отделом продаж
+    - хочу связать ваши продажи
+    - я хочу связаться с отделом продаж
+    - я хочу связаться с отделом продаж сейчас
+    - хочу связаться со службой поддержки продаж
+    - я хочу связаться с вашим отделом продаж
+    - хочу позвонить в отдел продаж
+    - я хочу поговорить с продавцом
+    - я хочу позвонить [господину Петрову](name)
+    - Я бы хотел поговорить с отделом продаж, пожалуйста
+    - я хочу поговорить с продавцом
+    - я хочу поговорить с отделом продаж
+    - Мне нравится поговорить с кем-то, кто может объяснить мне, что я могу сделать с расой
+    - позвольте мне позвонить в отдел продаж
+    - позвольте мне связаться с отделом продаж
+    - позволь мне позвонить
+    - позвольте мне поговорить о продажах
+    - позвольте мне поговорить с отделом продаж
+    - позвольте мне поговорить с вашими сейлами
+    - позвольте мне поговорить с вашими продавцами
+    - позвольте мне поговорить с вашими продавцами!
+    - позвольте нам связаться с отделом продаж сейчас
+    - поговорим с продажами
+    - рядом с продавцом
+    - очевидно, поговорите со своим отличным отделом продаж
+    - хорошо, я хочу поговорить с вашими продавцами
+    - пожалуйста, подключите меня к продажам
+    - запросить команду продаж
+    - корпоративные продажи
+    - звонок по продажам
+    - контакт по продажам
+    - отдел продаж
 - intent: enter_data
   examples: |
     - $1
@@ -842,127 +559,87 @@ nlu:
     - 5 euros
     - 5 mln
     - 50,000 dollar
-    - 50,000,000 INR
+    - 100 тыщ рублей
+    - 20 миллионов рублей
     - 50k
-    - 60 million INR
-    - 75000-150000 euro
-    - A customer service bot
-    - A wolf bot
-    - ACME bank
-    - ACME brands
-    - Able to integrate with paypal, wordpress, facebook andd twilio
-    - An ice cube bot
-    - Country names
-    - Evaluate Rasa :-)
-    - Flexible, but looking for low-cost alternative to proof of concept
+    - 75000-150000 евро
+    - бот поддержки клиентов
     - I am [Christina Sullivan](name)
     - I am [Hattie Rice](name)
     - I am [Robert Starks](name)
-    - I am a [Data Scientist](job_function)
-    - I am a [data scientist](job_function)
-    - I am a [head of business intelligence](job_function)
-    - I am a driver
-    - I am responsible for our [innovation department](job_function)
-    - I book a bus ticket
-    - I do not know yet
-    - I spend money
-    - I wanna build a bot that sends the people cute animal pictures based on their favorite color
-    - I wanna build a super bot to send me cute animal pictures
-    - I want a bot that sales my product that [Catherine Rodriguez](name) finally can focus on important stuff
-    - I want to build a bot that can substitute our entire workforce
-    - I want to build a cool bot
-    - I want to build a health insurance bot
-    - I want to build a kick ass bot
-    - I want to build a lot of different bots
-    - I want to build a sales bot
-    - I want to build an FAQ bot
-    - I want to use pip
-    - I work as a [frontend dev](job_function)
-    - I work as a [project manager](job_function)
-    - I work at [EXAMPLE insurance group](company) as [Head of Innovation](job_function)
-    - I work at the [NYT](company)
-    - I work for [Bayer](company)
-    - I work for [Stanford University](company)
-    - I work for the AI research group of the turing centre of the [UBC](company), Vancouver, Canada
-    - I work for the [New York Times](company)
-    - I work for the [new york times](company)
-    - I work in [innovation](job_function)
-    - I work in [project management](job_function)
-    - I would like to build an ice cube dispenser bot
-    - I wrote it in [chinese](language)
-    - I wrote it in [dutch](language)
+    - я [Data Scientist](job_function)
+    - я [дата инженер](job_function)
+    - я [разработчик](job_function)
+    - я [руководитель отдела разработки](job_function)
+    - я [руководитель отдела продаж](job_function)
+    - я отвечаю за [департамент инноваций](job_function)
+    - я водитель 
+    - Заказываю билет на автобус
+    - Я еще не знаю
+    - трачу деньги
+    - Я хочу создать бота, который будет отправлять людям милые картинки животных на основе их любимого цвета.
+    - Я хочу создать супербота, чтобы отправлять мне милые фотографии животных
+    - Я хочу, чтобы бот продавал мой продукт
+    - Я хочу создать бота, который сможет заменить всю нашу рабочую силу
+    - Я хочу собрать крутого бота
+    - Я хочу создать бота по страхованию здоровья
+    - Я хочу создать крутого бота
+    - Я хочу построить много разных ботов
+    - Я хочу создать торгового бота
+    - Я хочу создать бота с часто задаваемыми вопросами
+    - Я хочу использовать pip
+    - Я работаю [frontend dev](job_function)
+    - Я работаю [project manager](job_function)
+    - Я работаю [EXAMPLE insurance group](company) как [вице президент по инновациям](job_function)
+    - Я работаю в [NYT](company)
+    - Я работаю в [Bayer](company)
+    - Я работаю в [Stanford University](company)
+    - Я работаю в группе исследований AI [UBC](company) в Москве(location)
+    - Я работаю в [газпромнефти](company)
+    - Я занимаюсь [проектным управлением](job_function)
     - I wrote it in [english](language)
-    - I wrote it in [french](language)
-    - I wrote it in [german](language)
-    - I wrote it in [italian](language)
-    - I wrote it in [mandarin](language)
-    - I wrote it in [portuguese](language)
-    - I wrote it in [spanish](language)
-    - I'm [Gladys Bynum](name)
-    - I'm [Harvey Cordano](name)
-    - I'm [Jeanine Hwang](name)
-    - I'm [Virginia Mason](name)
-    - I'm [project manager](job_function)
-    - I'm a [bot developer](job_function)
-    - I'm a [business woman](job_function)
-    - I'm a [construction worker](job_function)
-    - I'm a [conversation designer](job_function)
-    - I'm a [developer](job_function)
-    - I'm a [full stack developer](job_function)
-    - I'm a [janitor](job_function)
-    - I'm a [machine learning engineer](job_function)
-    - I'm a [product manager](job_function)
-    - I'm a [project manager](job_function)
-    - I'm a [python developer](job_function)
-    - I'm a [software engineer](job_function)
-    - I'm a [student](job_function)
-    - I'm a bot [developer](job_function)
-    - I'm a real good [engineer](job_function)
-    - I'm an [AI researcher](job_function)
-    - I'm an [engineer](job_function)
-    - I'm in [business](job_function)
-    - I'm in [project mgmt](job_function)
-    - I'm the [boss](job_function)
-    - I'm the [developer](job_function)
-    - I'm the [lead engineer](job_function)
-    - Im a [full stack developer](job_function)
-    - It is Drew@Mccarthy.com
-    - I’ve trained it in [chinese](language)
-    - I’ve trained it in [dutch](language)
-    - I’ve trained it in [english](language)
-    - I’ve trained it in [french](language)
-    - I’ve trained it in [german](language)
-    - I’ve trained it in [italian](language)
-    - I’ve trained it in [mandarin](language)
-    - I’ve trained it in [portuguese](language)
-    - I’ve trained it in [spanish](language)
+    - Меня зовут [Геннадий Гладков](name)
+    - Меня зовут [Евгений Жириновский](name)
+    - Меня зовут [Андрей Рублев](name)
+    - Меня зовут [Геннадий Гладков](name)
+    - Меня зовут [Геннадий Гладков](name)
+    - Это [Сергей Иванович](name) 
+    - Меня зовут [Светлана Ивановна](name)  
+    - [Дима](name)        
+    - [Слава](name)        
+    - [Ольга](name)        
+    - [Света](name)        
+    - Я [проектный менеджер](job_function)
+    - Я [разработчик](job_function)
+    - Я [старший разработчик](job_function)
+    - Я [бизнесмен](job_function)
+    - Я [человек](job_function)
+    - Я [продавец](job_function)
+    - Я [менеджер по продажам](job_function)
+    - Я [директор по развитию](job_function)
+    - Я [студент](job_function)
+    - Я [дата сатанист](job_function)
+    - Я [инженер разработчик](job_function)
+    - Я [AI researcher](job_function)
+    - Я [engineer](job_function)
+    - Я занимаюсь [бизнесом](job_function)
+    - Я [начальник](job_function)
+    - Я [разраб](job_function)
+    - Это Drew@Mccarthy.com
+    - Я говорю по [китайски](language)
+    - Я говорю по [английски](language)
+    - Я говорю по [французски](language)
+    - Я говорю по [немецки](language)
     - My budget is oov
     - My email is Richard@Simmons.com
-    - My name is [Ashleigh Mees](name)
-    - My name is [chelsea Parker](name)
-    - My name is [jessie maglione](name)
-    - My name is [Kenneth Sherman](name)
-    - My name is [Lee George](name)
-    - My name is [Louise Caudill](name)
-    - My name is [Richard smith](name)
-    - My name is [Shane Goodyear](name)
-    - My name is [Sondra Boyd](name)
-    - My name si [tom Harbin](name)
-    - No job
-    - None
-    - Rasa bot
-    - SCALABLE MINDS
-    - The master of desaster
-    - The name of the company is [Daimler](company)
-    - This is [Kim Vanderveen](name)
-    - This is [Norma Taylor](name)
-    - We plan to build a sales bot to increase our sales by 500%.
-    - Whatever it costs
+    - [Гришкой](name) меня кличут
+    - безработный
+    - компания называется [1С](company)
+    - Чего бы это не стоило
     - $0.00
     - $1000
     - 0
-    - 1 million
-    - 1 million big ones
+    - 1 миллион
     - 10 m
     - 1000000
     - 100000
@@ -1044,7 +721,6 @@ nlu:
     - [Michelle Vinion](name)
     - [Mr. Sweney](name)
     - [N26](company)
-    - None?
     - [Owner](job_function)
     - [Product Manager](job_function)
     - [Rasa](company)
@@ -1053,7 +729,6 @@ nlu:
     - [Scalable Minds](company)
     - [Software engineer](job_function).
     - [Steven Carter](name)'s company
-    - Ten
     - [Terri Cline](name)
     - [William Zelkind](name)
     - Willie@gmail.com
@@ -1103,10 +778,6 @@ nlu:
     - [hindi](language)
     - [how long](entity)
     - [intel](company)
-    - [italian](language)
-    - [italian](language) is the language of my bot
-    - [italian](language) is the only language but I want to add more
-    - [italina](language)
     - [klara health](company)
     - [manager](job_function)
     - [mandarin](language)
@@ -1144,46 +815,13 @@ nlu:
     - [vodafone](company)
     - [wurst co kg](company)
     - [xyz](company)
-    - a big ol transformer
-    - a bot
-    - a bot to get a promotion
-    - a bot which sends cute shiba pictures
-    - a chatbot for mops - mopbot
-    - a chatbot for our company
-    - a chocolate bot
-    - a cool bot
-    - a cool boy
-    - a customer service support system
-    - a good one?
-    - a great one
-    - a health bot
-    - a insurance tool that consults potential customers on the best life insurance to choose.
-    - a killer bot
-    - a pizza bot
-    - a sales bot
-    - a sentient robot
-    - a shitty bot
-    - a turtle
-    - a voice bot
-    - about 10 k
-    - all the training data was in [chinese](language)
-    - all the training data was in [dutch](language)
-    - all the training data was in [english](language)
-    - all the training data was in [french](language)
-    - all the training data was in [german](language)
-    - all the training data was in [italian](language)
-    - all the training data was in [mandarin](language)
-    - all the training data was in [portuguese](language)
-    - all the training data was in [spanish](language)
     - amounts of [money](entity)
     - an ice cream bot
     - around $500,000 per year
     - around 200k
     - around one millon euros
-    - badass bot tester
     - between 100 to 200.000
     - big old bot
-    - boo
     - bout 4,000,000 INR
     - can you try E_Conder@gmail.com instead?
     - chatbot
@@ -1584,218 +1222,80 @@ nlu:
     - [Rasa X](product)
 - intent: how_to_get_started
   examples: |
-    - can you help me to build a bot
-    - can you tell me how to build a bot?
-    - Can I build a FAQ robot with Rasa?
-    - I wanted to build a bot my product customer support
-    - Get started
-    - HOW CAN i connect to rasa
-    - Help me get started
-    - Hi, how can i get started with [rasa x](product)
-    - Hot to get started with rasa
-    - How can I develop a bot?
-    - How can I get started with Rasa
-    - How can I get started with Rasa?
-    - How can I get started with rasa?
-    - How can I get started?
-    - How can I start with RASA on a legacy windows without Python?
-    - How can I try out Rasa?
-    - How can i launch a bot?
-    - How do I build a bot
-    - How do I get started
-    - How do I get started with Rasa?
-    - How do I get started?
-    - How do I start
-    - How do i get started
-    - How get started?
-    - How to build a bot in rasa
-    - How to download?
-    - How to get start
-    - How to get started
-    - How to get started with Rasa
-    - How to get started with Rasa [core](product)?
-    - How to get started with Rasa?
-    - How to get started?
-    - How to get starter?
-    - How to make a bot
-    - How to start using Rasa
-    - I am [new](user_type)
-    - I am [new](user_type) to Rasa
-    - I like to build a bot
-    - I need to know if I can use Rasa to build an application?
-    - I want to build a bot
-    - I want to build a chatbot
-    - I want to create chatbot using Rasa
-    - I want to implement rasa
-    - I want to know how to get started with rasa
-    - I'm [new](user_type)
-    - I'm [new](user_type) in Rasa, help me!
-    - I'm [new](user_type) to Rasa
-    - I'm [new](user_type) to rasa
-    - Im [new](user_type)
-    - Lets start with the basics
-    - Please tell me how I can start?
-    - Please tell me how to get started
-    - Please tell me how to get started with rasa
-    - Show me learning resources about Rasa
-    - Sure, give me the basics
-    - Tell me how to get started
-    - Tell me how to get started with Rasa
-    - Tell me more about Get started with Rasa
-    - What are the prerequisites for installing RASA
-    - What do I Need for Rasa implementation?
-    - Yeah please help me out
-    - Yes I am [new](user_type)
-    - [new](user_type)
-    - can i just test features without having to deal with your predefined conversation
-    - can i try it out
-    - can u teach me
-    - can you explain how can i make chatbot like you
-    - can you guide me know to create knowledge base chatbot
-    - can you help me build a chatbot
-    - can you help me get started?
-    - do you know how to set up a chatbot?
-    - find out how to get started with Rasa
-    - from where I should start?
-    - get starte
-    - get started
-    - get started pls
-    - get started with Rasa
-    - get started with rasa
-    - get strarted with rasa
-    - help me build a bot
-    - help me get started
-    - help with rasa
-    - hi can you help e build a chatbot
-    - how about building chatbot
-    - how can I build a chatbot
-    - how can I get started
-    - how can I get started?
-    - how can I learn rasa
-    - how can i build a chatbot
-    - how can i get started with Rasa?
-    - how can i get started with rasa
-    - how can i get started?
-    - how can i start
-    - how cna i get started with rasa
-    - how do I build a bot?
-    - how do I get started
-    - how do I get started with Rasa
-    - how do I get started with rasa
-    - how do I get started?
-    - how do I start
-    - how do I use rasa
-    - how do i build a bot
-    - how do i build a bot?
-    - how do i build a chatbot?
-    - how do i build a rasa chatbot?
-    - how do i get startd?
-    - how do i get started
-    - how do i get started with [NLU](product)
-    - how do i get started with [nlu](product)
-    - how do i get started with rasa
-    - how do i get started with rasa [nlu](product)
-    - how do i get started with rasa myself?
-    - how do i get started?
-    - how do i learn rasa [core](product)
-    - how can i start with rasa [core](product)?
-    - how do i set up a chatbot?
-    - how do i sstart
-    - how do i start
-    - how do i train rasa [core](product)
-    - how do i train rasa [nlu](product)
-    - how do you build a bot
-    - how easy is it to use rasa?
-    - how start
-    - how this Rasa works
-    - how to build a bot
-    - how to build a bot?
-    - how to build a chatbot
-    - how to build chatbot using rasa
-    - how to create a basic chat bot
-    - how to get sarted
-    - how to get start
-    - how to get start with Rasa
-    - how to get started
-    - how to get started with
-    - how to get started with Rasa
-    - how to get started with Rasa?
-    - how to get started with [nlu](product)
-    - how to get started with rasa
-    - how to get started with rasa ?
-    - how to get started with rasa [nlu](product)
-    - how to get started with rassa
-    - how to get started?
-    - how to get strated
-    - how to get strated?
-    - how to learn RASA
-    - how to learn rasa [core](product)
-    - how to setup rasa
-    - how to start
-    - how to start RASA
-    - how to start rasa
-    - how to start with it
-    - how to start with rasa
-    - how to start with rasa?
-    - how to use
-    - how toget strated?
-    - how t oget started
-    - hw to get started with Rasa
-    - i am [new](user_type)
-    - i am [new](user_type) to rasa
-    - i am a [new](user_type)
-    - i am a [new](user_type) user
-    - i m [new](user_type)
-    - i need help with rasa
-    - i wanna build a bot
-    - i wanna get started
-    - i wanna try rasa [nlu](product)
-    - i want to built a chatbot please help me
-    - i want to develop a chatbot
-    - i want to get started
-    - i want to get started with rasa
-    - i want to know how can buld my own bot
-    - i want to know how to start with Rasa
-    - i want to make intelligence chatbot
-    - i want to use [nlu](product)
-    - i want to use rasa to build my chatbot
-    - i would like to know how to get started with Rasa
-    - i'd like to get started with rasa
-    - i'm [new](user_type)
-    - i'm [new](user_type) to rasa
-    - im a [new](user_type) to rasa
-    - let's start
-    - lets get started
-    - ok i am [new](user_type) to Rasa
-    - ow to get started with Rasa
-    - please teach me
-    - pls explain how to get started
-    - so, how do I use rasa?
-    - start rasa
-    - tell me how i can get started with rasa
-    - tell me how to get started with [core](product)
-    - tell me how to start
-    - tell me more about how to use rasa
-    - what is the best place to get started?
-    - where can i learn to build a chatbot
-    - where do i find instructions
-    - where do i start?
-    - where should i start from
-    - where to start the development of rasa
-    - where to start?
-    - I am trying to build a bot using rasa
-    - i am [new](user_type) but so how can i start
-    - rasa basics
-    - how can i get stared
-    - how to build assistant?
-    - how to build assistant with rasa?
-    - how to using you
-    - create chatbot steps
-    - can you tell me how to create a new rasa project
-    - can you help me build my bot?
-    - start
-    - how to build bot with rasa x
-    - lets start
+    - вы можете помочь мне создать бота
+    - подскажите, как создать бота?
+    - Могу ли я построить робота ассистента с помощью Aide?
+    - Я хотел создать бота, поддержка клиентов по моему продукту
+    - Начать
+    - КАК я могу подключиться к Aide
+    - Помогите мне начать
+    - Привет, как мне начать работу с [aide](product)
+    - Как мне разработать бота?
+    - Как мне начать работу с Aide?
+    - Как я могу начать заниматься Aide?
+    - Как мне начать?
+    - Как мне попробовать Aide?
+    - Как запустить бота?
+    - Как создать бота
+    - Как мне начать
+    - Как мне начать работу с Aide?
+    - Как мне начать?
+    - Как мне начать
+    - Как начать?
+    - Как построить бота в расе
+    - Как загрузить?
+    - Как начать
+    - С чего начать
+    - Как сделать бота
+    - Как начать пользоваться Aide
+    - Я [новичок](user_type)
+    - Мне нравится создавать бота
+    - Мне нужно знать, могу ли я использовать Aide для создания приложения?
+    - Я хочу создать бота
+    - Я хочу создать чат-бота
+    - Я хочу реализовать раса
+    - Я хочу знать, как начать работу с расой
+    - Я [новичок](user_type) в Aide
+    - Я [новичок](user_type) в Aide, помогите мне!
+    - Начнем с основ
+    - Подскажите, пожалуйста, с чего мне начать?
+    - Подскажите, пожалуйста, с чего начать
+    - Подскажите, пожалуйста, как начать работу с Aide
+    - Покажи мне учебные ресурсы о Aide
+    - Скажите, с чего начать
+    - Какие предварительные условия для установки Aide
+    - Что мне нужно для реализации Aide?
+    - Да, пожалуйста, помогите мне
+    - могу ли я просто протестировать функции без необходимости иметь дело с вашим предопределенным разговором
+    - могу я попробовать
+    - можешь научить меня
+    - не могли бы вы объяснить, как сделать чат-бота похожим на вас?
+    - подскажете, как создать чат-бота из базы знаний
+    - вы можете помочь мне создать чат-бота
+    - Вы можете помочь мне начать работу?
+    - ты знаешь, как настроить чат-бота?
+    - с чего мне начать?
+    - начни, пожалуйста
+    - помоги мне создать бота
+    - помогите мне начать
+    - привет, вы можете помочь создать чат-бота
+    - как насчет создания чат-бота
+    - как я могу создать чат-бота
+    - как я могу начать
+    - как я могу начать?
+    - как я могу выучить Aide
+    - как я могу создать чат-бота
+    - как я могу начать работу с Aide?
+    - как мне начать работу с Aide
+    - как я могу начать?
+    - как использовать Aide
+    - как создать бота
+    - как создать бота?
+    - как создать чат-бота?
+    - как тренировать rasa [Aide](product)
+    - как собрать бота
+    - как собрать бота?
+    - как начать работу с Aide
 - intent: install_aide
   examples: |
     - how do I get rasa [core](product)
@@ -1906,536 +1406,160 @@ nlu:
     - How to download rasa
     - where do i download rasa
     - I have a specific question regarding installation
-- intent: nlu_generation_tool_recommendation
-  examples: |
-    - are there simpler ways to create [nlu](product) data
-    - are there tools to create [nlu](product) data
-    - how can I get [nlu](product) data
-    - how to work with [nlu](product) data
-    - i have to less [nlu](product) data
-    - i need more [nlu](product) data
-    - i require more [nlu](product) data
-    - need more data for [nlu](product)
-    - recommend me some [nlu](product) tools
-    - where can i get data for the [nlu](product)
-    - which tools can I use to create [nlu](product) data
-    - How to generate [NLU](product) using frontend.
-    - [NLU](product) data  generation
-    - i want a recommendation for an [nlu](product) data generation tool
-- intent: nlu_info
-  examples: |
-    - I checked the documentation on [entity recognition](nlu_part) but I still don’t understand it
-    - I checked the documentation on [intent classification](nlu_part) but I still don’t understand it
-    - I don’t understand [entity recognition](nlu_part)
-    - I don’t understand [intent classification](nlu_part)
-    - I don’t understand how you handle [entity recognition](nlu_part) at Rasa
-    - I don’t understand how you handle [intent classification](nlu_part) at Rasa
-    - I still don’t get how [entity recognition](nlu_part) works
-    - I still don’t get how [intent classification](nlu_part) works
-    - I want to know if rasa works with [duckling](nlu_part)
-    - I want to learn about [entity recognition](nlu_part)
-    - I want to learn about [intent classification](nlu_part)
-    - I was looking for [Duckling](nlu_part) integration
-    - Rasa NLu
-    - Tell me about the [entity extraction](nlu_part)
-    - Tell me about the [entity recognition](nlu_part)
-    - [Entity recognition](nlu_part)
-    - [NER](nlu_part)
-    - [duckling](nlu_part)
-    - [entity recognition](nlu_part)
-    - [entity recognition](nlu_part) - what is that?
-    - [intent classification](nlu_part)
-    - [intent classification](nlu_part) - what is that?
-    - [intent classificaton](nlu_part)
-    - [intent recognition](nlu_part)
-    - [intent](nlu_part)
-    - [intent](nlu_part) please
-    - [intents](nlu_part)
-    - [recognition](nlu_part)
-    - an explanation of how [entity recognition](nlu_part) work would help
-    - an explanation of how [intent classification](nlu_part) work would help
-    - can you explain me what [intents](nlu_part) are ?
-    - can you explain to me how [entity recognition](nlu_part) works?
-    - can you explain to me how [intent classification](nlu_part) works?
-    - custom [ner](nlu_part)
-    - do you use [duckling](nlu_part)
-    - does rasa work with [duckling](nlu_part)?
-    - hm [intents](nlu_part)?
-    - how do you integrate [duckling](nlu_part)
-    - how does [entity recognition](nlu_part) work?
-    - how does [intent classification](nlu_part) work?
-    - how is [entity recognition](nlu_part) managed in rasa?
-    - how is [intent classification](nlu_part) managed in rasa?
-    - is [duckling](nlu_part) part of rasa?
-    - it would be helpful to learn more about [entity recognition](nlu_part)
-    - it would be helpful to learn more about [intent classification](nlu_part)
-    - sorry its [ner](nlu_part)
-    - tell me about [entity recognition](nlu_part)
-    - tell me about [intent classification](nlu_part)
-    - the [intent](nlu_part)
-    - what are [intents](nlu_part) ?
-    - what are [intents](nlu_part)?
-    - what does [nlu](product) stands for
-    - what is [duckling](nlu_part)
-    - what is [duckling](nlu_part)?
-    - what is [entity recognition](nlu_part)?
-    - what is [intent classification](nlu_part)?
-    - what is [intent recognition](nlu_part)?
-    - what is a [intent](nlu_part)?
-    - where to [intents](nlu_part)?
-    - where to train [intents](nlu_part) in rasa?
-    - what does NLU server do?
-    - how enttity extrcation works
-- intent: pipeline_recommendation
-  examples: |
-    - I don’t know which pipeline to use
-    - can you help me with the pipeline?
-    - give me a recommendation
-    - pipeline
-    - pipeline recommendation
-    - recommend pipeline
-    - should I better start with the tensorflow pipeline or spacy?
-    - spacy or tensorflow, what is better to start?
-    - what I a good pipeline to start with?
-    - what [nlu](product) pipeline would you recommend?
-    - what is the right pipeline to choose?
-    - what pipeline is better for what i want?
-    - what pipeline is better?
-    - what pipeline should I start with?
-    - what pipeline should i use?
-    - which pipeline is better?
-    - nlu pipeline
-    - how to build a pipelin
-    - how to build a pipeline for the bot
-- intent: signup_newsletter
-  examples: |
-    - I also want to subscribe
-    - I wanna sign up for the newsletter.
-    - I want the newsletter
-    - I want to sign up for the newsletter
-    - I want to sign up for the newsletter.
-    - I want to subscribe to your newsletter
-    - I want to subscribing to the Rasa newsletter
-    - I would like to sign up for the newsletter.
-    - I would love to subscribe to a newsletter!
-    - I'd like to subscribe
-    - I'll subscribe to the newsletter
-    - Newsletter
-    - Newsletter please.
-    - Sign me up for the newsletter.
-    - Sign up.
-    - Subscribe
-    - Subscribe me to the newsletter please!
-    - Subscribe me to you newsletter
-    - Subscribe newsletter
-    - Subscribe to Rasa newsletter
-    - add me as your subscriber
-    - add me to the newsletter
-    - add me to the newsletter list
-    - add me to the subscription list
-    - but please sign me up for the newsletter!
-    - can i get emails from you
-    - can i sign up to the newsletter too?
-    - can i subscribe to news letter
-    - can you add Edward@Paul.com to the newsletter list?
-    - can you pelase subscribe me to the newsletter
-    - can you sign me up for the newsletter
-    - can you subscribe me to the newsletter
-    - do the newsletter then
-    - first lets sign up for the newsletter
-    - get a subscription
-    - get newsletter
-    - get the latest news from Rasa
-    - get the newsletter
-    - gimme the newsletter
-    - hello sara, can you subscribe me to the newsletter?
-    - how about the newsletter
-    - how about the newsletter signup
-    - how to subdcribe?
-    - i also want to sign up for the newsletter
-    - i go for the newsletter
-    - i just want to signup for our newsletter
-    - i just want to signup for your newsletter
-    - i need the newsletter
-    - i need this dope newsletter
-    - i need to be on the newsletter list
-    - i prefer to get the newsletter
-    - i want newsletter
-    - i want on that dope newsletter
-    - i want on this dope newsletter - my email is R_Grove@gmail.com
-    - i want subscribe
-    - i want the newsletter
-    - i want to  suscribe
-    - i want to be part of the newsletter
-    - i want to get the newsletter
-    - i want to join the newsletter list
-    - i want to join the newsletter mails
-    - i want to receive the newsletter emails
-    - i want to receive the newsletter from now on
-    - i want to receive your nl
-    - i want to sign up for the newsletter
-    - i want to signup
-    - i want to signup for the newsletter
-    - i want to signup for the nl
-    - i want to signup for your newsletter
-    - i want to subscribe
-    - i want to subscribe to the newsletter with Joseph_Pyles@yahoo.com
-    - i want to subscribe to your newsletter
-    - i want to subsribe to the newsletter
-    - i would like to join the newsletter
-    - i would like to subscribe
-    - i would like to subscribe to your newsletter
-    - i would love to get the newsletter
-    - i would love to receive the rasa newsletter
-    - i'd like your newspaper please
-    - i'm craving the newsletter
-    - id like to receive the newsletter
-    - id like to subscribe
-    - join that newsletter
-    - let's make a subscribtion
-    - lets do the newsletter signup
-    - lets try the newsletter registration
-    - lets try the newsletter signup
-    - may i receive the newsletter from now on
-    - newletter
-    - news
-    - newsletter
-    - newsletter - my email is Mabel@Brown.com
-    - newsletter it is
-    - newsletter please
-    - newsletter please my email is M_Moore@yahoo.com
-    - newsletter pls
-    - newsletter registration
-    - newsletter registration first
-    - newsletter subscription
-    - newsletter, here is my email: Marcus.Miller@yahoo.com
-    - newslettwr
-    - nl
-    - now i want to signup for the newsletter
-    - oh actually i want to get the newsletter
-    - please send me the newsletter
-    - please send newsletter to Robert@yahoo.com
-    - please sign me up for the newsletter
-    - please subscribe me to the newsletter gregory_lilley@yahoo.com
-    - please subscribe me to your newsletter
-    - register me for the newsletter
-    - send me the newsletter
-    - sign me up for that newsletter
-    - sign me up for the newsletter - my email is Carolyn_Caskey@yahoo.com
-    - sign me up for the rasa newsletter
-    - sign up
-    - sign up for newsletter
-    - sign up for the NL
-    - sign up newsletter
-    - sign up to the newsletter
-    - subcribe
-    - subscribe
-    - subscribe Bruce_harryman@Olsen.com to the newsletter
-    - subscribe Denise@gmail.com to the newsletter
-    - subscribe me to newsletter
-    - subscribe me to the newsletter
-    - subscribe my email Evan@Palmer.net to the newsletter
-    - subscribe to newsletter
-    - subscribe to our newsletter
-    - subscribe to the newsletter
-    - subscribe to your newsletter
-    - subscribing to our newsletter
-    - subscrime me
-    - subscription newsletter
-    - subsribing to our newsletter
-    - to make a subscribtion
-    - what about signing up for the newsletter?
-    - yeaaah lets go for the newsletter
-    - yeah how about the newsletter
-    - yes I would like to subscribe
-    - yes subscribe me
-    - yes.I.would.like.to.subscrbe
-- intent: source_code
-  examples: |
-    - Can u tell where is ur code
-    - Where can I find your source code?
-    - Where can i find the source code
-    - can i know your source code ?
-    - can i look at your source code
-    - can i see your code
-    - demo bot source code
-    - do u give me the code
-    - hey can you provide me the code of yours
-    - how can i get the code for the demo bot?
-    - how do u work?
-    - how it works?
-    - how to get the source code
-    - i need source code
-    - i need the source code to this bot
-    - i want to use your source code
-    - is your code available?
-    - source code
-    - we want to have full code of rasa chatbot
-    - what is your source code
-    - what's your source code?
-    - where can I download the source code?
-    - where can I find the rasa source code?
-    - where can i find this code
-    - where is the source code?
-    - where is your source code
-    - what is your github link
-    - yes with your source code
-    - your code
-    - your code please
-    - i need nlu.md file
-    - i need smalltalk.md file
-    - source
-    - github link?
 - intent: switch
   examples: |
-    - switching
-    - switching from
-    - migrate to rasa
-    - how to migrate my bot to rasa
-    - switch to rasa from another platform
-    - migrate to rasa from another tool
-    - switch to rasa
-    - from which tools can I migrate to rasa?
-    - can I migrate to rasa from another tool?
-    - and implementation from scratch
-    - how to migrate to
-    - switch from
-    - how do i migrate from
+    - переключение
+    - переключение с
+    - перейти в aide
+    - как перенести моего бота в aide
+    - перейти на aide с другой платформы
+    - перейти на aide с другого инструмента
+    - перейти на расу
+    - с каких инструментов я могу перейти на aide?
+    - могу ли я перейти на aide с другого инструмента?
+    - и реализация с нуля
+    - как перейти на
+    - переключиться с
+    - как мне перейти с 
 - intent: technical_question
   examples: |
-    - having trouble with rasa installation
-    - what is helm
-    - how to restart the rasa server
-    - i don't want to run rasa, i want to restart it
-    - action_restart in rasa
-    - i want to know restart action
-    - how can i restart conversation on chatbot
-    - how to restart story if am drooping in between
-    - how to restart rasa
-    - how to restart the rasa
-    - how to restart rasax
-    - docker is restarting
-    - restart server
-    - I am not able to restart action in some action
-    - how to restart rasa?
-    - how do you restart a story?
-    - Create ecommerce bot
-    - How can I visualise conversation flow?
-    - How many languages does Spacy support?
-    - and your REST API doesn't work
-    - can i makae rest calls
-    - can we use regex is rasa code
-    - does it support AI
-    - how do you retrieve previous messages
-    - how many words can you handle?
-    - how to use flask?
-    - how to visualise dialogue flow
-    - is this test compatible with linux?
-    - what database rasa use
-    - what is significance of domain.yml file
-    - what is the policy
-    - will this work on windows server
-    - work with buttons?
-    - can I install this on a mac?
-    - database rasa is using
-    - what is the difference between you and LUIS
-    - what is the latest version of rasa?
-    - Can I use Rasa for E-Mail
-    - Can you send messages based on events?
-    - How did rasa works?
-    - How do I use ngrok with [rasa x](product)?
-    - I want to know more about tracker
-    - What is the difference between entities and slots?
-    - Where can I get the source code of Rasa?
-    - Which other tools can be used to create chatbots?
-    - an I use Rasa for e-mail applications
-    - any open source GUI rasa have?
-    - any other tools to create chatbots?
-    - can i install on may mac
-    - can rasa run standalone
-    - db processing
-    - do you have docker image for rasa?
-    - does rasa support prestashop?
-    - hey can i run this onpremise
-    - how about interactive learning
-    - how can I get a docker image
-    - how can I train data
-    - how can i deploy my server on production?
-    - how i deploy my bot on production server?
-    - how to get the metadata file
-    - how to integrate RASA with customer data?
-    - how to use formaction
-    - how to use form actions
-    - how to use forms
-    - interactive learning?
-    - is rasa core able to run standalone?
-    - ok quick question here do i download this api
-    - tensorflow 1.10.0 has requirement numpy<=1.14.5,>=1.13.3, but you'll have numpy 1.16.0 which is incompatible.
-    - training model?
-    - what does on-premise mean?
-    - what infrastructure is required to run a bot?
-    - what is a synonym called?
-    - what is endpoint
-    - what is pip?
-    - what is the last version of rasa [core](product)?
-    - what technologies did u use to create more mature chatbot?
-    - what's pip
-    - yes what if i have to code open end responses into some categories
-    - best policies to be used
-    - Deploy to a Server
-    - Hello, Sara. How can I configure [etnity extraction](nlu_part) for [russian](language) lnguage?
-    - can I use Rasa with my Raspberry Pi
-    - Can I run Rasa on a raspberry pi ?
-    - can I run rasa on a raspberry pi
-    - Can I run rasa on a raspberry pi ?
-    - Is it possible to integrate Rasa with Android to run on mobile devices
-    - What is the min requirements to run rasa
-    - TypeError: 'module' object is not callable
-    - deploy rasa chat bot in flask
-    - How can i automate retraining of my rasa models
-    - can i user rasa for my text classification problem?
-    - how to initialize a new project?
-    - how to train model
-    - what are the policy available
-    - i need help with policies
-    - how to connect mongodb
-    - what is fallback policy in rasa
-    - what is a webhook
-    - how to handle sending scheduled message to custom webhooks
-    - actions
-    - actions on rasa
-    - how to add dropdowns?
-    - replace default nlu with custom component
-    - which technology is used to create you
-    - rasa-core error
-    - I am getting some error
-    - I have a problem
-    - I need help with a problem
-    - can you help me with this problem
-    - can you help with some documentation
-    - conda threw some weird error
-    - conda throws some unexpected error
-    - getting some error
-    - i am having trouble setting this up
-    - technical side of things?
-    - there is error
-    - why do I get errors using rasa?
-    - there are some python incompatibilities
-    - can this be integrated with mongo db
-    - Can you help me with forms
-    - can tell me about rasa_sdk
-    - rasa sdk
-    - where is rasa sdk?
-    - Do you have a python sdk?
-    - RASA sdk
-    - do RASA has sdk to develop bot
+    - возникли проблемы с установкой aide
+    - что такое helm
+    - как перезапустить сервер aide
+    - я не хочу запускать aide, я хочу перезапустить его
+    - action_restart в aide
+    - я хочу знать действие перезапуска
+    - как я могу перезапустить разговор на чат-боте
+    - как перезапустить историю, если я провисаю между ними
+    - как перезапустить aide
+    - docker перезагружается
+    - перезапустить сервер
+    - Я не могу перезапустить действие в каком-то действии
+    - как перезапустить aide?
+    - как начать рассказ заново?
+    - Создать бота для электронной коммерции
+    - Как я могу визуализировать разговор?
+    - Сколько языков поддерживает Spacy?
+    - и ваш REST API не работает
+    - могу ли я сделать REST вызовы?
+    - можем ли мы использовать регулярное выражение 
+    - поддерживает ли ИИ
+    - как получить предыдущие сообщения
+    - сколько слов ты можешь обработать?
+    - как пользоваться flask?
+    - как визуализировать диалог
+    - совместим ли этот тест с linux?
+    - какую базу данных использовать
+    - что означает файл domain.yml
+    - какова политика
+    - будет ли это работать на сервере Windows
+    - работать с кнопками?
+    - я могу установить это на Mac?
+    - база данных aide использует
+    - в чем разница между вами и LUIS
+    - какая последняя версия aide?
+    - Могу ли я использовать aide для электронной почты
+    - Можете ли вы отправлять сообщения на основе событий?
+    - Как работала aide?
+    - Как использовать ngrok с [aide](product)?
+    - Я хочу узнать больше о трекере
+    - В чем разница между сущностями и слотами?
+    - Где взять исходный код aide?
+    - Какие еще инструменты можно использовать для создания чат-ботов?
+    - я использую aide для приложений электронной почты
+    - есть ли у раса графический интерфейс с открытым исходным кодом?
+    - какие-нибудь другие инструменты для создания чат-ботов?
+    - могу ли я установить на Mac
+    - может ли раса работать автономно
+    - обработка db
+    - у вас есть docker image для aide?
+    - поддерживает ли aide prestashop?
+    - Эй, я могу запустить это в помещении
+    - как насчет интерактивного обучения
+    - как получить образ докера
+    - как я могу тренировать данные
+    - как я могу развернуть свой сервер на производстве?
+    - как развернуть своего бота на рабочем сервере?
+    - как получить файл метаданных
+    - как интегрировать RASA с данными клиентов?
+    - как использовать form action
+    - как использовать действия формы
+    - как пользоваться формами
+    - интерактивное обучение?
+    - Может ли rasa core работать автономно?
+    - Хорошо, быстрый вопрос, я могу загрузить этот api
+    - tenorflow 1.10.0 требует numpy <= 1.14.5,> = 1.13.3, но у вас будет numpy 1.16.0, который несовместим.
+    - тренировать модель?
+    - что значит "на месте"?
+    - какая инфраструктура необходима для запуска бота?
+    - как называется синоним?
+    - что такое конечная точка
+    - что такое pip?
+    - какая последняя версия [aide](product)?
+    - Какие технологии вы использовали для создания более зрелого чат-бота?
+    - что за pip
+    - да, что, если мне придется закодировать открытые ответы в некоторые категории
+    - лучшие политики, которые будут использоваться
+    - Развернуть на сервере
+    - могу ли я использовать aide с моим Raspberry Pi
+    - Могу ли я запустить aide на Raspberry Pi?
+    - могу ли я запустить aide на raspberry pi
+    - Могу ли я запустить aide на raspberry pi?
+    - Можно ли интегрировать aide с Android для работы на мобильных устройствах?
+    - Какие минимальные требования для запуска aide
+    - TypeError: объект 'модуль' не вызывается
+    - развернуть чат-бота aide во флаконе
+    - Как я могу автоматизировать переподготовку моих моделей aide
+    - Могу ли я использовать aide для моей задачи классификации текста?
+    - как инициализировать новый проект?
+    - как тренировать модель
+    - какие полисы доступны
+    - мне нужна помощь с политиками
+    - как подключить mongodb
+    - что такое резервная политика в rasa
+    - что такое перехватчик
+    - как обрабатывать отправку запланированного сообщения на пользовательские веб-перехватчики
+    - действия
+    - действия по расе
+    - как добавить выпадающие списки?
+    - заменить дефолтный nlu на кастомный компонент
+    - какие технологии используются для создания вас
+    - conda выдала странную ошибку
+    - conda выдает непредвиденную ошибку
+    - у меня проблемы с настройкой
+    - техническая сторона дела?
+    - есть ошибка
+    - почему я получаю ошибки при использовании aide?
+    - есть несовместимости с питоном
+    - можно ли это интегрировать с mongo db
+    - Можете ли вы помочь мне с формами
+    - можете рассказать про aide_sdk
+    - aide SDK
+    - где aide SDK?
+    - У вас есть python sdk?
+    - есть ли у aide SDK для разработки бота
     - python sdk
-    - how to run sdk endpoint in background
-    - sdk
-    - where can i find api documentation for rasa x
-    - where is the api for rasa x
-    - Hello, where can I find the paper about DIET?
-    - Is there a technical paper about DIET?
-    - domain
-    - How do I get yes / no answer buttons
-    - I am searching the changlog
-    - rasa templates
-    - how to add in my website
-    - php
-    - php code
-    - what is the difference between slot and entity
-    - is slot teh same as entity
-    - what should I do when I want to use a binary slot
-    - How d I use a boolean slot
-    - what  are values of a boolean slot
-    - fallback
-    - stories files
-    - use of stories files
-    - installation error
-    - bash: poetry: command not found
-    - Can i use NLU on its own
-    - do we need to write training data nlu.md
-    - For training data, to we need to exclusively write the file in MD format?
-    - How can i talk to RASA through the url
-    - what is action server
-    - is it a best practice to connect an external cms
-    - can you show me buttons
-    - I'd like to handle chitchat
-    - Can Rasa be incorporated into iOS apps?
-    - how to implement buttons
-    - buttons
-    - implement buttons
-    - I want to build RASA DIET in google colab
-    - tensorflow-text
-    - installation of tensorflow-text
-    - ConveRTFeaturizer
-    - whatsapp bro
-    - What does the NLU pipeline do
-    - what does the nlu pipeline do
-    - What is DIET
-    - how can create multilingual chatbor
-    - websocket
-    - hosting
-    - host models
-    - What is COnvert?
-    - Hi the command rasa init doesn't do anything in windows
-    - what is the knowledge base server
-    - testing chatbot
-    - what is knowledge base
-    - knowledge base action
-    - multipass issue
-    - embeddings
-    - how to write stories to train rasa
-    - tell me about the nlu training data format
-    - how can i get data from a database and use them as a response to a question?
-    - how to add a database?
-    - I want to integrate a database and look up values based on an entity the user gave me. How is this possible?
-    - what is default fall back
-    - fallback actions
-    - what is custom actions
-    - I am facing some issues with LMS
-    - my nlu cant detect entities
-    - how do i detect entities
-    - how to evaluate model
-    - Can I have multiple .md data files?
-    - response selector?
-    - does mongodb works for rasax
-    - tensorflow
-    - credentials.yml
-    - credentials
-    - how can I use transformers
-    - how long to train
-    - what model do you use
-    - technical question
-    - rasa core agent information
-    - rasa shell
-    - what is an intemt
-    - Rasa provides me recall and precision?
-    - i want to run rasa x in ibm cloud
-    - how to build stories
-    - testing
-    - whats tensorflow
-    - what is a custom action?
-    - which python libraries are used
-    - Should I run the 'rasa init' command in the anaconda prompt ?
-    - Where to run rasa init command ?
-    - how to set threshold ?
-    - how to you exit the server
-    - is Rasa works with Unity3d?
-    - rasa uses deep learning ?
-    - i want to extract predefined entity from user query
+    - как запустить конечную точку sdk в фоновом режиме
+    - где я могу найти документацию по API для aide
+    - где api для aide
+    - Здравствуйте, а где мне найти статью о DIET Classifier?
 - intent: restart
   examples: |
-    - yep you can restart
-    - Please restart this chat/
-    - ok restart please
-    - please restart the bot
-    - restart this conversation
-    - i want to restart
-    - why don't you restart????
-    - hey, i said restart
-    - restart session pls
-    - restart ps
+    - да, вы можете перезапустить
+    - Пожалуйста, перезапустите этот чат /
+    - хорошо перезапустите, пожалуйста
+    - перезапустите бота
+    - перезапустить этот разговор
+    - я хочу перезапустить
+    - почему бы тебе не перезапустить ????
+    - эй, я сказал перезапуск
+    - перезапустите сеанс, 
+    - перезапустить 
+    - начнем снова
+    - начнем с чистого листа
+    - сбросим разговор
+    - сброс чата
+
 - synonym: высокий
   examples: |
     - очень важно
@@ -2489,14 +1613,6 @@ nlu:
 - synonym: all
   examples: |
     - both
-- synonym: core
-  examples: |
-    - CORE
-    - Core
-    - dialogue management
-    - Dialogue management
-    - Dialogue Management
-    - DIALOGUE MANAGEMENT
 - synonym: custom actions
   examples: |
     - Actions
@@ -2561,38 +1677,9 @@ nlu:
 - synonym: organisation
   examples: |
     - companies
-- synonym: rasa
-  examples: |
-    - Rasa
-    - rasa open source
-    - Rasa Open Source
-    - Rasa open source
-    - rasa Open Source
-    - open source
-    - open source rasa
-    - RASA open source
-- synonym: stack
-  examples: |
-    - fullstack
-    - full
-    - Full stack
-    - full staclk
-    - full framework
-    - full stack
-    - Full
-    - Full Stack
 - synonym: wit.ai
   examples: |
     - wit
-- synonym: x
-  examples: |
-    - Rasax
-    - RASAX
-    - Rasa X
-    - rasa x
-    - RASA X
-    - X
-    - rasax
 - synonym: local
   examples: |
     - locally

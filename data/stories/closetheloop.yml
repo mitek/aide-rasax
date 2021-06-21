@@ -1,83 +1,5 @@
 version: "2.0"
 stories:
-- story: story number 1
-  steps:
-  - intent: greet
-  - action: action_greet_user
-  - intent: out_of_scope
-  - action: utter_out_of_scope
-  - action: utter_possibilities
-  - intent: signup_newsletter
-  - action: utter_can_do
-  - action: subscribe_newsletter_form
-  - active_loop: subscribe_newsletter_form
-  - active_loop: null
-  - action: action_submit_subscribe_newsletter_form
-  - action: utter_docu
-  - action: utter_ask_feedback
-  - intent: thank
-  - action: utter_noworries
-  - action: utter_anything_else
-  - intent: contact_sales
-  - action: utter_moreinformation
-  - action: sales_form
-  - active_loop: sales_form
-  - active_loop: null
-  - action: action_submit_sales_form
-  - action: utter_ask_feedback
-- story: story number 2
-  steps:
-  - intent: greet
-  - action: action_greet_user
-  - intent: signup_newsletter
-  - action: utter_can_do
-  - action: subscribe_newsletter_form
-  - active_loop: subscribe_newsletter_form
-  - active_loop: null
-  - action: action_submit_subscribe_newsletter_form
-  - action: utter_docu
-  - action: utter_ask_feedback
-  - intent: out_of_scope
-  - action: utter_out_of_scope
-  - action: utter_anything_else
-- story: story number 4
-  steps:
-  - intent: greet
-  - action: action_greet_user
-  - intent: signup_newsletter
-  - action: utter_can_do
-  - action: subscribe_newsletter_form
-  - active_loop: subscribe_newsletter_form
-  - active_loop: null
-  - action: action_submit_subscribe_newsletter_form
-  - action: utter_docu
-  - action: utter_ask_feedback
-  - intent: thank
-  - action: utter_noworries
-  - action: utter_anything_else
-  - intent: chitchat
-  - action: utter_chitchat
-  - intent: out_of_scope
-  - action: utter_out_of_scope
-  - action: utter_possibilities
-- story: story number 5
-  steps:
-  - intent: greet
-  - action: action_greet_user
-  - intent: signup_newsletter
-  - action: utter_can_do
-  - action: subscribe_newsletter_form
-  - active_loop: subscribe_newsletter_form
-  - active_loop: null
-  - action: action_submit_subscribe_newsletter_form
-  - action: utter_docu
-  - action: utter_ask_feedback
-  - intent: thank
-  - action: utter_noworries
-  - action: utter_anything_else
-  - intent: out_of_scope
-  - action: utter_out_of_scope
-  - action: utter_possibilities
 - story: story number 6
   steps:
   - intent: greet
@@ -120,68 +42,6 @@ stories:
   - action: utter_possibilities
   - intent: deny
   - action: utter_nohelp
-- story: story number 11, continue
-  steps:
-  - intent: greet
-  - action: action_greet_user
-  - intent: chitchat
-  - action: utter_chitchat
-  - intent: chitchat
-  - action: utter_chitchat
-  - intent: chitchat
-  - action: utter_chitchat
-  - intent: chitchat
-  - action: utter_chitchat
-  - intent: signup_newsletter
-  - action: utter_can_do
-  - action: subscribe_newsletter_form
-  - active_loop: subscribe_newsletter_form
-  - intent: deny
-  - action: utter_cantsignup
-  - action: utter_ask_continue_newsletter
-  - intent: affirm
-  - action: utter_great
-  - action: subscribe_newsletter_form
-  - active_loop: null
-  - action: action_submit_subscribe_newsletter_form
-  - action: utter_docu
-  - action: utter_ask_feedback
-- story: story number 12
-  steps:
-  - intent: greet
-  - action: action_greet_user
-  - intent: signup_newsletter
-  - action: utter_can_do
-  - action: subscribe_newsletter_form
-  - active_loop: subscribe_newsletter_form
-  - active_loop: null
-  - action: action_submit_subscribe_newsletter_form
-  - action: utter_docu
-  - action: utter_ask_feedback
-  - intent: enter_data
-  - action: utter_thumbsup
-  - action: utter_anything_else
-- story: story number 12, continue
-  steps:
-  - intent: greet
-  - action: action_greet_user
-  - intent: signup_newsletter
-  - action: utter_can_do
-  - action: subscribe_newsletter_form
-  - active_loop: subscribe_newsletter_form
-  - intent: out_of_scope
-  - action: utter_out_of_scope
-  - action: utter_ask_continue_newsletter
-  - intent: affirm
-  - action: utter_great
-  - action: subscribe_newsletter_form
-  - active_loop: null
-  - action: action_submit_subscribe_newsletter_form
-  - action: utter_docu
-  - action: utter_ask_feedback
-  - intent: enter_data
-  - action: utter_thumbsup
-  - action: utter_anything_else
 - story: story number 14
   steps:
   - intent: greet
@@ -244,6 +104,21 @@ stories:
   - intent: enter_data
   - action: utter_not_sure
   - action: utter_possibilities
+- story: Story from conversation with 00e7815f79e4413abb0dfb4b392f1099 on November 15th 2018
+  steps:
+  - intent: greet
+  - action: action_greet_user
+  - intent: greet
+  - action: action_greet_user
+  - intent: chitchat
+  - action: utter_chitchat
+  - intent: how_to_get_started
+  - action: utter_ask_playground_install_info
+  - intent: trigger_response_selector
+    entities:
+    - retrieval_intent: chitchat/ask_whatisaide
+  - action: action_trigger_response_selector
+  - action: utter_first_bot_with_rasa
 - story: story from linda
   steps:
   - intent: greet
@@ -255,7 +130,20 @@ stories:
   - action: utter_ask_playground_install_info
   - intent: trigger_response_selector
     entities:
-    - retrieval_intent: chitchat/ask_whatisrasa
+    - retrieval_intent: chitchat/ask_whatisaide
+  - action: action_trigger_response_selector
+  - action: utter_first_bot_with_rasa
+- story: Story from conversation with dfbb633d10854f97b880a2496d632f0d on November 16th 2018
+  steps:
+  - intent: greet
+  - action: action_greet_user
+  - intent: greet
+  - action: action_greet_user
+  - intent: how_to_get_started
+  - action: utter_ask_playground_install_info
+  - intent: trigger_response_selector
+    entities:
+    - retrieval_intent: chitchat/ask_whatisaide
   - action: action_trigger_response_selector
   - action: utter_first_bot_with_rasa
 - story: Story from conversation with linda on November 15th 2018
@@ -270,6 +158,146 @@ stories:
   - action: utter_ask_playground_install_info
   - intent: trigger_response_selector
     entities:
-    - retrieval_intent: chitchat/ask_whatisrasa
+    - retrieval_intent: chitchat/ask_whatisaide
   - action: action_trigger_response_selector
   - action: utter_first_bot_with_rasa
+- story: Story from conversation with 477ddbe73e374eedb07104c5d9f42c31 on November 16th 2018
+  steps:
+  - intent: greet
+  - action: action_greet_user
+  - intent: greet
+  - action: action_greet_user
+  - intent: how_to_get_started
+  - action: utter_ask_playground_install_info
+  - intent: trigger_response_selector
+    entities:
+    - retrieval_intent: chitchat/ask_whatisaide
+  - action: action_trigger_response_selector
+  - action: utter_first_bot_with_rasa
+  - intent: greet
+  - action: action_greet_user
+- story: Story from conversation with 4986d88ccb784dc19dc5a553a8e07890 on November 19th 2018
+  steps:
+  - intent: greet
+  - action: action_greet_user
+  - intent: greet
+  - action: action_greet_user
+  - intent: chitchat
+  - action: utter_chitchat
+  - intent: how_to_get_started
+  - action: utter_ask_playground_install_info
+  - intent: trigger_response_selector
+    entities:
+    - retrieval_intent: chitchat/ask_whatisaide
+  - action: action_trigger_response_selector
+  - action: utter_first_bot_with_rasa
+  - intent: affirm
+  - action: action_set_onboarding
+  - slot_was_set:
+    - onboarding: true
+  - action: utter_built_bot_before
+  - intent: deny
+  - action: utter_explain_aide_components
+  - action: utter_aide_components_details
+  - action: utter_ask_explain_nlucorex
+  - intent: how_to_get_started
+    entities:
+    - product: core
+  - slot_was_set:
+    - product: core
+  - action: utter_explain_core
+  - action: utter_also_explain_nlu
+  - intent: how_to_get_started
+    entities:
+    - product: core
+  - slot_was_set:
+    - product: core
+  - action: utter_explain_core
+- story: Story from conversation with 7830abb04e1c49809d89b0d420443928 on November 19th 2018
+  steps:
+  - intent: greet
+  - action: action_greet_user
+  - intent: chitchat
+  - action: utter_chitchat
+  - intent: out_of_scope
+  - action: utter_out_of_scope
+  - action: utter_possibilities
+  - intent: chitchat
+  - action: utter_chitchat
+  - intent: how_to_get_started
+    entities:
+    - product: nlu
+  - action: utter_getstarted
+  - action: utter_first_bot_with_rasa
+- story: Story from conversation with 29d264d8ce574a11bde572f0e79b73f3 on November 19th 2018
+  steps:
+  - intent: greet
+  - action: action_greet_user
+  - intent: greet
+  - action: action_greet_user
+  - intent: chitchat
+  - action: utter_chitchat
+  - intent: affirm
+  - action: utter_thumbsup
+- story: Story from conversation with 6fd65c93e374489f9c8d76697ab9c493 on November 19th 2018
+  steps:
+  - intent: greet
+  - action: action_greet_user
+  - intent: greet
+  - action: action_greet_user
+  - intent: chitchat
+  - action: utter_chitchat
+  - intent: affirm
+  - action: utter_thumbsup
+- story: Story from conversation with 35d1ecc91c364cbf8a6edf006e5d8c9a on November 19th 2018
+  steps:
+  - intent: greet
+  - action: action_greet_user
+  - intent: enter_data
+  - action: utter_not_sure
+  - action: utter_possibilities
+  - intent: contact_sales
+  - action: utter_moreinformation
+  - action: sales_form
+  - active_loop: sales_form
+  - active_loop: null
+  - action: action_submit_sales_form
+  - action: utter_ask_feedback
+  - intent: deny
+  - action: utter_thumbsup
+  - action: utter_anything_else
+  - intent: affirm
+  - action: utter_what_help
+- story: Story from conversation with 4c274f8d470e4b77adbfefe7cda7cad7 on October 27th 2018
+  steps:
+  - intent: greet
+  - action: action_greet_user
+  - intent: greet
+  - action: action_greet_user
+  - intent: affirm
+  - action: utter_thumbsup
+  - intent: how_to_get_started
+  - action: utter_ask_playground_install_info
+  - intent: trigger_response_selector
+    entities:
+    - retrieval_intent: chitchat/ask_whatisaide
+  - action: action_trigger_response_selector
+  - action: utter_first_bot_with_rasa
+- story: Story from conversation with d041ba4b0a89479e9bb6a5007f2cdc87 on November 15th 2018
+  steps:
+  - intent: contact_sales
+  - action: utter_moreinformation
+  - action: sales_form
+  - active_loop: sales_form
+  - active_loop: null
+  - action: action_submit_sales_form
+  - action: utter_ask_feedback
+  - intent: enter_data
+  - action: utter_thumbsup
+  - action: utter_anything_else
+  - intent: chitchat
+  - action: utter_chitchat
+  - intent: enter_data
+  - action: utter_not_sure
+  - action: utter_possibilities
+

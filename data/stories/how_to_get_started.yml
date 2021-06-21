@@ -23,8 +23,8 @@ stories:
   - action: utter_getstarted_new
   - action: utter_built_bot_before
   - intent: deny
-  - action: utter_explain_rasa_components
-  - action: utter_rasa_components_details
+  - action: utter_explain_aide_components
+  - action: utter_aide_components_details
   - action: utter_ask_explain_nlucorex
   - or:
     - intent: affirm
@@ -46,8 +46,8 @@ stories:
   - action: utter_getstarted_new
   - action: utter_built_bot_before
   - intent: deny
-  - action: utter_explain_rasa_components
-  - action: utter_rasa_components_details
+  - action: utter_explain_aide_components
+  - action: utter_aide_components_details
   - action: utter_ask_explain_nlucorex
   - intent: faq
     entities:
@@ -60,7 +60,7 @@ stories:
   - action: utter_ask_playground_install_info
   - intent: trigger_response_selector
     entities:
-    - retrieval_intent: chitchat/ask_whatisrasa
+    - retrieval_intent: chitchat/ask_whatisaide
   - action: action_trigger_response_selector
   - action: utter_first_bot_with_rasa
   - or:
@@ -76,8 +76,8 @@ stories:
   - intent: affirm
   - action: utter_ask_migration
   - intent: deny
-  - action: utter_explain_rasa_components
-  - action: utter_rasa_components_details
+  - action: utter_explain_aide_components
+  - action: utter_aide_components_details
   - action: utter_ask_explain_nlucorex
   - or:
     - intent: affirm
@@ -94,7 +94,7 @@ stories:
   - action: utter_ask_playground_install_info
   - intent: trigger_response_selector
     entities:
-    - retrieval_intent: chitchat/ask_whatisrasa
+    - retrieval_intent: chitchat/ask_whatisaide
   - action: action_trigger_response_selector
   - action: utter_first_bot_with_rasa
   - or:
@@ -110,8 +110,8 @@ stories:
   - intent: affirm
   - action: utter_ask_migration
   - intent: deny
-  - action: utter_explain_rasa_components
-  - action: utter_rasa_components_details
+  - action: utter_explain_aide_components
+  - action: utter_aide_components_details
   - action: utter_ask_explain_nlucorex
   - or:
     - intent: affirm
@@ -128,7 +128,7 @@ stories:
   - action: utter_ask_playground_install_info
   - intent: trigger_response_selector
     entities:
-    - retrieval_intent: chitchat/ask_whatisrasa
+    - retrieval_intent: chitchat/ask_whatisaide
   - action: action_trigger_response_selector
   - action: utter_first_bot_with_rasa
   - or:
@@ -149,7 +149,7 @@ stories:
   - action: utter_ask_playground_install_info
   - intent: trigger_response_selector
     entities:
-    - retrieval_intent: chitchat/ask_whatisrasa
+    - retrieval_intent: chitchat/ask_whatisaide
   - action: action_trigger_response_selector
   - action: utter_first_bot_with_rasa
   - or:
@@ -170,7 +170,7 @@ stories:
   - action: utter_ask_playground_install_info
   - intent: trigger_response_selector
     entities:
-    - retrieval_intent: chitchat/ask_whatisrasa
+    - retrieval_intent: chitchat/ask_whatisaide
   - action: action_trigger_response_selector
   - action: utter_first_bot_with_rasa
   - or:
@@ -195,7 +195,7 @@ stories:
   - action: utter_ask_playground_install_info
   - intent: trigger_response_selector
     entities:
-    - retrieval_intent: chitchat/ask_whatisrasa
+    - retrieval_intent: chitchat/ask_whatisaide
   - action: action_trigger_response_selector
   - action: utter_first_bot_with_rasa
   - or:
@@ -236,7 +236,7 @@ stories:
   - action: utter_ask_playground_install_info
   - intent: trigger_response_selector
     entities:
-    - retrieval_intent: chitchat/ask_whatisrasa
+    - retrieval_intent: chitchat/ask_whatisaide
   - action: action_trigger_response_selector
   - action: utter_first_bot_with_rasa
   - or:
@@ -250,8 +250,8 @@ stories:
     - onboarding: true
   - action: utter_built_bot_before
   - intent: deny
-  - action: utter_explain_rasa_components
-  - action: utter_rasa_components_details
+  - action: utter_explain_aide_components
+  - action: utter_aide_components_details
   - action: utter_ask_explain_nlucorex
   - or:
     - intent: affirm
@@ -268,7 +268,7 @@ stories:
   - action: utter_ask_playground_install_info
   - intent: trigger_response_selector
     entities:
-    - retrieval_intent: chitchat/ask_whatisrasa
+    - retrieval_intent: chitchat/ask_whatisaide
   - action: action_trigger_response_selector
   - action: utter_first_bot_with_rasa
   - or:
@@ -282,8 +282,8 @@ stories:
     - onboarding: true
   - action: utter_built_bot_before
   - intent: deny
-  - action: utter_explain_rasa_components
-  - action: utter_rasa_components_details
+  - action: utter_explain_aide_components
+  - action: utter_aide_components_details
   - action: utter_ask_explain_nlucorex
   - intent: how_to_get_started
     entities:
@@ -298,7 +298,7 @@ stories:
   - action: utter_ask_playground_install_info
   - intent: trigger_response_selector
     entities:
-    - retrieval_intent: chitchat/ask_whatisrasa
+    - retrieval_intent: chitchat/ask_whatisaide
   - action: action_trigger_response_selector
   - action: utter_first_bot_with_rasa
   - or:
@@ -312,8 +312,8 @@ stories:
     - onboarding: true
   - action: utter_built_bot_before
   - intent: deny
-  - action: utter_explain_rasa_components
-  - action: utter_rasa_components_details
+  - action: utter_explain_aide_components
+  - action: utter_aide_components_details
   - action: utter_ask_explain_nlucorex
   - intent: faq
     entities:
@@ -326,7 +326,7 @@ stories:
   - action: utter_ask_playground_install_info
   - intent: trigger_response_selector
     entities:
-    - retrieval_intent: chitchat/ask_whatisrasa
+    - retrieval_intent: chitchat/ask_whatisaide
   - action: action_trigger_response_selector
   - action: utter_first_bot_with_rasa
   - or:
@@ -340,8 +340,8 @@ stories:
     - onboarding: true
   - action: utter_built_bot_before
   - intent: deny
-  - action: utter_explain_rasa_components
-  - action: utter_rasa_components_details
+  - action: utter_explain_aide_components
+  - action: utter_aide_components_details
   - action: utter_ask_explain_nlucorex
   - intent: how_to_get_started
     entities:
@@ -359,7 +359,7 @@ stories:
   - action: utter_ask_playground_install_info
   - intent: trigger_response_selector
     entities:
-    - retrieval_intent: chitchat/ask_whatisrasa
+    - retrieval_intent: chitchat/ask_whatisaide
   - action: action_trigger_response_selector
   - action: utter_first_bot_with_rasa
   - or:
@@ -373,8 +373,8 @@ stories:
     - onboarding: true
   - action: utter_built_bot_before
   - intent: deny
-  - action: utter_explain_rasa_components
-  - action: utter_rasa_components_details
+  - action: utter_explain_aide_components
+  - action: utter_aide_components_details
   - action: utter_ask_explain_nlucorex
   - intent: faq
     entities:
@@ -387,7 +387,7 @@ stories:
   - action: utter_ask_playground_install_info
   - intent: trigger_response_selector
     entities:
-    - retrieval_intent: chitchat/ask_whatisrasa
+    - retrieval_intent: chitchat/ask_whatisaide
   - action: action_trigger_response_selector
   - action: utter_first_bot_with_rasa
   - or:
@@ -401,8 +401,8 @@ stories:
     - onboarding: true
   - action: utter_built_bot_before
   - intent: deny
-  - action: utter_explain_rasa_components
-  - action: utter_rasa_components_details
+  - action: utter_explain_aide_components
+  - action: utter_aide_components_details
   - action: utter_ask_explain_nlucorex
   - intent: how_to_get_started
     entities:
@@ -419,7 +419,7 @@ stories:
   - action: utter_ask_playground_install_info
   - intent: trigger_response_selector
     entities:
-    - retrieval_intent: chitchat/ask_whatisrasa
+    - retrieval_intent: chitchat/ask_whatisaide
   - action: action_trigger_response_selector
   - action: utter_first_bot_with_rasa
   - or:
@@ -433,8 +433,8 @@ stories:
     - onboarding: true
   - action: utter_built_bot_before
   - intent: deny
-  - action: utter_explain_rasa_components
-  - action: utter_rasa_components_details
+  - action: utter_explain_aide_components
+  - action: utter_aide_components_details
   - action: utter_ask_explain_nlucorex
   - intent: how_to_get_started
     entities:
@@ -449,7 +449,7 @@ stories:
   - action: utter_ask_playground_install_info
   - intent: trigger_response_selector
     entities:
-    - retrieval_intent: chitchat/ask_whatisrasa
+    - retrieval_intent: chitchat/ask_whatisaide
   - action: action_trigger_response_selector
   - action: utter_first_bot_with_rasa
   - or:
@@ -463,8 +463,8 @@ stories:
     - onboarding: true
   - action: utter_built_bot_before
   - intent: deny
-  - action: utter_explain_rasa_components
-  - action: utter_rasa_components_details
+  - action: utter_explain_aide_components
+  - action: utter_aide_components_details
   - action: utter_ask_explain_nlucorex
   - intent: how_to_get_started
     entities:
@@ -479,7 +479,7 @@ stories:
   - action: utter_ask_playground_install_info
   - intent: trigger_response_selector
     entities:
-    - retrieval_intent: chitchat/ask_whatisrasa
+    - retrieval_intent: chitchat/ask_whatisaide
   - action: action_trigger_response_selector
   - action: utter_first_bot_with_rasa
   - intent: deny
@@ -497,7 +497,7 @@ stories:
   - action: utter_ask_playground_install_info
   - intent: trigger_response_selector
     entities:
-    - retrieval_intent: chitchat/ask_whatisrasa
+    - retrieval_intent: chitchat/ask_whatisaide
   - action: action_trigger_response_selector
   - action: utter_first_bot_with_rasa
   - intent: deny
@@ -516,7 +516,7 @@ stories:
   - action: utter_ask_playground_install_info
   - intent: trigger_response_selector
     entities:
-    - retrieval_intent: chitchat/ask_whatisrasa
+    - retrieval_intent: chitchat/ask_whatisaide
   - action: action_trigger_response_selector
   - action: utter_first_bot_with_rasa
   - or:
@@ -530,8 +530,8 @@ stories:
     - onboarding: true
   - action: utter_built_bot_before
   - intent: deny
-  - action: utter_explain_rasa_components
-  - action: utter_rasa_components_details
+  - action: utter_explain_aide_components
+  - action: utter_aide_components_details
   - action: utter_ask_explain_nlucorex
   - intent: explain
   - action: utter_explain_nlu
@@ -543,7 +543,7 @@ stories:
   - action: utter_ask_playground_install_info
   - intent: trigger_response_selector
     entities:
-    - retrieval_intent: chitchat/ask_whatisrasa
+    - retrieval_intent: chitchat/ask_whatisaide
   - action: action_trigger_response_selector
   - action: utter_first_bot_with_rasa
   - or:
@@ -557,8 +557,8 @@ stories:
     - onboarding: true
   - action: utter_built_bot_before
   - intent: deny
-  - action: utter_explain_rasa_components
-  - action: utter_rasa_components_details
+  - action: utter_explain_aide_components
+  - action: utter_aide_components_details
   - action: utter_ask_explain_nlucorex
   - intent: faq
     entities:
@@ -571,7 +571,7 @@ stories:
   - action: utter_ask_playground_install_info
   - intent: trigger_response_selector
     entities:
-    - retrieval_intent: chitchat/ask_whatisrasa
+    - retrieval_intent: chitchat/ask_whatisaide
   - action: action_trigger_response_selector
   - action: utter_first_bot_with_rasa
   - or:
@@ -585,8 +585,8 @@ stories:
     - onboarding: true
   - action: utter_built_bot_before
   - intent: deny
-  - action: utter_explain_rasa_components
-  - action: utter_rasa_components_details
+  - action: utter_explain_aide_components
+  - action: utter_aide_components_details
   - action: utter_ask_explain_nlucorex
   - intent: deny
   - action: utter_anything_else
@@ -596,7 +596,7 @@ stories:
   - action: utter_ask_playground_install_info
   - intent: trigger_response_selector
     entities:
-    - retrieval_intent: chitchat/ask_whatisrasa
+    - retrieval_intent: chitchat/ask_whatisaide
   - action: action_trigger_response_selector
   - action: utter_first_bot_with_rasa
   - intent: deny
@@ -612,7 +612,7 @@ stories:
   - action: utter_ask_playground_install_info
   - intent: trigger_response_selector
     entities:
-    - retrieval_intent: chitchat/ask_whatisrasa
+    - retrieval_intent: chitchat/ask_whatisaide
   - action: action_trigger_response_selector
   - action: utter_first_bot_with_rasa
   - intent: deny
@@ -631,7 +631,7 @@ stories:
   - action: utter_ask_playground_install_info
   - intent: trigger_response_selector
     entities:
-    - retrieval_intent: chitchat/ask_whatisrasa
+    - retrieval_intent: chitchat/ask_whatisaide
   - action: action_trigger_response_selector
   - action: utter_first_bot_with_rasa
   - intent: deny
@@ -650,7 +650,7 @@ stories:
   - action: utter_ask_playground_install_info
   - intent: trigger_response_selector
     entities:
-    - retrieval_intent: chitchat/ask_whatisrasa
+    - retrieval_intent: chitchat/ask_whatisaide
   - action: action_trigger_response_selector
   - action: utter_first_bot_with_rasa
   - intent: deny
@@ -671,7 +671,7 @@ stories:
   - action: utter_ask_playground_install_info
   - intent: trigger_response_selector
     entities:
-    - retrieval_intent: chitchat/ask_whatisrasa
+    - retrieval_intent: chitchat/ask_whatisaide
   - action: action_trigger_response_selector
   - action: utter_first_bot_with_rasa
   - intent: deny
@@ -692,7 +692,7 @@ stories:
   - action: utter_ask_playground_install_info
   - intent: trigger_response_selector
     entities:
-    - retrieval_intent: chitchat/ask_whatisrasa
+    - retrieval_intent: chitchat/ask_whatisaide
   - action: action_trigger_response_selector
   - action: utter_first_bot_with_rasa
   - intent: deny
@@ -711,7 +711,7 @@ stories:
   - action: utter_ask_playground_install_info
   - intent: trigger_response_selector
     entities:
-    - retrieval_intent: chitchat/ask_whatisrasa
+    - retrieval_intent: chitchat/ask_whatisaide
   - action: action_trigger_response_selector
   - action: utter_first_bot_with_rasa
   - intent: deny
@@ -732,7 +732,7 @@ stories:
   - action: utter_ask_playground_install_info
   - intent: trigger_response_selector
     entities:
-    - retrieval_intent: chitchat/ask_whatisrasa
+    - retrieval_intent: chitchat/ask_whatisaide
   - action: action_trigger_response_selector
   - action: utter_first_bot_with_rasa
   - intent: deny
@@ -763,24 +763,13 @@ stories:
     - product: rasa
   - action: utter_explain_nlu
   - action: utter_explain_core
-- story: skip to info on rasa nlu
-  steps:
-  - intent: how_to_get_started
-    entities:
-    - product: nlu
-  - action: utter_ask_for_nlu_specifics
-  - intent: nlu_info
-    entities:
-    - nlu_part: intent classification
-  - action: utter_nlu_intent_tutorial
-  - action: utter_offer_recommendation
 - story: not new to rasa + x
   steps:
   - intent: how_to_get_started
   - action: utter_ask_playground_install_info
   - intent: trigger_response_selector
     entities:
-    - retrieval_intent: chitchat/ask_whatisrasa
+    - retrieval_intent: chitchat/ask_whatisaide
   - action: action_trigger_response_selector
   - action: utter_first_bot_with_rasa
   - intent: deny
@@ -801,7 +790,7 @@ stories:
   - action: utter_ask_playground_install_info
   - intent: trigger_response_selector
     entities:
-    - retrieval_intent: chitchat/ask_whatisrasa
+    - retrieval_intent: chitchat/ask_whatisaide
   - action: action_trigger_response_selector
   - action: utter_first_bot_with_rasa
   - intent: affirm
@@ -812,14 +801,14 @@ stories:
   - intent: affirm
   - action: utter_ask_migration
   - intent: deny
-  - action: utter_explain_rasa_components
-  - action: utter_rasa_components_details
+  - action: utter_explain_aide_components
+  - action: utter_aide_components_details
   - action: utter_ask_explain_nlucorex
   - intent: how_to_get_started
     entities:
-    - product: x
+    - product: aide
   - slot_was_set:
-    - product: x
+    - product: aide
   - action: utter_explain_x
   - action: utter_also_explain_nlucore
   - intent: affirm
@@ -837,7 +826,7 @@ stories:
   - action: utter_ask_playground_install_info
   - intent: trigger_response_selector
     entities:
-    - retrieval_intent: chitchat/ask_whatisrasa
+    - retrieval_intent: chitchat/ask_whatisaide
   - action: action_trigger_response_selector
   - action: utter_first_bot_with_rasa
   - intent: affirm
@@ -848,8 +837,8 @@ stories:
   - intent: affirm
   - action: utter_ask_migration
   - intent: deny
-  - action: utter_explain_rasa_components
-  - action: utter_rasa_components_details
+  - action: utter_explain_aide_components
+  - action: utter_aide_components_details
   - action: utter_ask_explain_nlucorex
   - intent: how_to_get_started
     entities:
@@ -862,7 +851,7 @@ stories:
   - action: utter_ask_playground_install_info
   - intent: trigger_response_selector
     entities:
-    - retrieval_intent: chitchat/ask_whatisrasa
+    - retrieval_intent: chitchat/ask_whatisaide
   - action: action_trigger_response_selector
   - action: utter_first_bot_with_rasa
   - intent: affirm
@@ -873,8 +862,8 @@ stories:
   - intent: affirm
   - action: utter_ask_migration
   - intent: deny
-  - action: utter_explain_rasa_components
-  - action: utter_rasa_components_details
+  - action: utter_explain_aide_components
+  - action: utter_aide_components_details
   - action: utter_ask_explain_nlucorex
   - intent: faq
     entities:
@@ -889,7 +878,7 @@ stories:
   - action: utter_ask_playground_install_info
   - intent: trigger_response_selector
     entities:
-    - retrieval_intent: chitchat/ask_whatisrasa
+    - retrieval_intent: chitchat/ask_whatisaide
   - action: action_trigger_response_selector
   - action: utter_first_bot_with_rasa
   - intent: affirm
@@ -900,14 +889,14 @@ stories:
   - intent: affirm
   - action: utter_ask_migration
   - intent: deny
-  - action: utter_explain_rasa_components
-  - action: utter_rasa_components_details
+  - action: utter_explain_aide_components
+  - action: utter_aide_components_details
   - action: utter_ask_explain_nlucorex
   - intent: faq
     entities:
-    - product: x
+    - product: aide
   - slot_was_set:
-    - product: x
+    - product: aide
   - action: utter_explain_x
   - action: utter_also_explain_nlucore
 - story: skip to info on core
@@ -923,7 +912,7 @@ stories:
   - action: utter_ask_playground_install_info
   - intent: trigger_response_selector
     entities:
-    - retrieval_intent: chitchat/ask_whatisrasa
+    - retrieval_intent: chitchat/ask_whatisaide
   - action: action_trigger_response_selector
   - action: utter_first_bot_with_rasa
   - intent: deny
@@ -938,452 +927,9 @@ stories:
   - intent: deny
   - action: utter_tutorialnlu
   - action: utter_anything_else
-- story: not new to rasa + nlu + unknown topic
-  steps:
-  - intent: how_to_get_started
-  - action: utter_ask_playground_install_info
-  - intent: trigger_response_selector
-    entities:
-    - retrieval_intent: chitchat/ask_whatisrasa
-  - action: action_trigger_response_selector
-  - action: utter_first_bot_with_rasa
-  - intent: deny
-  - action: action_set_onboarding
-  - slot_was_set:
-    - onboarding: false
-  - action: utter_ask_which_product
-  - intent: how_to_get_started
-    entities:
-    - product: nlu
-  - action: utter_ask_for_nlu_specifics
-  - intent: nlu_info
-  - action: action_store_unknown_nlu_part
-  - action: utter_dont_know_nlu_part
-  - action: utter_search_bar
-  - action: utter_anything_else
-- story: not new to rasa + nlu + intent + no recommendation
-  steps:
-  - intent: how_to_get_started
-  - action: utter_ask_playground_install_info
-  - intent: trigger_response_selector
-    entities:
-    - retrieval_intent: chitchat/ask_whatisrasa
-  - action: action_trigger_response_selector
-  - action: utter_first_bot_with_rasa
-  - intent: deny
-  - action: action_set_onboarding
-  - slot_was_set:
-    - onboarding: false
-  - action: utter_ask_which_product
-  - intent: how_to_get_started
-    entities:
-    - product: nlu
-  - action: utter_ask_for_nlu_specifics
-  - intent: nlu_info
-    entities:
-    - nlu_part: intent classification
-  - action: utter_nlu_intent_tutorial
-  - action: utter_offer_recommendation
-  - intent: deny
-  - action: utter_thumbsup
-  - action: utter_anything_else
-- story: pipeline
-  steps:
-  - intent: pipeline_recommendation
-  - action: utter_what_language
-  - intent: enter_data
-    entities:
-    - language: english
-  - slot_was_set:
-    - language: english
-  - action: utter_pipeline_english
-  - action: utter_anything_else
-- story: pipeline
-  steps:
-  - intent: pipeline_recommendation
-  - action: utter_what_language
-  - intent: enter_data
-    entities:
-    - language: spanish
-  - slot_was_set:
-    - language: __other__
-  - action: action_store_bot_language
-  - slot_was_set:
-    - can_use_spacy: true
-  - action: utter_pipeline_nonenglish_spacy
-  - action: utter_anything_else
-- story: pipeline
-  steps:
-  - intent: pipeline_recommendation
-  - action: utter_what_language
-  - intent: enter_data
-    entities:
-    - language: Russian
-  - slot_was_set:
-    - language: __other__
-  - action: action_store_bot_language
-  - slot_was_set:
-    - can_use_spacy: false
-  - action: utter_pipeline_nonenglish_nospacy
-  - action: utter_anything_else
-- story: pipeline
-  steps:
-  - intent: pipeline_recommendation
-  - action: utter_what_language
-  - intent: enter_data
-  - action: action_store_bot_language
-  - slot_was_set:
-    - can_use_spacy: true
-  - action: utter_pipeline_nonenglish_spacy
-  - action: utter_anything_else
-- story: not new to rasa + nlu + intent + pipeline recommendation, spacy
-  steps:
-  - intent: how_to_get_started
-  - action: utter_ask_playground_install_info
-  - intent: trigger_response_selector
-    entities:
-    - retrieval_intent: chitchat/ask_whatisrasa
-  - action: action_trigger_response_selector
-  - action: utter_first_bot_with_rasa
-  - intent: deny
-  - action: action_set_onboarding
-  - slot_was_set:
-    - onboarding: false
-  - action: utter_ask_which_product
-  - intent: how_to_get_started
-    entities:
-    - product: nlu
-  - action: utter_ask_for_nlu_specifics
-  - intent: nlu_info
-    entities:
-    - nlu_part: intent classification
-  - action: utter_nlu_intent_tutorial
-  - action: utter_offer_recommendation
-  - or:
-    - intent: pipeline_recommendation
-    - intent: affirm
-  - action: utter_what_language
-  - intent: enter_data
-    entities:
-    - language: spanish
-  - slot_was_set:
-    - language: __other__
-  - action: action_store_bot_language
-  - slot_was_set:
-    - can_use_spacy: true
-  - action: utter_pipeline_nonenglish_spacy
-  - action: utter_anything_else
-- story: not new to rasa + nlu + intent + pipeline recommendation, not spacy
-  steps:
-  - intent: how_to_get_started
-  - action: utter_ask_playground_install_info
-  - intent: trigger_response_selector
-    entities:
-    - retrieval_intent: chitchat/ask_whatisrasa
-  - action: action_trigger_response_selector
-  - action: utter_first_bot_with_rasa
-  - intent: deny
-  - action: action_set_onboarding
-  - slot_was_set:
-    - onboarding: false
-  - action: utter_ask_which_product
-  - intent: how_to_get_started
-    entities:
-    - product: nlu
-  - action: utter_ask_for_nlu_specifics
-  - intent: nlu_info
-    entities:
-    - nlu_part: intent classification
-  - action: utter_nlu_intent_tutorial
-  - action: utter_offer_recommendation
-  - or:
-    - intent: pipeline_recommendation
-    - intent: affirm
-  - action: utter_what_language
-  - intent: enter_data
-    entities:
-    - language: russian
-  - slot_was_set:
-    - language: __other__
-  - action: action_store_bot_language
-  - slot_was_set:
-    - can_use_spacy: false
-  - action: utter_pipeline_nonenglish_nospacy
-  - action: utter_anything_else
-- story: not new to rasa + nlu + intent + pipeline recommendation, not spacy
-  steps:
-  - intent: how_to_get_started
-  - action: utter_ask_playground_install_info
-  - intent: trigger_response_selector
-    entities:
-    - retrieval_intent: chitchat/ask_whatisrasa
-  - action: action_trigger_response_selector
-  - action: utter_first_bot_with_rasa
-  - intent: deny
-  - action: action_set_onboarding
-  - slot_was_set:
-    - onboarding: false
-  - action: utter_ask_which_product
-  - intent: how_to_get_started
-    entities:
-    - product: nlu
-  - action: utter_ask_for_nlu_specifics
-  - intent: nlu_info
-    entities:
-    - nlu_part: intent classification
-  - action: utter_nlu_intent_tutorial
-  - action: utter_offer_recommendation
-  - or:
-    - intent: pipeline_recommendation
-    - intent: affirm
-  - action: utter_what_language
-  - intent: enter_data
-  - action: action_store_bot_language
-  - slot_was_set:
-    - can_use_spacy: false
-  - action: utter_pipeline_nonenglish_nospacy
-  - action: utter_anything_else
-- story: not new to rasa + nlu + intent + pipeline recommendation, english
-  steps:
-  - intent: how_to_get_started
-  - action: utter_ask_playground_install_info
-  - intent: trigger_response_selector
-    entities:
-    - retrieval_intent: chitchat/ask_whatisrasa
-  - action: action_trigger_response_selector
-  - action: utter_first_bot_with_rasa
-  - intent: deny
-  - action: action_set_onboarding
-  - slot_was_set:
-    - onboarding: false
-  - action: utter_ask_which_product
-  - intent: how_to_get_started
-    entities:
-    - product: nlu
-  - action: utter_ask_for_nlu_specifics
-  - intent: nlu_info
-    entities:
-    - nlu_part: intent classification
-  - action: utter_nlu_intent_tutorial
-  - action: utter_offer_recommendation
-  - or:
-    - intent: pipeline_recommendation
-    - intent: affirm
-  - action: utter_what_language
-  - intent: enter_data
-    entities:
-    - language: english
-  - slot_was_set:
-    - language: english
-  - action: utter_pipeline_english
-  - action: utter_anything_else
-- story: not new to rasa + nlu + intent + tool recommendation
-  steps:
-  - intent: how_to_get_started
-  - action: utter_ask_playground_install_info
-  - intent: trigger_response_selector
-    entities:
-    - retrieval_intent: chitchat/ask_whatisrasa
-  - action: action_trigger_response_selector
-  - action: utter_first_bot_with_rasa
-  - intent: deny
-  - action: action_set_onboarding
-  - slot_was_set:
-    - onboarding: false
-  - action: utter_ask_which_product
-  - intent: how_to_get_started
-    entities:
-    - product: nlu
-  - action: utter_ask_for_nlu_specifics
-  - intent: nlu_info
-    entities:
-    - nlu_part: intent classification
-  - action: utter_nlu_intent_tutorial
-  - action: utter_offer_recommendation
-  - intent: nlu_generation_tool_recommendation
-  - action: utter_nlu_tools
-- story: not new to rasa + nlu + entity + no recommendation
-  steps:
-  - intent: how_to_get_started
-  - action: utter_ask_playground_install_info
-  - intent: trigger_response_selector
-    entities:
-    - retrieval_intent: chitchat/ask_whatisrasa
-  - action: action_trigger_response_selector
-  - action: utter_first_bot_with_rasa
-  - intent: deny
-  - action: action_set_onboarding
-  - slot_was_set:
-    - onboarding: false
-  - action: utter_ask_which_product
-  - intent: how_to_get_started
-    entities:
-    - product: nlu
-  - action: utter_ask_for_nlu_specifics
-  - intent: nlu_info
-    entities:
-    - nlu_part: entity recognition
-  - action: utter_nlu_entity_tutorial
-  - action: utter_offer_recommendation
-  - intent: deny
-  - action: utter_thumbsup
-  - action: utter_anything_else
-- story: not new to rasa + nlu + entity + pipeline spacy
-  steps:
-  - intent: how_to_get_started
-  - action: utter_ask_playground_install_info
-  - intent: trigger_response_selector
-    entities:
-    - retrieval_intent: chitchat/ask_whatisrasa
-  - action: action_trigger_response_selector
-  - action: utter_first_bot_with_rasa
-  - intent: deny
-  - action: action_set_onboarding
-  - slot_was_set:
-    - onboarding: false
-  - action: utter_ask_which_product
-  - intent: how_to_get_started
-    entities:
-    - product: nlu
-  - action: utter_ask_for_nlu_specifics
-  - intent: nlu_info
-    entities:
-    - nlu_part: entity recognition
-  - action: utter_nlu_entity_tutorial
-  - action: utter_offer_recommendation
-  - or:
-    - intent: pipeline_recommendation
-    - intent: affirm
-  - action: utter_ask_entities
-  - intent: enter_data
-    entities:
-    - entity: name
-  - action: action_store_entity_extractor
-  - slot_was_set:
-    - entity_extractor: SpacyEntityExtractor
-  - action: utter_spacy
-  - action: utter_anything_else
-- story: not new to rasa + nlu + entity + pipeline duckling
-  steps:
-  - intent: how_to_get_started
-  - action: utter_ask_playground_install_info
-  - intent: trigger_response_selector
-    entities:
-    - retrieval_intent: chitchat/ask_whatisrasa
-  - action: action_trigger_response_selector
-  - action: utter_first_bot_with_rasa
-  - intent: deny
-  - action: action_set_onboarding
-  - slot_was_set:
-    - onboarding: false
-  - action: utter_ask_which_product
-  - intent: how_to_get_started
-    entities:
-    - product: nlu
-  - action: utter_ask_for_nlu_specifics
-  - intent: nlu_info
-    entities:
-    - nlu_part: entity recognition
-  - action: utter_nlu_entity_tutorial
-  - action: utter_offer_recommendation
-  - or:
-    - intent: pipeline_recommendation
-    - intent: affirm
-  - action: utter_ask_entities
-  - intent: enter_data
-    entities:
-    - entity: date ranges
-  - action: action_store_entity_extractor
-  - slot_was_set:
-    - entity_extractor: DucklingHTTPExtractor
-  - action: utter_duckling
-  - action: utter_anything_else
-- story: not new to rasa + nlu + entity + pipeline CRFEntityExtractor
-  steps:
-  - intent: how_to_get_started
-  - action: utter_ask_playground_install_info
-  - intent: trigger_response_selector
-    entities:
-    - retrieval_intent: chitchat/ask_whatisrasa
-  - action: action_trigger_response_selector
-  - action: utter_first_bot_with_rasa
-  - intent: deny
-  - action: action_set_onboarding
-  - slot_was_set:
-    - onboarding: false
-  - action: utter_ask_which_product
-  - intent: how_to_get_started
-    entities:
-    - product: nlu
-  - action: utter_ask_for_nlu_specifics
-  - intent: nlu_info
-    entities:
-    - nlu_part: entity recognition
-  - action: utter_nlu_entity_tutorial
-  - action: utter_offer_recommendation
-  - or:
-    - intent: pipeline_recommendation
-    - intent: affirm
-  - action: utter_ask_entities
-  - intent: enter_data
-    entities:
-    - entity: some custom entity
-  - action: action_store_entity_extractor
-  - slot_was_set:
-    - entity_extractor: CRFEntityExtractor
-  - action: utter_crf
-  - action: utter_anything_else
-- story: not new to rasa + nlu + entity + duckling info
-  steps:
-  - intent: how_to_get_started
-  - action: utter_ask_playground_install_info
-  - intent: trigger_response_selector
-    entities:
-    - retrieval_intent: chitchat/ask_whatisrasa
-  - action: action_trigger_response_selector
-  - action: utter_first_bot_with_rasa
-  - intent: deny
-  - action: action_set_onboarding
-  - slot_was_set:
-    - onboarding: false
-  - action: utter_ask_which_product
-  - intent: how_to_get_started
-    entities:
-    - product: nlu
-  - action: utter_ask_for_nlu_specifics
-  - intent: nlu_info
-    entities:
-    - nlu_part: duckling
-  - action: utter_duckling_info
-  - action: utter_anything_else
-- story: skip to info on nlu entities
-  steps:
-  - intent: nlu_info
-    entities:
-    - nlu_part: entity recognition
-  - action: utter_nlu_entity_tutorial
-  - action: utter_offer_recommendation
-- story: skip to info on nlu intents
-  steps:
-  - intent: nlu_info
-    entities:
-    - nlu_part: intent classification
-  - action: utter_nlu_intent_tutorial
-  - action: utter_offer_recommendation
-- story: skip to info on nlu intents
-  steps:
-  - intent: nlu_info
-    entities:
-    - nlu_part: duckling
-  - action: utter_duckling_info
-  - action: utter_anything_else
 - story: faq
   steps:
   - intent: faq
   - action: utter_faq
   - action: action_set_faq_slot
-- story: source code
-  steps:
-  - intent: source_code
-  - action: utter_source_code
-  - action: utter_anything_else
+
