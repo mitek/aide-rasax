@@ -7,24 +7,14 @@ stories:
   - action: utter_possibilities
 - story: say enter data outside the flows
   steps:
-  - intent: greet
+  - intent: chitchat
   - action: action_greet_user
   - intent: enter_data
   - action: utter_not_sure
   - action: utter_possibilities
 - story: say confirm outside the flows 2
   steps:
-  - intent: greet
+  - intent: chitchat
   - action: action_greet_user
   - intent: affirm
   - action: utter_thumbsup
-- story: say greet outside the flows
-  steps:
-  - intent: greet
-  - action: action_greet_user
-  - or:
-    - intent: greet
-    - intent: enter_data
-      entities:
-      - name: akela
-  - action: action_greet_user

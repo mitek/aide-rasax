@@ -1,10 +1,6 @@
 version: "2.0"
 stories:
 
-- story: answer out of scope
-  steps:
-  - intent: out_of_scope
-  - action: utter_out_of_scope
 - story: give help
   steps:
   - intent: help
@@ -13,21 +9,13 @@ stories:
   steps:
   - intent: thank
   - action: utter_welcome
-- story: greet + give info
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - action: utter_help
 - story: say goodbye
   steps:
   - intent: goodbye
   - action: utter_goodbye
-- story: open incident form interrupted
+- story: open incident form interrupted HELP
   steps:
-  - or:
-    - intent: open_incident
-    - intent: password_reset
-    - intent: problem_email
+  - intent: helpcreate
   - action: open_incident_form
   - active_loop: open_incident_form
   - intent: help
@@ -35,12 +23,9 @@ stories:
   - action: open_incident_form
   - active_loop: null
   - action: action_open_incident
-- story: open incident form interrupted
+- story: open incident form interrupted OOS
   steps:
-  - or:
-    - intent: open_incident
-    - intent: password_reset
-    - intent: problem_email
+  - intent: helpcreate
   - action: open_incident_form
   - active_loop: open_incident_form
   - intent: out_of_scope
@@ -48,9 +33,9 @@ stories:
   - action: open_incident_form
   - active_loop: null
   - action: action_open_incident
-- story: incident status form interrupted
+- story: incident status form interrupted with HELP
   steps:
-  - intent: incident_status
+  - intent: helpcheck
   - action: incident_status_form
   - active_loop: incident_status_form
   - intent: help
@@ -58,9 +43,9 @@ stories:
   - action: incident_status_form
   - active_loop: null
   - action: action_check_incident_status
-- story: incident status form interrupted
+- story: incident status form interrupted with OOS
   steps:
-  - intent: incident_status
+  - intent: helpcheck
   - action: incident_status_form
   - active_loop: incident_status_form
   - intent: out_of_scope
@@ -68,52 +53,17 @@ stories:
   - action: incident_status_form
   - active_loop: null
   - action: action_check_incident_status
-- story: incident status form switch to open incident
-  steps:
-  - intent: incident_status
-  - action: incident_status_form
-  - active_loop: incident_status_form
-  - or:
-    - intent: open_incident
-    - intent: password_reset
-    - intent: problem_email
-  - action: open_incident_form
-  - active_loop: open_incident_form
-  - active_loop: null
-  - action: action_open_incident
-- story: open incident form switch to incident status form
+- story: chitchat greet
   steps:
   - or:
-    - intent: open_incident
-    - intent: password_reset
-    - intent: problem_email
-  - action: open_incident_form
-  - active_loop: open_incident_form
-  - intent: incident_status
-  - action: incident_status_form
-  - active_loop: incident_status_form
-  - active_loop: null
-  - action: action_check_incident_status
-- story: thanks
-  steps:
-  - intent: thank
-  - action: utter_noworries
-  - action: utter_anything_else
-- story: bye
-  steps:
-  - intent: bye
-  - action: utter_bye
-- story: greet
-  steps:
-  - or:
-    - intent: greet
+    - intent: chitchat
     - intent: enter_data
       entities:
-      - name: akela
+      - name: Дмитрий
   - action: action_greet_user
 - story: sales
   steps:
-  - intent: greet
+  - intent: chitchat
   - action: action_greet_user
   - intent: contact_sales
   - action: utter_moreinformation
@@ -128,13 +78,13 @@ stories:
   - action: utter_anything_else
 - story: neither options
   steps:
-  - intent: greet
+  - intent: chitchat
   - action: action_greet_user
   - intent: deny
   - action: utter_nohelp
 - story: neither --> sales
   steps:
-  - intent: greet
+  - intent: chitchat
   - action: action_greet_user
   - intent: deny
   - action: utter_nohelp

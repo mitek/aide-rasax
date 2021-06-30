@@ -6,7 +6,7 @@ stories:
   - action: utter_canthelp
 - story: greet + canthelp
   steps:
-  - intent: greet
+  - intent: chitchat
   - action: action_greet_user
   - intent: canthelp
   - action: utter_canthelp

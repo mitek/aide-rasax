@@ -88,19 +88,6 @@ rules:
   - action: action_explain_sales_form
   - action: utter_ask_continue_sales
 
-- rule: Rasa x faq in sales form
-  condition:
-  - active_loop: sales_form
-  steps:
-  - intent: faq
-    entities:
-    - product: x
-  - slot_was_set:
-    - product: x
-  - action: utter_faq
-  - action: action_set_faq_slot
-  - action: utter_ask_continue_sales
-
 - rule: all faq in sales form
   condition:
   - active_loop: sales_form

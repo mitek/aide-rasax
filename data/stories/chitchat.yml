@@ -3,16 +3,18 @@ stories:
 - story: chitchat
   steps:
   - intent: chitchat
+  - action: action_greet_user
+  - intent: chitchat
   - action: utter_chitchat
 - story: deny chitchat
   steps:
   - intent: chitchat
-  - action: utter_chitchat
+  - action: action_greet_user
   - intent: deny
   - action: utter_nohelp
 - story: more chitchat
   steps:
-  - intent: greet
+  - intent: chitchat
   - action: action_greet_user
   - intent: chitchat
   - action: utter_chitchat
@@ -20,253 +22,19 @@ stories:
   - action: utter_chitchat
 - story: greet chitchat
   steps:
-  - intent: greet
-  - action: action_greet_user
   - intent: chitchat
-  - action: utter_chitchat
-- story: new to rasa + not new to chatbots + not migrating
-  steps:
-  - intent: greet
   - action: action_greet_user
-  - intent: chitchat
-  - action: utter_chitchat
-  - intent: how_to_get_started
-  - action: utter_ask_playground_install_info
-  - intent: trigger_response_selector
-    entities:
-    - retrieval_intent: chitchat/ask_whatisaide
-  - action: action_trigger_response_selector
-  - action: utter_first_bot_with_rasa
-  - intent: affirm
-  - action: action_set_onboarding
-  - slot_was_set:
-    - onboarding: true
-  - action: utter_built_bot_before
-  - intent: affirm
-  - action: utter_ask_migration
-  - intent: deny
-  - action: utter_explain_aide_components
-  - action: utter_aide_components_details
-  - action: utter_ask_explain_nlucorex
-  - or:
-    - intent: affirm
-    - intent: how_to_get_started
-      entities:
-      - product: all
-    - intent: explain
-  - action: utter_explain_nlu
-  - action: utter_explain_core
-  - action: utter_explain_x
-- story: new to rasa + not new to chatbots + not migrating
-  steps:
-  - intent: greet
-  - action: action_greet_user
-  - intent: how_to_get_started
-  - action: utter_ask_playground_install_info
-  - intent: trigger_response_selector
-    entities:
-    - retrieval_intent: chitchat/ask_whatisaide
-  - action: action_trigger_response_selector
-  - action: utter_first_bot_with_rasa
-  - intent: chitchat
-  - action: utter_chitchat
-  - action: utter_first_bot_with_rasa
-  - intent: affirm
-  - action: action_set_onboarding
-  - slot_was_set:
-    - onboarding: true
-  - action: utter_built_bot_before
-  - intent: affirm
-  - action: utter_ask_migration
-  - intent: deny
-  - action: utter_explain_aide_components
-  - action: utter_aide_components_details
-  - action: utter_ask_explain_nlucorex
-  - or:
-    - intent: affirm
-    - intent: how_to_get_started
-      entities:
-      - product: all
-    - intent: explain
-  - action: utter_explain_nlu
-  - action: utter_explain_core
-  - action: utter_explain_x
-- story: new to rasa + not new to chatbots + not migrating
-  steps:
-  - intent: greet
-  - action: action_greet_user
-  - intent: how_to_get_started
-  - action: utter_ask_playground_install_info
-  - intent: trigger_response_selector
-    entities:
-    - retrieval_intent: chitchat/ask_whatisaide
-  - action: action_trigger_response_selector
-  - action: utter_first_bot_with_rasa
-  - intent: affirm
-  - action: action_set_onboarding
-  - slot_was_set:
-    - onboarding: true
-  - action: utter_built_bot_before
-  - intent: chitchat
-  - action: utter_chitchat
-  - action: utter_built_bot_before
-  - intent: affirm
-  - action: utter_ask_migration
-  - intent: deny
-  - action: utter_explain_aide_components
-  - action: utter_aide_components_details
-  - action: utter_ask_explain_nlucorex
-  - or:
-    - intent: affirm
-    - intent: how_to_get_started
-      entities:
-      - product: all
-    - intent: explain
-  - action: utter_explain_nlu
-  - action: utter_explain_core
-  - action: utter_explain_x
-- story: new to rasa + not new to chatbots + not migrating
-  steps:
-  - intent: greet
-  - action: action_greet_user
-  - intent: how_to_get_started
-  - action: utter_ask_playground_install_info
-  - intent: trigger_response_selector
-    entities:
-    - retrieval_intent: chitchat/ask_whatisaide
-  - action: action_trigger_response_selector
-  - action: utter_first_bot_with_rasa
-  - intent: affirm
-  - action: action_set_onboarding
-  - slot_was_set:
-    - onboarding: true
-  - action: utter_built_bot_before
-  - intent: chitchat
-  - action: utter_chitchat
-  - action: utter_built_bot_before
-  - intent: affirm
-  - action: utter_ask_migration
-  - intent: deny
-  - action: utter_explain_aide_components
-  - action: utter_aide_components_details
-  - action: utter_ask_explain_nlucorex
-  - intent: faq
-    entities:
-    - product: rasa
-  - slot_was_set:
-    - product: rasa
-  - action: utter_explain_nlu
-  - action: utter_explain_core
-- story: new to rasa + not new to chatbots + not migrating
-  steps:
-  - intent: greet
-  - action: action_greet_user
-  - intent: how_to_get_started
-  - action: utter_ask_playground_install_info
-  - intent: trigger_response_selector
-    entities:
-    - retrieval_intent: chitchat/ask_whatisaide
-  - action: action_trigger_response_selector
-  - action: utter_first_bot_with_rasa
-  - intent: affirm
-  - action: action_set_onboarding
-  - slot_was_set:
-    - onboarding: true
-  - action: utter_built_bot_before
-  - intent: affirm
-  - action: utter_ask_migration
-  - intent: chitchat
-  - action: utter_chitchat
-  - action: utter_ask_migration
-  - intent: deny
-  - action: utter_explain_aide_components
-  - action: utter_aide_components_details
-  - action: utter_ask_explain_nlucorex
-  - or:
-    - intent: affirm
-    - intent: how_to_get_started
-      entities:
-      - product: all
-    - intent: explain
-  - action: utter_explain_nlu
-  - action: utter_explain_core
-  - action: utter_explain_x
-- story: new to rasa + not new to chatbots + not migrating
-  steps:
-  - intent: greet
-  - action: action_greet_user
-  - intent: how_to_get_started
-  - action: utter_ask_playground_install_info
-  - intent: trigger_response_selector
-    entities:
-    - retrieval_intent: chitchat/ask_whatisaide
-  - action: action_trigger_response_selector
-  - action: utter_first_bot_with_rasa
-  - intent: affirm
-  - action: action_set_onboarding
-  - slot_was_set:
-    - onboarding: true
-  - action: utter_built_bot_before
-  - intent: affirm
-  - action: utter_ask_migration
-  - intent: deny
-  - action: utter_explain_aide_components
-  - action: utter_aide_components_details
-  - action: utter_ask_explain_nlucorex
-  - intent: chitchat
-  - action: utter_chitchat
-  - action: utter_ask_explain_nlucorex
-  - or:
-    - intent: affirm
-    - intent: how_to_get_started
-      entities:
-      - product: all
-    - intent: explain
-  - action: utter_explain_nlu
-  - action: utter_explain_core
-  - action: utter_explain_x
-- story: new to rasa + not new to chatbots + not migrating
-  steps:
-  - intent: greet
-  - action: action_greet_user
-  - intent: how_to_get_started
-  - action: utter_ask_playground_install_info
-  - intent: trigger_response_selector
-    entities:
-    - retrieval_intent: chitchat/ask_whatisaide
-  - action: action_trigger_response_selector
-  - action: utter_first_bot_with_rasa
-  - intent: affirm
-  - action: action_set_onboarding
-  - slot_was_set:
-    - onboarding: true
-  - action: utter_built_bot_before
-  - intent: affirm
-  - action: utter_ask_migration
-  - intent: deny
-  - action: utter_explain_aide_components
-  - action: utter_aide_components_details
-  - action: utter_ask_explain_nlucorex
-  - or:
-    - intent: affirm
-    - intent: how_to_get_started
-      entities:
-      - product: all
-    - intent: explain
-  - action: utter_explain_nlu
-  - action: utter_explain_core
-  - action: utter_explain_x
   - intent: chitchat
   - action: utter_chitchat
 - story: new to rasa/bots, explain NLU and try it out
   steps:
-  - intent: greet
+  - intent: chitchat
   - action: action_greet_user
   - intent: how_to_get_started
   - action: utter_ask_playground_install_info
   - intent: trigger_response_selector
     entities:
-    - retrieval_intent: chitchat/ask_whatisaide
+    - retrieval_intent: faq/aidex
   - action: action_trigger_response_selector
   - action: utter_first_bot_with_rasa
   - intent: affirm
@@ -290,13 +58,13 @@ stories:
   - action: utter_explain_core
 - story: new to rasa/bots, explain rasa x only
   steps:
-  - intent: greet
+  - intent: chitchat
   - action: action_greet_user
   - intent: how_to_get_started
   - action: utter_ask_playground_install_info
   - intent: trigger_response_selector
     entities:
-    - retrieval_intent: chitchat/ask_whatisaide
+    - retrieval_intent: faq/aidex
   - action: action_trigger_response_selector
   - action: utter_first_bot_with_rasa
   - intent: affirm
@@ -310,13 +78,13 @@ stories:
   - action: utter_ask_explain_nlucorex
 - story: new to rasa/bots, explain stack and try it out
   steps:
-  - intent: greet
+  - intent: chitchat
   - action: action_greet_user
   - intent: how_to_get_started
   - action: utter_ask_playground_install_info
   - intent: trigger_response_selector
     entities:
-    - retrieval_intent: chitchat/ask_whatisaide
+    - retrieval_intent: faq/aidex
   - action: action_trigger_response_selector
   - action: utter_first_bot_with_rasa
   - intent: affirm
@@ -342,13 +110,13 @@ stories:
   - action: utter_explain_x
 - story: new to rasa/bots, explain stack and try it out
   steps:
-  - intent: greet
+  - intent: chitchat
   - action: action_greet_user
   - intent: how_to_get_started
   - action: utter_ask_playground_install_info
   - intent: trigger_response_selector
     entities:
-    - retrieval_intent: chitchat/ask_whatisaide
+    - retrieval_intent: faq/aidex
   - action: action_trigger_response_selector
   - action: utter_first_bot_with_rasa
   - intent: affirm
@@ -373,13 +141,13 @@ stories:
   - action: utter_chitchat
 - story: new to rasa/bots, explain core and try out stack
   steps:
-  - intent: greet
+  - intent: chitchat
   - action: action_greet_user
   - intent: how_to_get_started
   - action: utter_ask_playground_install_info
   - intent: trigger_response_selector
     entities:
-    - retrieval_intent: chitchat/ask_whatisaide
+    - retrieval_intent: faq/aidex
   - action: action_trigger_response_selector
   - action: utter_first_bot_with_rasa
   - intent: affirm
@@ -403,13 +171,13 @@ stories:
   - action: utter_anything_else
 - story: new to rasa/bots, explain core and try out stack
   steps:
-  - intent: greet
+  - intent: chitchat
   - action: action_greet_user
   - intent: how_to_get_started
   - action: utter_ask_playground_install_info
   - intent: trigger_response_selector
     entities:
-    - retrieval_intent: chitchat/ask_whatisaide
+    - retrieval_intent: faq/aidex
   - action: action_trigger_response_selector
   - action: utter_first_bot_with_rasa
   - intent: affirm
@@ -432,13 +200,13 @@ stories:
   - action: utter_chitchat
 - story: new to rasa/bots, explain core, then nlu and try out stack
   steps:
-  - intent: greet
+  - intent: chitchat
   - action: action_greet_user
   - intent: how_to_get_started
   - action: utter_ask_playground_install_info
   - intent: trigger_response_selector
     entities:
-    - retrieval_intent: chitchat/ask_whatisaide
+    - retrieval_intent: faq/aidex
   - action: action_trigger_response_selector
   - action: utter_first_bot_with_rasa
   - intent: affirm
@@ -462,13 +230,13 @@ stories:
   - action: utter_explain_nlu
 - story: new to rasa/bots, explain core, then nlu and try out stack
   steps:
-  - intent: greet
+  - intent: chitchat
   - action: action_greet_user
   - intent: how_to_get_started
   - action: utter_ask_playground_install_info
   - intent: trigger_response_selector
     entities:
-    - retrieval_intent: chitchat/ask_whatisaide
+    - retrieval_intent: faq/aidex
   - action: action_trigger_response_selector
   - action: utter_first_bot_with_rasa
   - intent: affirm
@@ -489,117 +257,9 @@ stories:
   - action: utter_explain_nlu
   - intent: chitchat
   - action: utter_chitchat
-- story: new to rasa/bots, explain nlu and try out stack
-  steps:
-  - intent: greet
-  - action: action_greet_user
-  - intent: how_to_get_started
-  - action: utter_ask_playground_install_info
-  - intent: trigger_response_selector
-    entities:
-    - retrieval_intent: chitchat/ask_whatisaide
-  - action: action_trigger_response_selector
-  - action: utter_first_bot_with_rasa
-  - intent: affirm
-  - action: action_set_onboarding
-  - slot_was_set:
-    - onboarding: true
-  - action: utter_built_bot_before
-  - intent: deny
-  - action: utter_explain_aide_components
-  - action: utter_aide_components_details
-  - action: utter_ask_explain_nlucorex
-  - intent: how_to_get_started
-    entities:
-    - product: nlu
-  - action: utter_explain_nlu
-  - action: utter_also_explain_core
-  - intent: chitchat
-  - action: utter_chitchat
-  - action: utter_also_explain_core
-  - intent: deny
-  - action: utter_anything_else
-- story: new to rasa/bots, explain nlu and try out stack
-  steps:
-  - intent: greet
-  - action: action_greet_user
-  - intent: how_to_get_started
-  - action: utter_ask_playground_install_info
-  - intent: trigger_response_selector
-    entities:
-    - retrieval_intent: chitchat/ask_whatisaide
-  - action: action_trigger_response_selector
-  - action: utter_first_bot_with_rasa
-  - intent: affirm
-  - action: action_set_onboarding
-  - slot_was_set:
-    - onboarding: true
-  - action: utter_built_bot_before
-  - intent: deny
-  - action: utter_explain_aide_components
-  - action: utter_aide_components_details
-  - action: utter_ask_explain_nlucorex
-  - intent: how_to_get_started
-    entities:
-    - product: nlu
-  - action: utter_explain_nlu
-  - action: utter_also_explain_core
-  - intent: deny
-  - action: utter_anything_else
-  - intent: chitchat
-  - action: utter_chitchat
-- story: new to rasa/bots, don't explain and try out stack
-  steps:
-  - intent: greet
-  - action: action_greet_user
-  - intent: how_to_get_started
-  - action: utter_ask_playground_install_info
-  - intent: trigger_response_selector
-    entities:
-    - retrieval_intent: chitchat/ask_whatisaide
-  - action: action_trigger_response_selector
-  - action: utter_first_bot_with_rasa
-  - intent: affirm
-  - action: action_set_onboarding
-  - slot_was_set:
-    - onboarding: true
-  - action: utter_built_bot_before
-  - intent: deny
-  - action: utter_explain_aide_components
-  - action: utter_aide_components_details
-  - action: utter_ask_explain_nlucorex
-  - intent: chitchat
-  - action: utter_chitchat
-  - action: utter_ask_explain_nlucorex
-  - intent: deny
-  - action: utter_anything_else
-- story: new to rasa/bots, don't explain and try out stack
-  steps:
-  - intent: greet
-  - action: action_greet_user
-  - intent: how_to_get_started
-  - action: utter_ask_playground_install_info
-  - intent: trigger_response_selector
-    entities:
-    - retrieval_intent: chitchat/ask_whatisaide
-  - action: action_trigger_response_selector
-  - action: utter_first_bot_with_rasa
-  - intent: affirm
-  - action: action_set_onboarding
-  - slot_was_set:
-    - onboarding: true
-  - action: utter_built_bot_before
-  - intent: deny
-  - action: utter_explain_aide_components
-  - action: utter_aide_components_details
-  - action: utter_ask_explain_nlucorex
-  - intent: deny
-  - action: utter_anything_else
-  - intent: chitchat
-  - action: utter_chitchat
 - story: not new to rasa + not interested in products
   steps:
-  - intent: greet
+  - intent: chitchat
   - action: action_greet_user
   - intent: chitchat
   - action: utter_chitchat
@@ -607,7 +267,7 @@ stories:
   - action: utter_ask_playground_install_info
   - intent: trigger_response_selector
     entities:
-    - retrieval_intent: chitchat/ask_whatisaide
+    - retrieval_intent: faq/aidex
   - action: action_trigger_response_selector
   - action: utter_first_bot_with_rasa
   - intent: deny
@@ -619,13 +279,13 @@ stories:
   - action: utter_thumbsup
 - story: not new to rasa + not interested in products
   steps:
-  - intent: greet
+  - intent: chitchat
   - action: action_greet_user
   - intent: how_to_get_started
   - action: utter_ask_playground_install_info
   - intent: trigger_response_selector
     entities:
-    - retrieval_intent: chitchat/ask_whatisaide
+    - retrieval_intent: faq/aidex
   - action: action_trigger_response_selector
   - action: utter_first_bot_with_rasa
   - intent: chitchat
@@ -640,13 +300,13 @@ stories:
   - action: utter_thumbsup
 - story: not new to rasa + not interested in products
   steps:
-  - intent: greet
+  - intent: chitchat
   - action: action_greet_user
   - intent: how_to_get_started
   - action: utter_ask_playground_install_info
   - intent: trigger_response_selector
     entities:
-    - retrieval_intent: chitchat/ask_whatisaide
+    - retrieval_intent: faq/aidex
   - action: action_trigger_response_selector
   - action: utter_first_bot_with_rasa
   - intent: deny
@@ -661,13 +321,13 @@ stories:
   - action: utter_thumbsup
 - story: not new to rasa + nlu + nothing special
   steps:
-  - intent: greet
+  - intent: chitchat
   - action: action_greet_user
   - intent: how_to_get_started
   - action: utter_ask_playground_install_info
   - intent: trigger_response_selector
     entities:
-    - retrieval_intent: chitchat/ask_whatisaide
+    - retrieval_intent: faq/aidex
   - action: action_trigger_response_selector
   - action: utter_first_bot_with_rasa
   - intent: deny
@@ -687,13 +347,13 @@ stories:
   - action: utter_anything_else
 - story: not new to rasa + rasa x + nothing special
   steps:
-  - intent: greet
+  - intent: chitchat
   - action: action_greet_user
   - intent: how_to_get_started
   - action: utter_ask_playground_install_info
   - intent: trigger_response_selector
     entities:
-    - retrieval_intent: chitchat/ask_whatisaide
+    - retrieval_intent: faq/aidex
   - action: action_trigger_response_selector
   - action: utter_first_bot_with_rasa
   - intent: deny
@@ -717,13 +377,13 @@ stories:
   - action: utter_explain_core
 - story: not new to rasa + rasa x + nothing special
   steps:
-  - intent: greet
+  - intent: chitchat
   - action: action_greet_user
   - intent: how_to_get_started
   - action: utter_ask_playground_install_info
   - intent: trigger_response_selector
     entities:
-    - retrieval_intent: chitchat/ask_whatisaide
+    - retrieval_intent: faq/aidex
   - action: action_trigger_response_selector
   - action: utter_first_bot_with_rasa
   - intent: chitchat
@@ -745,13 +405,13 @@ stories:
   - action: utter_anything_else
 - story: new to rasa + rasa x + nothing special
   steps:
-  - intent: greet
+  - intent: chitchat
   - action: action_greet_user
   - intent: how_to_get_started
   - action: utter_ask_playground_install_info
   - intent: trigger_response_selector
     entities:
-    - retrieval_intent: chitchat/ask_whatisaide
+    - retrieval_intent: faq/aidex
   - action: action_trigger_response_selector
   - action: utter_first_bot_with_rasa
   - intent: chitchat
@@ -777,35 +437,3 @@ stories:
   - action: utter_anything_else
   - intent: chitchat
   - action: utter_chitchat
-- story: how to get started without privacy policy
-  steps:
-  - intent: how_to_get_started
-  - action: utter_ask_playground_install_info
-  - intent: trigger_response_selector
-    entities:
-    - retrieval_intent: chitchat/ask_whatisaide
-  - action: action_trigger_response_selector
-  - action: utter_first_bot_with_rasa
-  - intent: chitchat
-  - action: utter_chitchat
-  - action: utter_first_bot_with_rasa
-  - intent: affirm
-  - action: action_set_onboarding
-  - slot_was_set:
-    - onboarding: true
-  - action: utter_built_bot_before
-  - intent: affirm
-  - action: utter_ask_migration
-  - intent: deny
-  - action: utter_explain_aide_components
-  - action: utter_aide_components_details
-  - action: utter_ask_explain_nlucorex
-  - or:
-    - intent: affirm
-    - intent: how_to_get_started
-      entities:
-      - product: all
-    - intent: explain
-  - action: utter_explain_nlu
-  - action: utter_explain_core
-  - action: utter_explain_x

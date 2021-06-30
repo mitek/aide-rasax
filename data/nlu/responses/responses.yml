@@ -69,7 +69,7 @@ responses:
   - text: "Я был написан на Python, но для вашего удобства переведу на русский."
   utter_chitchat/ask_weather:
   - text: "I don't know about where you live, but in my world it's always sunny 🔆"
-  - text: "It's getting pretty chilly!"
+  - text: "Становится довольно прохладно тут"
   - text: "Where I'm from, it's almost never-leaving-the-house weather."
   - text: "Winter is coming ⚔️"
   utter_chitchat/ask_whatismyname:
@@ -77,10 +77,6 @@ responses:
   - text: "I'd tell you, but there's restricted access to that chunk of memory."
   - text: "Believe it or not, I actually am not spying on your personal information."
   - text: "You're the second person now to ask me that. Rihanna was the first."
-  utter_chitchat/ask_whatisaide:
-  - text: "Rasa Open Source is a conversational AI framework for that provides machine learning tools for
-  building contextual assistants. You can read more about it here in the docs or on our
-  [website](https://rasa.com/)."
   utter_chitchat/ask_whatspossible:
   - text: "Я могу рассказать вам как начать работать с ботом, как передать информацию или заказать звонок."
   utter_chitchat/ask_wherefrom:
@@ -108,9 +104,42 @@ responses:
   - text: "It's always a pleasure to meet new people!"
   - text: "Nice to meet you too! Happy to be of help."
   utter_chitchat/telljoke:
-  - text: "Why are eggs not very much into jokes? - Because they could crack up."
-  - text: "What's a tree's favorite drink? - Root beer!"
-  - text: "Why do the French like to eat snails so much? - They can't stand fast food."
-  - text: "Why did the robot get angry? - Because someone kept pushing its buttons."
-  - text: "What do you call a pirate droid? - Arrrr-2-D2"
-  - text: "Why did the robot cross the road? - Because he was programmed to."
+  - text: "Как называется пиратский дроид? - Арррр-2-Дэ2"
+  - text: "Почему робот пересекает дорогу? - Потому что у него программа."
+  utter_chitchat/greet:
+  - text: "Здравствуйте!"
+  - text: "Привет! Я помощник."
+  - text: "Я помощник."
+  - text: "Привет, я ассистент."
+  utter_chitchat/greet_name:
+  - text: "Привет, {name}!"
+  - text: "Здравствуйте, {name}!"
+  - text: "Добрый день, {name}!"
+  utter_chitchat/greet_noname:
+  - text: "Привет!"
+  - text: "День добрый!"
+  - text: "Здрасьте!"
+  utter_chitchat/bye:
+  - text: "До свидания!"
+  - text: "Пока!"
+  - text: "Ciao!"
+  - text: "Всего хорошего!"
+  - text: "До свидания, приятно было пообщаться!"
+  utter_helpcreate/password_reset:
+  - text: "Вы хотите поменять пароль?"
+  - text: "Вы хотите сбросить пароль?"
+  - text: "Не работает пароль?"
+  utter_helpcreate/open_incident:
+  - text: "Вы хотите оставить информацию?"
+  - text: "Хотите открыть инцидент?"
+  utter_helpcreate/create_email:
+  - text: "Вы хотите написать новое письмо?"
+  - text: "Создадим новое письмо?"
+  - text: "Хотите новое сообщение?"
+  utter_helpcheck/incident_status:
+  - text: "Вы хотите узнать статус запроса?"
+  - text: "Хотите узнать что с вашим запросом?"
+  utter_helpcheck/checkaccount:
+  - text: "Проверьте работает ли акаунт"
+  utter_helpcheck/checkmail:
+  - text: "Проверить почту"
